@@ -1,76 +1,301 @@
-<script setup>
-</script>
 <template>
-    <div class="min-h-[90dvh] flex items-center justify-center">
-        <div
-            class="absolute inset-0 h-full w-full -z-10 bg-[linear-gradient(to_right,#80808012_1px,transparent_1px),linear-gradient(to_bottom,#80808012_1px,transparent_1px)] bg-[size:24px_24px]">
+  <!-- HERO SECTION -->
+  <section
+    class="relative py-4 overflow-hidden"
+    style="
+      background: linear-gradient(
+        135deg,
+        #fef2f4 0%,
+        #ffffff 50%,
+        #f0f4ff 100%
+      );
+    "
+  >
+    <!-- Decorative Blobs -->
+    <div
+      class="absolute top-20 left-10 w-64 h-64 rounded-full opacity-20 hidden md:block"
+      style="background: radial-gradient(circle, #e31c52 0%, transparent 70%)"
+    ></div>
+
+    <div
+      class="absolute bottom-20 right-10 w-96 h-96 rounded-full opacity-10 hidden md:block"
+      style="background: radial-gradient(circle, #152042 0%, transparent 70%)"
+    ></div>
+
+    <div class="max-w-7xl mx-auto px-4 md:p-12 relative">
+      <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
+        <!-- LEFT: CONTENT -->
+        <div class="relative z-10 text-center md:text-left">
+          <span
+            class="inline-block mb-6 px-5 py-2 text-xs font-semibold rounded-full"
+            style="background: #e31c5215; color: #e31c52"
+          >
+            বাংলাদেশের #১ ওয়েব সলিউশন
+          </span>
+
+          <h1
+            class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-[#152042]"
+          >
+            আপনার ব্যবসার জন্য<br />
+            <span class="block text-[#E31C52]">প্রিমিয়াম ওয়েবসাইট</span>
+            তৈরি করুন
+          </h1>
+
+          <p class="text-sm text-gray-600 mb-4 leading-relaxed max-w-xl">
+            সেলস বাড়াতে ও ব্র্যান্ড উপস্থিতি শক্তিশালী করতে আমাদের প্রফেশনাল
+            ওয়েব ডিজাইন সার্ভিস নিন। ১০০% সন্তুষ্টির গ্যারান্টি।
+          </p>
+
+          <!-- CTA BUTTONS -->
+          <div
+            class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6"
+          >
+            <a
+              href="#"
+              class="text-white font-bold rounded-xl px-8 py-2 shadow-lg flex items-center justify-center gap-2 btn-primary"
+            >
+              ফ্রি কনসাল্টেশন নিন
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </a>
+
+            <a
+              href="#"
+              class="btn-outline font-bold rounded-xl px-8 py-2 flex items-center justify-center gap-2"
+            >
+              পোর্টফোলিও দেখুন
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="w-5 h-5"
+                fill="none"
+                stroke="currentColor"
+                viewBox="0 0 24 24"
+              >
+                <path
+                  fill="currentColor"
+                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <!-- STATS -->
+          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            <div
+              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+            >
+              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
+                ৫০০+
+              </div>
+              <div class="text-xs text-gray-600 mt-1">সন্তুষ্ট ক্লায়েন্ট</div>
+            </div>
+
+            <div
+              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+            >
+              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
+                ১২০০+
+              </div>
+              <div class="text-xs text-gray-600 mt-1">সম্পন্ন প্রজেক্ট</div>
+            </div>
+
+            <div
+              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+            >
+              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">৮+</div>
+              <div class="text-xs text-gray-600 mt-1">বছরের অভিজ্ঞতা</div>
+            </div>
+
+            <div
+              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+            >
+              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
+                ৪.৯
+              </div>
+              <div class="text-xs text-gray-600 mt-1">গড় রেটিং</div>
+            </div>
+          </div>
         </div>
-        <div class="">
-            <section class="sm:pt-0 lg:min-h-[90vh] lg:flex lg:items-center">
-                <span
-                    class="bg-gradient-to-r from-[#6944ff] via-[#5aa2f0] to-[#455159] blur-xl filter opacity-20 w-[300px] sm:w-[400px] lg:w-[500px] 2xl:w-[800px] h-20 sm:h-28 lg:h-40 rotate-45 rounded-[100%] absolute inset- top-10">
-                </span>
-                <div class=" mx-auto sm:px-6 lg:px-8 relative">
-                    <div class="max-w-2xl 2xl:max-w-6xl mx-auto text-center">
-                        <h1 class="px-2 sm:px-6 text-md sm:text-lg 2xl:text-2xl font-inter">আপনার স্বপ্নের সাইট তৈরি করুন আমাদের সাথে!</h1>
-                        <p
-                            class=" text-4xl 2xl:text-8xl font-bold leading-tight  sm:leading-tight sm:text-5xl lg:text-6xl lg:leading-tight font-pj">
-                            আপনার স্বপ্নের ওয়েবসাইট তৈরি হোক আমাদের
-                            <span class="relative inline-flex sm:inline">
-                                <span
-                                    class="bg-gradient-to-r from-[#44BCFF] via-[#FF44EC] to-[#FF675E] blur-lg filter opacity-30 w-full h-full absolute inset-0">
-                                </span>
-                                <span class="relative"> দক্ষতায় </span>
-                            </span>
-                        </p>
-                        <div class="pt-4 sm:pt-8 inline-flex gap-2 flex-row">
-                            <NuxtLink to="#services"
-                                class="inline-flex items-center gap-1.5 justify-center px-3 sm:px-8 py-1 sm:py-3 text-sm sm:text-lg 2xl:text-2xl font-bold text-white dark:text-gray-900 transition-all duration-200 bg-gray-900 dark:bg-gray-100 border-2 border-transparent sm:w-auto rounded-xl focus:outline-none"
-                                role="button">
-                                সার্ভিস দেখুন
-                                <Icon name="hugeicons:service" />
-                            </NuxtLink>
 
-                            <NuxtLink to="contacts"
-                                class="inline-flex items-center gap-1.5 justify-center px-3 sm:px-8 py-1 sm:py-3 text-sm sm:text-lg 2xl:text-2xl font-bold text-gray-900 dark:text-gray-100 transition-all duration-200 border-2 border-gray-900 dark:border-gray-100 sm:w-auto sm:mt-0 rounded-xl hover:bg-gray-900 hover:dark:border-gray-50 hover:text-white  hover:border-gray-900"
-                                role="button">
-                                যোগাযোগ করুন
-                                <Icon name="hugeicons:contact-book" />
-                            </NuxtLink>
-                        </div>
-                        <div class="mt-4 sm:mt-8 lg:mx-24 lg:flex lg:items-center">
-                            <div
-                                class="flex items-center justify-center flex-shrink-0 -space-x-4 overflow-hidden lg:justify-start">
-                                <img class="inline-block object-cover rounded-full w-4 h-6 sm:w-6 sm:h-6 2xl:w-10 2xl:h-10 border-2 border-gray-100"
-                                    src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
-                                    alt="" />
-                                <img class="inline-block object-cover rounded-full w-6 h-6 sm:w-8 sm:h-8 2xl:w-12 2xl:h-12 border-2 border-gray-100"
-                                    src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
-                                    alt="" />
-                                <img class="inline-block object-cover rounded-full w-8 h-8 sm:w-10 sm:h-10 2xl:w-14 2xl:h-14 border-2 border-gray-100"
-                                    src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
-                                    alt="" />
-                                <img class="inline-block object-cover rounded-full w-10 h-10 sm:w-12 sm:h-12 2xl:w-16 2xl:h-16 border-2 border-gray-100"
-                                    src="https://media.istockphoto.com/id/1437816897/photo/business-woman-manager-or-human-resources-portrait-for-career-success-company-we-are-hiring.jpg?s=612x612&w=0&k=20&c=tyLvtzutRh22j9GqSGI33Z4HpIwv9vL_MZw_xOE19NQ="
-                                    alt="" />
-                                <div
-                                    class="flex items-center justify-center text-sm 2xl:text-xl object-cover rounded-full w-12 h-12 sm:w-14 2xl:w-16 2xl:h-16 font-semibold sm:h-14 bg-gray-200 text-slate-950  border-2 border-gray-100">
-                                    <p>95+</p>
-                                </div>
-                            </div>
+        <!-- RIGHT: VIDEO + FLOAT CARDS -->
+        <div class="relative w-full">
+          <div class="glass rounded-3xl shadow-2xl p-1 md:p-2 w-full">
+            <iframe
+              class="rounded-xl w-full h-[315px] md:h-[420px]"
+              src="https://www.youtube.com/embed/UMJSwbhOQzg?si=yR-zoH0JMcIerz0D"
+              title="YouTube video player"
+              frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              referrerpolicy="strict-origin-when-cross-origin"
+              allowfullscreen
+            ></iframe>
+          </div>
 
-                            <p class="mt-2 sm:mt-4 text-base 2xl:text-4xl text-center lg:text-left lg:mt-0 lg:ml-4">
-                                আস্থা রেখেছেন
-                                <span class="font-bold">৩০০+ সফল উদ্যোক্তা</span> <br>
-                                - আপনি কেন নয়?
-                            </p>
-                        </div>
+          <!-- FLOATING CARD LEFT -->
+          <div
+            class="absolute -bottom-6 -left-6 glass rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-14 h-14 rounded-full flex-center"
+                style="background: #e31c5215"
+              >
+                <svg
+                  class="w-8 h-8 text-[#E31C52]"
+                  fill="currentColor"
+                  viewBox="0 0 20 20"
+                >
+                  <path
+                    fill-rule="evenodd"
+                    clip-rule="evenodd"
+                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="font-bold text-[#152042]">১০০% সন্তুষ্টি</div>
+                <div class="text-sm text-gray-600">গ্যারান্টি</div>
+              </div>
+            </div>
+          </div>
 
-                    </div>
-                </div>
-            </section>
+          <!-- FLOATING CARD RIGHT -->
+          <div
+            class="absolute -top-6 -right-6 glass rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+          >
+            <div class="flex items-center gap-4">
+              <div
+                class="w-14 h-14 rounded-full flex-center"
+                style="background: #e31c5215"
+              >
+                <svg
+                  class="w-8 h-8 text-[#E31C52]"
+                  viewBox="0 0 24 24"
+                  fill="currentColor"
+                >
+                  <path
+                    d="m12 14.475 1.925 1.15q.275.175.538-.012t.187-.513l-.5-2.175 1.7-1.475q.25-.225.15-.537t-.45-.338l-2.225-.175-.875-2.075q-.125-.3-.45-.3t-.45.3l-.875 2.075-2.225.175q-.35.025-.45.338t.15.537l1.7 1.475-.5 2.175q-.075.325.188.513t.537.012z"
+                  />
+                </svg>
+              </div>
+              <div>
+                <div class="font-bold text-[#152042]">১০০% সন্তুষ্টি</div>
+                <div class="text-sm text-gray-600">গ্যারান্টি</div>
+              </div>
+            </div>
+          </div>
         </div>
+        <!-- END RIGHT -->
+      </div>
     </div>
+  </section>
 </template>
 
-<style scoped></style>
+<style scoped>
+/* Responsive fixes */
+@media (max-width: 480px) {
+  .stat-card {
+    padding: 12px !important;
+  }
+  .stat-card div:first-child {
+    font-size: 20px !important;
+  }
+  iframe {
+    height: 260px !important;
+  }
+  .float-card {
+    transform: scale(0.85);
+  }
+}
+
+@media (max-width: 380px) {
+  iframe {
+    height: 220px !important;
+  }
+  .stat-card div:first-child {
+    font-size: 18px !important;
+  }
+}
+
+/* Glass & Card Styles */
+.glass {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(20px);
+  border: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.8);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(227, 28, 82, 0.1);
+  box-shadow: 0 8px 32px rgba(21, 32, 66, 0.08);
+}
+
+/* Buttons */
+.btn-primary {
+  background: linear-gradient(135deg, #e31c52, #c4173f);
+  transition: 0.3s ease;
+}
+.btn-primary:hover {
+  background: linear-gradient(135deg, #c4173f, #a11235);
+  transform: translateY(-3px);
+  box-shadow: 0 15px 35px rgba(227, 28, 82, 0.4);
+}
+.btn-outline {
+  border: 2px solid #e31c52;
+  color: #e31c52;
+  transition: 0.3s ease;
+}
+.btn-outline:hover {
+  background: #e31c52;
+  color: white;
+  transform: translateY(-3px);
+}
+
+/* Hover cards */
+.stat-card {
+  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
+}
+.stat-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 20px 40px rgba(21, 32, 66, 0.15);
+}
+
+/* Floating animation */
+@keyframes float {
+  0%,
+  100% {
+    transform: translateY(0px);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+}
+.float-anim {
+  animation: float 6s ease-in-out infinite;
+}
+.float-card {
+  transition: 0.4s ease;
+}
+.float-card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px rgba(21, 32, 66, 0.25);
+}
+
+/* Flex Center */
+.flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+</style>

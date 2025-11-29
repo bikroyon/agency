@@ -1,5 +1,25 @@
 <script setup lang="ts">
+import { ref, computed, onMounted, onUnmounted } from "vue";
 import type { TimelineItem } from "@nuxt/ui";
+
+// Track screen width manually
+const width = ref<number>(0);
+
+const updateWidth = () => {
+  width.value = window.innerWidth;
+};
+
+onMounted(() => {
+  updateWidth();
+  window.addEventListener("resize", updateWidth);
+});
+
+onUnmounted(() => {
+  window.removeEventListener("resize", updateWidth);
+});
+
+// Breakpoint check
+const isMobile = computed(() => width.value < 768);
 
 const items = ref<TimelineItem[]>([
   {
@@ -35,7 +55,6 @@ const items = ref<TimelineItem[]>([
 
 <template>
   <section class="py-16 relative">
-    <!-- Section Heading -->
     <div class="text-center mb-10">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
         আমরা যে ভাবে <span class="text-rose-500">কাজ করি</span>
@@ -45,9 +64,10 @@ const items = ref<TimelineItem[]>([
         আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২২ সাল থেকে ধরে রেখেছি
       </p>
     </div>
+
     <div class="flex justify-center items-center">
       <UTimeline
-        orientation="horizontal"
+        :orientation="isMobile ? 'vertical' : 'horizontal'"
         :default-value="4"
         :items="items"
         size="2xl"
