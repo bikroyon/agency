@@ -89,8 +89,7 @@ export default defineNuxtConfig({
         },
       ],
     },
-    pageTransition: { name: "fade", mode: "in-out" },
-    layoutTransition: { name: "fade", mode: "in-out" },
+    pageTransition: { name: 'page', mode: 'out-in' },
   },
   components: [{ path: "~/components", pathPrefix: true }],
   modules: [

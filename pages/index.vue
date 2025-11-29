@@ -1,13 +1,15 @@
 <template>
-  <HomeHero />
-  <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
-    <HomeServices />
-    <Timeline />
-    <Partners />
-    <HomeFounder />
-    <HomeTabs />
-    <Testimonials />
-    <Banner />
+  <div>
+    <HomeHero />
+    <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
+      <HomeServices />
+      <Timeline />
+      <Partners />
+      <HomeFounder />
+      <HomeTabs />
+      <Testimonials />
+      <Banner />
+    </div>
   </div>
 </template>
 

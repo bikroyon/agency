@@ -1,9 +1,7 @@
 <template>
   <NuxtLayout>
     <UApp class="w-full">
-      <Transition name="blur-fade" mode="out-in">
         <NuxtPage />
-      </Transition>
     </UApp>
   </NuxtLayout>
 </template>
@@ -31,23 +29,14 @@
 }
 
 /* Page transition: blur and fade */
-.blur-fade-enter-active,
-.blur-fade-leave-active {
-  transition: all 0.3s ease;
+.page-enter-active,
+.page-leave-active {
+  transition: all 0.4s;
 }
-
-.blur-fade-enter-from,
-.blur-fade-leave-to {
+.page-enter-from,
+.page-leave-to {
   opacity: 0;
-  filter: blur(8px);
-  transform: scale(0.98);
-}
-
-.blur-fade-enter-to,
-.blur-fade-leave-from {
-  opacity: 1;
-  filter: blur(0);
-  transform: scale(1);
+  filter: blur(1rem);
 }
 
 @supports not selector(::-webkit-scrollbar) {

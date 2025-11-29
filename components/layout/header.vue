@@ -68,7 +68,7 @@ const items = [
     <div class="container mx-auto px-4 py-3 flex items-center justify-between">
       <!-- Logo -->
       <NuxtLink to="/" class="flex items-center text-xl font-bold">
-        Bappy<span class="text-rose-600 text-2xl">.</span>
+        Bikroy<span class="text-rose-600 text-2xl">on.</span>
       </NuxtLink>
 
       <!-- Desktop Nav -->
