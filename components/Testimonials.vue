@@ -2,7 +2,7 @@
   <section class="py-16 relative">
     <!-- Section Heading -->
     <div class="text-center mb-10">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+      <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
         আমাদের সার্ভিস নিয়ে <span class="text-rose-500">উদ্দোক্তারা</span> যা বলেন
       </h2>
       <p class="mt-2 text-sm sm:text-lg">

@@ -6,7 +6,7 @@
             <div class="max-w-xl flex items-center flex-col">
                 <div class="text-left sm:pl-10">
                     <!-- Heading -->
-                    <h2 class="text-2xl md:text-3xl font-bold">
+                    <h2 class="text-3xl md:text-3xl font-bold">
                         সার্বক্ষণিক সহায়তার জন্য থাকছে <span class="text-rose-500"> টেলিগ্রাম </span>প্রাইভেট সাপোর্ট চ্যানেল
                     </h2>
                     <p class="text-xs sm:text-sm mb-2 font-normal">

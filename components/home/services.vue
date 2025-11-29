@@ -11,7 +11,7 @@
         <div class="text-left h-[200px] overflow-hidden">
           <Lottie style="height: 200px" :data="developerSkils" />
         </div>
-        <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+        <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
           <span class="">আমাদের </span>
           <span class="text-rose-500">সার্ভিস সমূহ</span>
         </h2>

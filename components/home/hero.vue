@@ -2,14 +2,6 @@
   <!-- HERO SECTION -->
   <section
     class="relative py-4 overflow-hidden"
-    style="
-      background: linear-gradient(
-        135deg,
-        #fef2f4 0%,
-        #ffffff 50%,
-        #f0f4ff 100%
-      );
-    "
   >
     <!-- Decorative Blobs -->
     <div
@@ -34,14 +26,14 @@
           </span>
 
           <h1
-            class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6 text-[#152042]"
+            class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
           >
             আপনার ব্যবসার জন্য<br />
             <span class="block text-[#E31C52]">প্রিমিয়াম ওয়েবসাইট</span>
             তৈরি করুন
           </h1>
 
-          <p class="text-sm text-gray-600 mb-4 leading-relaxed max-w-xl">
+          <p class="text-sm mb-4 leading-relaxed max-w-xl">
             সেলস বাড়াতে ও ব্র্যান্ড উপস্থিতি শক্তিশালী করতে আমাদের প্রফেশনাল
             ওয়েব ডিজাইন সার্ভিস নিন। ১০০% সন্তুষ্টির গ্যারান্টি।
           </p>
@@ -92,16 +84,16 @@
           <!-- STATS -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div
-              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
             >
-              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
+              <h3 class="text-lg md:text-2xl font-bold text-[#E31C52]">
                 ৫০০+
-              </div>
-              <div class="text-xs text-gray-600 mt-1">সন্তুষ্ট ক্লায়েন্ট</div>
+              </h3>
+              <p class="text-xs text-gray-600 mt-1">সন্তুষ্ট ক্লায়েন্ট</p>
             </div>
 
             <div
-              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
             >
               <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
                 ১২০০+
@@ -110,14 +102,14 @@
             </div>
 
             <div
-              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
             >
               <div class="text-lg md:text-2xl font-bold text-[#E31C52]">৮+</div>
               <div class="text-xs text-gray-600 mt-1">বছরের অভিজ্ঞতা</div>
             </div>
 
             <div
-              class="text-center glass-card rounded-2xl p-5 stat-card cursor-pointer"
+              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
             >
               <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
                 ৪.৯
@@ -143,7 +135,7 @@
 
           <!-- FLOATING CARD LEFT -->
           <div
-            class="absolute -bottom-6 -left-6 glass rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+            class="absolute -bottom-6 -left-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
           >
             <div class="flex items-center gap-4">
               <div
@@ -163,15 +155,15 @@
                 </svg>
               </div>
               <div>
-                <div class="font-bold text-[#152042]">১০০% সন্তুষ্টি</div>
-                <div class="text-sm text-gray-600">গ্যারান্টি</div>
+                <div class="font-bold ">১০০% সন্তুষ্টি</div>
+                <div class="text-sm">গ্যারান্টি</div>
               </div>
             </div>
           </div>
 
           <!-- FLOATING CARD RIGHT -->
           <div
-            class="absolute -top-6 -right-6 glass rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+            class="absolute -top-6 -right-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
           >
             <div class="flex items-center gap-4">
               <div
@@ -189,8 +181,8 @@
                 </svg>
               </div>
               <div>
-                <div class="font-bold text-[#152042]">১০০% সন্তুষ্টি</div>
-                <div class="text-sm text-gray-600">গ্যারান্টি</div>
+                <div class="font-bold ">২৪/৭ সাপোর্ট</div>
+                <div class="text-sm"></div>
               </div>
             </div>
           </div>
@@ -229,13 +221,12 @@
 
 /* Glass & Card Styles */
 .glass {
-  background: rgba(255, 255, 255, 0.7);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.044);
 }
 
 .glass-card {
-  background: rgba(255, 255, 255, 0.8);
+  background: rgba(255, 255, 255, 0.17);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(227, 28, 82, 0.1);
   box-shadow: 0 8px 32px rgba(21, 32, 66, 0.08);

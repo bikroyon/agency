@@ -111,7 +111,7 @@ const items = [
     <div
       v-if="mobileOpen"
       id="mobile-menu"
-      class="fixed md:hidden inset-0 z-40 bg-gray-100 dark:bg-[#030712] p-6 flex flex-col justify-start"
+      class="fixed md:hidden inset-0 z-40 bg-gray-100 dark:bg-[#02091e] p-6 flex flex-col justify-start"
     >
       <div class="text-lg font-semibold mt-16 mb-6">মেনু</div>
 

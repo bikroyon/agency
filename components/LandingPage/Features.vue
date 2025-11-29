@@ -2,8 +2,8 @@
     <section class="py-16">
         <div class="max-w-7xl mx-auto px-4 text-center">
             <!-- Heading -->
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-                আমাদের তৈরি <span class="text-rose-500">ল্যান্ডিং পেইজে</span> যা থাকছে
+            <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
+                আমরা <span class="text-rose-500">যা দিচ্ছি</span>
             </h2>
             <p class="mt-2 text-sm sm:text-lg">আমাদের তৈরি ল্যান্ডিং পেজ শুধু সুন্দর নয়—এটি সাইকোলজিক্যালি কনভার্টিং
                 করার মতো করে তৈরি।</p>

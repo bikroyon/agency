@@ -6,7 +6,7 @@
                 <div class="flex items-center h-[220px] overflow-hidden">
                     <Lottie style="height: 400px;" :data="Thinking"/>
                 </div>
-                <h2 class="text-left text-2xl md:text-3xl font-bold mb-1">
+                <h2 class="text-left text-3xl md:text-3xl font-bold mb-1">
                   সচরাচর জানতে চাওয়া<br>
                   <span class="text-rose-500">প্রশ্নের উত্তর</span>
                 </h2>

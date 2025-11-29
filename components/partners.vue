@@ -14,7 +14,7 @@ const brandLogos = [
 <template>
   <section class="py-16 relative">
     <div class="text-center mb-10">
-      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+      <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
         আমাদের থেকে <span class="text-rose-500">উপকৃত</span> হয়েছেন যারা
       </h2>
       <p class="mt-2 text-sm sm:text-lg">

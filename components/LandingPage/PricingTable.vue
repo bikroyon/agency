@@ -2,7 +2,7 @@
     <div id="#pricing" class="py-20 sm:px-4 max-w-7xl mx-auto" :class="{ 'dark': darkMode }">
         <div class="text-center mb-10">
             <!-- Heading -->
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
+            <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
                 আমাদের সকল <span class="text-rose-500">প্রাইসিং প্লান</span>
             </h2>
             <p class="mt-2 text-sm sm:text-lg">আমাদের তৈরি ল্যান্ডিং পেজ শুধু সুন্দর নয়—এটি সাইকোলজিক্যালি কনভার্টিং
