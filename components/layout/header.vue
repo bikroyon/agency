@@ -12,31 +12,31 @@ const items = [
     to: "/",
   },
   {
-    label: "সেবা",
+    label: "সেবা সমূহ",
     icon: "hugeicons:service",
     children: [
       {
         label: "ল্যান্ডিং পেজ ডিজাইন",
         description:
-          "স্পিড এবং কনভার্সনের জন্য ওয়ার্ডপ্রেস ও এলিমেন্টরে নির্মিত",
+          "কম খরচে নতুন উদোক্তাদের জন্য আকর্ষণীয় ল্যান্ডিং পেজ ডিজাইন।",
         icon: "hugeicons:store-02",
         to: "/landing-page",
       },
       {
         label: "ই-কমার্স ওয়েবসাইট",
-        description: "ওয়ার্ডপ্রেস বা কাস্টম স্ট্যাক ব্যবহার করে তৈরি",
+        description: "বিক্রয় বৃদ্ধির জন্য কাস্টমাইজড ওয়ার্ডপ্রেস ই-কমার্স সলিউশন।",
         icon: "hugeicons:activity-04",
         to: "/ecommerce-website",
       },
       {
         label: "কাস্টম ওয়েব অ্যাপ",
-        description: "স্কেলেবল অ্যাপের জন্য Laravel, Vue.js, Mysql ব্যবহৃত",
+        description: "আমরা স্কেলেবল অ্যাপের জন্য Laravel, Vue.js, Mysql ব্যবহার করি।",
         icon: "hugeicons:computer-check",
         to: "#",
       },
       {
-        label: "মাসিক রক্ষণাবেক্ষণ",
-        description: "আপডেট, SEO ও নিরাপত্তা সেবা চলমানভাবে প্রদান",
+        label: "সোশ্যাল মিডিয়া মার্কেটিং",
+        description: "সঠিক ব্র্যান্ডিং এবং টার্গেট অডিয়েন্সের মাধ্যমে বিক্রয় বৃদ্ধি।",
         icon: "hugeicons:calendar-love-01",
         to: "/website-management",
       },
