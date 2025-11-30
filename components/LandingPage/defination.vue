@@ -1,7 +1,8 @@
-<script setup lang="ts"></script>
-
 <template>
-  <div class="container mx-auto py-12">
+  <div class="container mx-auto py-12 relative">
+    <div
+      class="absolute inset-0 h-full w-full opacity-40 -z-10 bg-[radial-gradient(#99a1af_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"
+    ></div>
     <!-- Section Heading -->
     <div class="text-center mb-2">
       <!-- Heading -->
@@ -13,7 +14,7 @@
     <div
       class="max-w-4xl mx-auto text-center sm:text-base md:text-lg space-y-2"
     >
-      <p class="mt-4 t sm:text-base md:text-lg">
+      <p class="mt-4 px-2 text-sm sm:text-base md:text-lg">
         ল্যান্ডিং পেইজ হল একটি বিশেষ ওয়েব পেইজ যা মূলত কোন প্রোডাক্ট, সার্ভিস বা
         অফারের উপর ফোকাস করে। এর উদ্দেশ্য ভিজিটরকে একটি নির্দিষ্ট অ্যাকশন নেওয়ার
         জন্য উৎসাহিত করা, যেমন ফর্ম পূরণ করা, সাইনআপ করা বা প্রোডাক্ট কেনা।
@@ -29,7 +30,7 @@
     <div
       class="max-w-4xl mx-auto text-center sm:text-base md:text-lg space-y-2"
     >
-      <p class="mt-4 sm:text-base md:text-lg leading-relaxed">
+      <p class="mt-4 text-sm px-2 sm:text-base md:text-lg leading-relaxed">
         ফেসবুকের এলগোরিদম কিভাবে কাজ করে তা বোঝার পরই আপনি বুঝতে পারবেন কেন একটি
         ল্যান্ডিং পেজ অপরিহার্য। কিছু ব্যবহারকারী সরাসরি ফেসবুকের ইনবক্সে মেসেজ
         পাঠাতে পছন্দ করেন, তাই ফেসবুক তাদের আলাদা করে রেখেছে। পাশাপাশি, যারা
@@ -38,10 +39,34 @@
         অডিয়েন্সকে আরও কার্যকরভাবে আনা এবং কনভার্সন বাড়ানো সম্ভব হয়।
       </p>
     </div>
+    <section class="py-10 px-4">
+      <div
+        class="md:max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-6 sm:p-10 border border-gray-100 dark:border-slate-800"
+      >
+        <h2 class="text-xl sm:text-2xl font-bold text-center mb-6">
+          একটি ল্যান্ডিং পেজে থাকলে আপনি যে সুবিধাগুলো পাবেন:
+        </h2>
+
+        <!-- Benefits List -->
+        <ul class="space-y-4">
+          <li
+            v-for="(item, index) in benefits"
+            :key="index"
+            class="flex items-start gap-3"
+          >
+            <Icon
+              name="hugeicons:checkmark-circle-03"
+              class="text-green-500 w-6 h-6 mt-1 flex-shrink-0"
+            />
+            <span class="text-sm sm:text-base leading-relaxed">
+              {{ item }}
+            </span>
+          </li>
+        </ul>
+      </div>
+    </section>
     <!-- CPA Result Proof Section - Peacock BD Success -->
-    <section
-      class="py-12 md:py-16  overflow-hidden"
-    >
+    <section class="py-12 md:py-16 overflow-hidden">
       <div class="max-w-5xl mx-auto px-6 text-center">
         <!-- Top Badge -->
         <div class="inline-flex items-center gap-3 mb-8">
@@ -62,16 +87,17 @@
         </div>
 
         <!-- Main Heading -->
-        <h2
-          class="text-3xl md:text-4xl font-bold mb-2 leading-tight"
-        >
+        <h2 class="text-3xl md:text-4xl font-bold mb-2 leading-tight">
           ছবিতে দেখুন — <span style="color: #e31c52">১৪৪০ টাকা</span> দামের
-          প্রোডাক্ট <br> সেল করতে খরচ হচ্ছে মাত্র
+          প্রোডাক্ট <br />
+          সেল করতে খরচ হচ্ছে মাত্র
           <span style="color: #e31c52">১০৫ টাকা</span>
         </h2>
 
         <!-- Sub Heading -->
-        <p class="text-xl md:text-3xl font-bold my-4">
+        <p
+          class="text-xl md:text-3xl font-bold my-4 bg-gradient-to-r from-slate-900 via-rose-500 to-slate-600 inline-block text-transparent bg-clip-text"
+        >
           স্মার্ট ল্যান্ডিং + স্ট্র্যাটেজি = কম কষ্টে সেল
         </p>
         <p class="text-xs sm:text-sm mb-1 italic">
@@ -109,5 +135,16 @@
     </section>
   </div>
 </template>
-<script></script>
+<script setup lang="ts">
+const benefits = [
+  "সার্ভার সাইড ট্র্যাকিং সহ পিক্সেল সেটআপ করে এড রান করে প্রচুর সেল করতে পারবেন",
+  "যারা ওয়েবসাইটে এসে ফুট প্রিন্ট রেখে চলে গেছে তাদের রিটার্গেটিং করে আপনার সেলকে অনেক বাড়াতে পারবেন",
+  "অর্ডার সহজে ম্যানেজ করতে পারবেন",
+  "অটোম্যাটিক সেল হতে থাকবে",
+  "স্টুডফাস্ট, পাঠাও কুরিয়ার এক ক্লিকে অর্ডার ডিটেইল অটোমেটিক এনট্রি",
+  "স্টক ম্যানেজ করার সুবিধাও থাকবে",
+  "ইনভয়েস প্রিন্ট / ডাউনলোড",
+  "তাছাড়া প্রয়োজনীয় সকল ফিচার ইনবিল্ট করা থাকে",
+];
+</script>
 <style scoped></style>

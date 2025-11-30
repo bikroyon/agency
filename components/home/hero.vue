@@ -1,8 +1,6 @@
 <template>
   <!-- HERO SECTION -->
-  <section
-    class="relative py-4 overflow-hidden"
-  >
+  <section class="relative py-4 overflow-hidden">
     <!-- Decorative Blobs -->
     <div
       class="absolute top-20 left-10 w-64 h-64 rounded-full opacity-20 hidden md:block"
@@ -14,107 +12,64 @@
       style="background: radial-gradient(circle, #152042 0%, transparent 70%)"
     ></div>
 
-    <div class="max-w-7xl mx-auto px-4 md:p-12 relative">
+    <div class="max-w-7xl mx-auto px-4 md:p-12 md:pt-8 relative">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <!-- LEFT: CONTENT -->
         <div class="relative z-10 text-center md:text-left">
           <span
-            class="inline-block mb-6 px-5 py-2 text-xs font-semibold rounded-full"
+            class="inline-block mb-4 px-5 py-2 text-xs font-semibold rounded-full"
             style="background: #e31c5215; color: #e31c52"
           >
             বাংলাদেশের #১ ওয়েব সলিউশন
           </span>
 
           <h1
-            class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-6"
+            class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4"
           >
-            আপনার ব্যবসার জন্য<br />
-            <span class="block text-[#E31C52]">প্রিমিয়াম ওয়েবসাইট</span>
+            সেলস বাড়ানোর জন্য<br />
+            <span class="block text-[#E31C52]">প্রফেশনাল ওয়েবসাইট</span>
             তৈরি করুন
           </h1>
 
           <p class="text-sm mb-4 leading-relaxed max-w-xl">
-            সেলস বাড়াতে ও ব্র্যান্ড উপস্থিতি শক্তিশালী করতে আমাদের প্রফেশনাল
-            ওয়েব ডিজাইন সার্ভিস নিন। ১০০% সন্তুষ্টির গ্যারান্টি।
+            আপনার ব্যবসার জন্য <b>দ্রুত লোডিং</b> এবং SEO অপটিমাইজড ওয়েবসাইট
+            তৈরি করুন। আমাদের <b>প্রমাণিত পদ্ধতি</b> ব্যবহার করে আপনার অনলাইন
+            <b>সেলস</b> নিশ্চিতভাবে <b>৩ গুণ বাড়ান</b> এবং আপনার ডিজিটাল
+            ব্যবসাকে আরও সহজ করুন।
           </p>
 
           <!-- CTA BUTTONS -->
           <div
             class="flex flex-col sm:flex-row justify-center md:justify-start gap-4 mb-6"
           >
-            <a
-              href="#"
-              class="text-white font-bold rounded-xl px-8 py-2 shadow-lg flex items-center justify-center gap-2 btn-primary"
+            <NuxtLink
+              to="https://wa.me/8801904015818"
+              class="text-white font-semibold rounded-xl px-8 py-2 shadow-lg flex items-center justify-center gap-2 btn-primary"
             >
-              ফ্রি কনসাল্টেশন নিন
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
-                />
-              </svg>
-            </a>
+              সরাসরি যোগাযোগ করুন
+              <Icon name="hugeicons:whatsapp" class="w-5 h-5" />
+            </NuxtLink>
 
-            <a
-              href="#"
-              class="btn-outline font-bold rounded-xl px-8 py-2 flex items-center justify-center gap-2"
+            <NuxtLink
+              href="#services"
+              class="btn-outline font-semibold rounded-xl px-8 py-2 flex items-center justify-center gap-2"
             >
-              পোর্টফোলিও দেখুন
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                class="w-5 h-5"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
-                <path
-                  fill="currentColor"
-                  d="M16.15 13H5q-.425 0-.712-.288T4 12t.288-.712T5 11h11.15L13.3 8.15q-.3-.3-.288-.7t.288-.7q.3-.3.713-.312t.712.287L19.3 11.3q.15.15.213.325t.062.375t-.062.375t-.213.325l-4.575 4.575q-.3.3-.712.288t-.713-.313q-.275-.3-.288-.7t.288-.7z"
-                />
-              </svg>
-            </a>
+              আমাদের সার্ভিস সমূহ
+              <Icon name="hugeicons:service" class="w-5 h-5" />
+            </NuxtLink>
           </div>
 
           <!-- STATS -->
           <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div
-              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
+              v-for="(stat, index) in stats"
+              :key="index"
+              class="'stat-card text-center p-5 rounded-2xl border border-rose-100 dark:border-slate-700 transition-transform duration-500',"
             >
-              <h3 class="text-lg md:text-2xl font-bold text-[#E31C52]">
-                ৫০০+
+              <h3 class="text-lg md:text-2xl font-bold text-rose-600">
+                {{ stat.value }}
               </h3>
-              <p class="text-xs text-gray-600 mt-1">সন্তুষ্ট ক্লায়েন্ট</p>
-            </div>
-
-            <div
-              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
-            >
-              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
-                ১২০০+
-              </div>
-              <div class="text-xs text-gray-600 mt-1">সম্পন্ন প্রজেক্ট</div>
-            </div>
-
-            <div
-              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
-            >
-              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">৮+</div>
-              <div class="text-xs text-gray-600 mt-1">বছরের অভিজ্ঞতা</div>
-            </div>
-
-            <div
-              class="text-center backdrop-blur-xl rounded-2xl p-5 stat-card cursor-pointer"
-            >
-              <div class="text-lg md:text-2xl font-bold text-[#E31C52]">
-                ৪.৯
-              </div>
-              <div class="text-xs text-gray-600 mt-1">গড় রেটিং</div>
+              <p class="text-xs text-gray-600 mt-1">{{ stat.label }}</p>
             </div>
           </div>
         </div>
@@ -142,20 +97,13 @@
                 class="w-14 h-14 rounded-full flex-center"
                 style="background: #e31c5215"
               >
-                <svg
+                <Icon
+                  name="hugeicons:checkmark-badge-03"
                   class="w-8 h-8 text-[#E31C52]"
-                  fill="currentColor"
-                  viewBox="0 0 20 20"
-                >
-                  <path
-                    fill-rule="evenodd"
-                    clip-rule="evenodd"
-                    d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
-                  />
-                </svg>
+                />
               </div>
               <div>
-                <div class="font-bold ">১০০% সন্তুষ্টি</div>
+                <div class="font-bold">১০০% সন্তুষ্টি</div>
                 <div class="text-sm">গ্যারান্টি</div>
               </div>
             </div>
@@ -170,19 +118,14 @@
                 class="w-14 h-14 rounded-full flex-center"
                 style="background: #e31c5215"
               >
-                <svg
+                <Icon
+                  name="hugeicons:customer-support"
                   class="w-8 h-8 text-[#E31C52]"
-                  viewBox="0 0 24 24"
-                  fill="currentColor"
-                >
-                  <path
-                    d="m12 14.475 1.925 1.15q.275.175.538-.012t.187-.513l-.5-2.175 1.7-1.475q.25-.225.15-.537t-.45-.338l-2.225-.175-.875-2.075q-.125-.3-.45-.3t-.45.3l-.875 2.075-2.225.175q-.35.025-.45.338t.15.537l1.7 1.475-.5 2.175q-.075.325.188.513t.537.012z"
-                  />
-                </svg>
+                />
               </div>
               <div>
-                <div class="font-bold ">২৪/৭ সাপোর্ট</div>
-                <div class="text-sm"></div>
+                <div class="font-bold">২৪/৭ সাপোর্ট</div>
+                <div class="text-sm">যেকোনো সময়</div>
               </div>
             </div>
           </div>
@@ -192,6 +135,16 @@
     </div>
   </section>
 </template>
+<script setup lang="ts">
+import { ref, onMounted } from "vue";
+
+const stats = [
+  { value: "৩০০+", label: "সন্তুষ্ট ক্লায়েন্ট" },
+  { value: "৩৫০+", label: "সম্পন্ন প্রজেক্ট" },
+  { value: "৩+", label: "বছরের অভিজ্ঞতা" },
+  { value: "৪.৯", label: "গড় রেটিং" },
+];
+</script>
 
 <style scoped>
 /* Responsive fixes */
@@ -253,13 +206,12 @@
   transform: translateY(-3px);
 }
 
-/* Hover cards */
-.stat-card {
-  transition: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
-}
 .stat-card:hover {
-  transform: translateY(-10px);
-  box-shadow: 0 20px 40px rgba(21, 32, 66, 0.15);
+  transform: scale(1.05); /* only scale */
+  box-shadow: 0 20px 30px rgba(21, 32, 66, 0.15); /* shadow only */
+  /* remove background or color changes */
+  background-color: inherit !important;
+  color: inherit !important;
 }
 
 /* Floating animation */

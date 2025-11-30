@@ -23,32 +23,32 @@ const isMobile = computed(() => width.value < 768);
 
 const items = ref<TimelineItem[]>([
   {
-    title: "প্রজেক্ট স্টার্ট",
+    title: "বিস্তারিত আলোচনা",
     description:
       "ক্লায়েন্টের প্রয়োজন অনুযায়ী বিস্তারিত আলোচনা ও প্রজেক্টের লক্ষ্য নির্ধারণ।",
-    icon: "i-lucide-rocket",
+    icon: "hugeicons:time-setting-03",
   },
   {
-    title: "ডিজাইন পর্যায়",
+    title: "মার্কেট এনালাইসি করে ডিজাইন",
     description:
       "UI/UX ডিজাইন তৈরি করা, ল্যান্ডিং পেজ বা ওয়েবসাইটের লেআউট প্রস্তাব।",
-    icon: "i-lucide-palette",
+    icon: "hugeicons:paint-board",
   },
   {
-    title: "ডেভেলপমেন্ট",
+    title: "ডেভেলপমেন্ট স্টেজ",
     description: "Laravel বা WordPress-এ ওয়েবসাইট/ল্যান্ডিং পেজ ডেভেলপ করা।",
-    icon: "i-lucide-code",
+    icon: "hugeicons:laptop-programming",
   },
   {
     title: "টেস্টিং ও রিভিউ",
     description:
       "ক্লায়েন্টের সাথে ফাইনাল রিভিউ, বাগ ফিক্স এবং ফাংশনালিটি পরীক্ষা।",
-    icon: "i-lucide-check-circle",
+    icon: "hugeicons:checkmark-circle-03",
   },
   {
     title: "ডেলিভারি ও লঞ্চ",
     description: "সর্বশেষ ফাইনাল ওয়েবসাইট হোস্টিং করা এবং লঞ্চ সম্পন্ন করা।",
-    icon: "i-lucide-flag",
+    icon: "hugeicons:live-streaming-01",
   },
 ]);
 </script>
@@ -60,12 +60,11 @@ const items = ref<TimelineItem[]>([
         আমরা যে ভাবে <span class="text-rose-500">কাজ করি</span>
       </h2>
       <p class="mt-2 text-sm sm:text-lg">
-        আমি সবসময় চেষ্টা করি একটা ভালো মানের সার্ভিস ক্লাইন্টদের দিতে।
-        আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২২ সাল থেকে ধরে রেখেছি
+        আইডিয়া থেকে লঞ্চ পর্যন্ত—আপনার ব্যবসাকে এগিয়ে নিতে আমাদের কাজের প্রতিটি ধাপই পরিকল্পিত ও প্রমাণিত।
       </p>
     </div>
 
-    <div class="flex justify-center items-center">
+    <div class="flex justify-center items-center px-3">
       <UTimeline
         :orientation="isMobile ? 'vertical' : 'horizontal'"
         :default-value="4"

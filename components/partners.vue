@@ -7,7 +7,7 @@ const brandLogos = [
   "/brands/LaOrganika.png",
   "/brands/OrganicOnline.png",
   "/brands/ShefaNaturalFood.png",
-  "/brands/Sukkar.png"
+  "/brands/Sukkar.png",
 ];
 </script>
 
@@ -15,10 +15,11 @@ const brandLogos = [
   <section class="py-16 relative">
     <div class="text-center mb-10">
       <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-        আমাদের থেকে <span class="text-rose-500">উপকৃত</span> হয়েছেন যারা
+        আমাদের<span class="text-rose-500"> পার্টনার ব্র্যান্ডস</span>
       </h2>
       <p class="mt-2 text-sm sm:text-lg">
-        আমি সবসময় চেষ্টা করি একটা ভালো মানের সার্ভিস ক্লাইন্টদের দিতে। আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২২ সাল থেকে ধরে রেখেছি
+        আমাদের ওয়েবসাইট ও ল্যান্ডিং পেজের মাধ্যমে শত শত উদ্যোক্তা আজ ব্যবসায়
+        ৩-৪গুন সফলতা পেয়েছেন— আপনিও হতে পারেন পরবর্তী সাফল্যের অংশ।
       </p>
     </div>
 
@@ -27,7 +28,7 @@ const brandLogos = [
         v-for="(logo, index) in brandLogos"
         :key="index"
         :src="logo"
-        class="h-16 w-auto"
+        class="h-10 md:h-16 w-auto"
         :alt="`Brand ${index + 1}`"
       />
     </UMarquee>

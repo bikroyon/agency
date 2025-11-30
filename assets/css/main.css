@@ -43,3 +43,9 @@
 body {
   font-family: "Hind Siliguri", sans-serif;
 }
+html {
+  scroll-behavior: smooth;
+}
+.stat-card:hover {
+  @apply bg-rose-50 dark:bg-rose-900 shadow-lg transform -translate-y-1 transition-all duration-300;
+}

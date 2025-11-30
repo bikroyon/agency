@@ -19,17 +19,17 @@
           <span class="text-slate-500 font-medium">/প্রজেক্ট</span>
         </div>
         <p class="text-sm text-slate-500 mb-5">{{ plan.description }}</p>
-        <a href="#" :class="[
+        <NuxtLink to="#" :class="[
           highlighted ? 'bg-rose-700 hover:bg-rose-600' : 'bg-rose-700 hover:bg-rose-600'
         ]" class="w-full flex items-center justify-center gap-4 rounded-lg px-3.5 py-2.5 text-sm font-medium text-white transition">
           <Icon name="hugeicons:messenger" class="w-6 h-6" />
           <span>
             এই প্যাকেজটি নিতে চাই
           </span>
-        </a>
+        </NuxtLink>
       </div>
 
-      <div class="text-slate-900 dark:text-slate-200 font-medium mb-3">Includes:</div>
+      <div class="text-slate-900 dark:text-slate-200 font-medium mb-3">এই প্যাক্যাজে যা পাচ্ছেনঃ</div>
       <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-3">
         <li v-for="(feature, i) in plan.features" :key="i" class="flex items-center">
           <svg class="w-3 h-3 fill-emerald-500 mr-3 shrink-0" viewBox="0 0 12 12">

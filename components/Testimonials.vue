@@ -3,20 +3,20 @@
     <!-- Section Heading -->
     <div class="text-center mb-10">
       <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-        আমাদের সার্ভিস নিয়ে <span class="text-rose-500">উদ্দোক্তারা</span> যা বলেন
+        উদ্যোক্তাদের <span class="text-rose-500">অভিজ্ঞতা</span>
       </h2>
       <p class="mt-2 text-sm sm:text-lg">
-        আমি সবসময় চেষ্টা করি একটা ভালো মানের সার্ভিস ক্লাইন্টদের দিতে।
-        আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২২ সাল থেকে ধরে রেখেছি
+        আমরা প্রতিশ্রুতির চেয়ে আমরা কাজে বিশ্বাসী। উদ্যোক্তারা কী ধরনের সফলতা
+        পেয়েছেন, তা তাদের মুখ থেকেই শুনুন।
       </p>
     </div>
 
-    <!-- Content Wrapper (apply overflow here) -->
-    <div class="flex flex-col gap-4 w-full">
+    <!-- Content Wrapper -->
+    <div class="flex flex-col gap-3 w-full">
       <UMarquee
         pause-on-hover
         :overlay="true"
-        :ui="{ root: '[--duration:140s] [--gap:--spacing(4)]', content: 'w-auto py-1' }"
+        :ui="{ root: '[--duration:120s] [--gap:1rem]', content: 'w-auto py-1' }"
       >
         <UPageCard
           v-for="(testimonial, index) in testimonials"
@@ -25,25 +25,26 @@
           :description="testimonial.quote"
           :ui="{
             description:
-              'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+              'before:content-[open-quote] after:content-[close-quote] line-clamp-3 text-xs sm:text-sm',
           }"
-          class="w-64 shrink-0"
+          class="w-48 sm:w-56 md:w-64 shrink-0"
         >
           <template #footer>
             <UUser
               v-bind="testimonial.user"
-              size="xl"
-              :ui="{ description: 'line-clamp-1' }"
+              size="md"
+              :ui="{ description: 'line-clamp-1 text-xs sm:text-sm' }"
             />
           </template>
         </UPageCard>
       </UMarquee>
+
       <UMarquee
         pause-on-hover
         reverse
-        scrollamount="10"
+        scrollamount="8"
         :overlay="true"
-        :ui="{ root: '[--duration:140s] [--gap:--spacing(4)]', content: 'w-auto py-1' }"
+        :ui="{ root: '[--duration:120s] [--gap:1rem]', content: 'w-auto py-1' }"
       >
         <UPageCard
           v-for="(testimonial, index) in testimonials"
@@ -52,15 +53,15 @@
           :description="testimonial.quote"
           :ui="{
             description:
-              'before:content-[open-quote] after:content-[close-quote] line-clamp-3',
+              'before:content-[open-quote] after:content-[close-quote] line-clamp-3 text-xs sm:text-sm',
           }"
-          class="w-64 shrink-0"
+          class="w-48 sm:w-56 md:w-64 shrink-0"
         >
           <template #footer>
             <UUser
               v-bind="testimonial.user"
-              size="xl"
-              :ui="{ description: 'line-clamp-1' }"
+              size="md"
+              :ui="{ description: 'line-clamp-1 text-xs sm:text-sm' }"
             />
           </template>
         </UPageCard>

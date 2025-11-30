@@ -3,11 +3,10 @@
         <!-- Section Heading -->
         <div class="text-center mb-4 sm:mb-10">
             <h2 class="text-3xl md:text-4xl font-bold">
-                আমাদের কিছু <span class="text-rose-500">কাজ</span>
+                আমাদের <span class="text-rose-500"> পোর্টফোলিও</span>
             </h2>
             <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base mt-2">
-                আমি সবসময় চেষ্টা করি একটা ভালো মানের সার্ভিস ক্লাইন্টদের দিতে। আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২০
-                সাল থেকে ধরে রেখেছি
+                আমি সবসময় চেষ্টা করি ক্লায়েন্টদের সর্বোচ্চ মানের সার্ভিস দিতে। আলহামদুলিল্লাহ, এই ধারাবাহিকতা আমি ২০২২ সাল থেকে বজায় রেখেছি।
             </p>
         </div>
 
@@ -15,7 +14,7 @@
         <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-4">
             <div v-for="(tab, index) in tabs" :key="index" @click="changeTab(index)" :class="[
                 'cursor-pointer p-2 sm:p-4 rounded-lg w-auto shadow transition duration-300',
-                currentTab === index ? 'bg-rose-100 dark:bg-slate-800 border border-rose-300 dark:border-slate-700 shadow-md' : 'border border-slate-300 dark:border-slate-700 hover:bg-slate-50 hover:dark:bg-slate-900'
+                currentTab === index ? 'bg-rose-50 dark:bg-slate-800 border border-rose-200 dark:border-slate-700 shadow dark:shadow-slate-950 shadow-rose-300' : 'border border-rose-300 shadow shadow-rose-300 dark:shadow-slate-950 dark:border-slate-700 hover:bg-rose-50 hover:dark:bg-slate-900'
             ]">
                 <div class="flex items-start gap-1 sm:gap-3">
                     <Icon :name="tab.icon" class="text-lg sm:text-2xl text-rose-600" />
@@ -28,7 +27,7 @@
         </div>
 
         <!-- Animated Content -->
-        <div ref="tabContent" class="overflow-hidden p-8 pt-0">
+        <div ref="tabContent" class="overflow-hidden p-2 md:p-4 pt-0">
             <HomeTabContent :courses="tabs[currentTab].courses" />
             <!-- See More Button -->
             <div v-if="tabs[currentTab].button" class="mt-8 text-center">
@@ -51,7 +50,7 @@ const tabs = [
     {
         title: 'ল্যান্ডিং পেইজ ডিজাইন',
         description: '৩০০+ কমপ্লিট · ৩ রানিং',
-        icon: 'mdi:web',
+        icon: 'hugeicons:ai-web-browsing',
         button: {
             title: 'আরও দেখুন',
             link: '/portfolio'
@@ -77,8 +76,8 @@ const tabs = [
     },
     {
         title: 'ই-কমার্স ওয়েবসাইট',
-        description: '৫০+ কমপ্লিট · ১ রানিং',
-        icon: 'mdi:lightbulb-on-outline',
+        description: '৫০+ কমপ্লিট · ২ রানিং',
+        icon: 'hugeicons:activity-04',
         button: {
             title: 'আরও দেখুন',
             link: '/portfolio'
@@ -92,25 +91,9 @@ const tabs = [
         ],
     },
     {
-        title: 'ওয়ার্ড়প্রেস ওয়েবসাইট',
-        description: '১ কমপ্লিট · ১ রানিং',
-        icon: 'mdi:briefcase-outline',
-        button: {
-            title: 'আরও দেখুন',
-            link: '/portfolio'
-        },
-        courses: [
-            {
-                title: 'Digital Marketing',
-                image: 'https://placehold.co/400',
-                tags: ['SEO', 'Ads', 'Strategy'],
-            },
-        ],
-    },
-    {
         title: 'কাষ্টম ওয়েবসাইট',
-        description: '১ রানিং',
-        icon: 'mdi:database',
+        description: '১২ কমপ্লিট · ১ রানিং',
+        icon: 'hugeicons:ai-beautify',
         button: {
             title: 'আরও দেখুন',
             link: '/portfolio'
@@ -120,6 +103,22 @@ const tabs = [
                 title: 'Big Data with Spark',
                 image: 'https://placehold.co/400',
                 tags: ['Big Data', 'Spark', 'ETL'],
+            },
+        ],
+    },
+        {
+        title: 'সোশ্যাল মিডিয়া মার্কেটিং',
+        description: '৩০ কমপ্লিট · ৪ রানিং',
+        icon: 'hugeicons:ai-voice',
+        button: {
+            title: 'আরও দেখুন',
+            link: '/portfolio'
+        },
+        courses: [
+            {
+                title: 'Digital Marketing',
+                image: 'https://placehold.co/400',
+                tags: ['SEO', 'Ads', 'Strategy'],
             },
         ],
     },

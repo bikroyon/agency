@@ -1,17 +1,18 @@
 <template>
-    <section class="py-8 md:py-16 pt-8 md:pt-8 relative">
-        <div
-            class="absolute inset-0 h-full w-full opacity-40 -z-10 bg-[radial-gradient(#99a1af_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]">
-        </div>
+    <section class="py-8 md:py-16 pt-8 md:pt-8">
+              <div
+        class="absolute -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"
+      ></div>
+
         <div class="max-w-5xl mx-auto px-4 text-center">
             <!-- Title -->
-            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
+            <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug ">
                 আপনার ব্র্যান্ডের প্রথম ইম্প্রেশনটাই হয়ে উঠুক <span class="text-rose-500">বিশ্বাসের ভিত্তি</span>
                 — শুরু হোক একটি নিখুঁত ল্যান্ডিং পেজ দিয়ে।
             </h2>
 
             <!-- Description -->
-            <p class="mt-4 text-gray-400 text-sm sm:text-lg">
+            <p class="mt-4 text-sm sm:text-lg">
                 ৩০০+ ল্যান্ডিং পেইজ ডিজাইনের অভিজ্ঞতায় আমি জানি কীভাবে একটি ব্যবসাকে বিশ্বাসযোগ্য ও কনভার্টিং বানাতে হয়।
                 আপনি যদি এখনও আপনার ল্যান্ডিং পেজ তৈরি না করে থাকেন, তাহলে আপনার প্রতিযোগীদের থেকে এক ধাপ পিছিয়ে আছেন।
                 আপনার ব্র্যান্ড, লক্ষ্য আর অডিয়েন্স বুঝেই তৈরি করি এমন পেইজ যা সত্যিই কাজ করে।
