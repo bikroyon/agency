@@ -1,13 +1,12 @@
 <template>
   <section class="py-16 relative">
     <!-- Section Heading -->
-    <div class="text-center mb-10">
+    <div class="text-center max-w-2xl mb-10 mx-auto px-3">
       <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-        উদ্যোক্তাদের <span class="text-rose-500">অভিজ্ঞতা</span>
+        {{ t("testimonials.title") }}<span class="text-rose-500"> {{ t("testimonials.highlight") }}</span>
       </h2>
       <p class="mt-2 text-sm sm:text-lg">
-        আমরা প্রতিশ্রুতির চেয়ে আমরা কাজে বিশ্বাসী। উদ্যোক্তারা কী ধরনের সফলতা
-        পেয়েছেন, তা তাদের মুখ থেকেই শুনুন।
+        {{t("partners.subtitle")}}
       </p>
     </div>
 
@@ -71,6 +70,8 @@
 </template>
 
 <script setup lang="ts">
+import { useI18n } from "vue-i18n";
+const { t } = useI18n();
 import type { UserProps } from "@nuxt/ui";
 
 const testimonials: { user: UserProps; quote: string }[] = [

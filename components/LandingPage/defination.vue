@@ -123,14 +123,14 @@
         </p>
 
         <!-- CTA Button -->
-        <a
+        <
           href="https://wa.me/8809638365975"
           target="_blank"
           class="inline-flex items-center gap-4 px-12 py-3 rounded-2xl text-white font-bold text-sm md:text-xl shadow-2xl shadow-red-600/50 transform hover:scale-105 transition-all duration-300"
           style="background: linear-gradient(135deg, #e31c52, #c4173f)"
         >
           এখনই যোগাযোগ করুন
-        </a>
+        </>
       </div>
     </section>
   </div>

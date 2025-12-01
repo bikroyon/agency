@@ -12,23 +12,35 @@
           <Lottie style="height: 200px" :data="developerSkils" />
         </div>
         <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-          <span class="">আমাদের </span>
-          <span class="text-rose-500">সার্ভিস সমূহ</span>
+          <span class=""
+            >{{ $t("services.title") }}
+            <span class="text-rose-500">{{
+              $t("services.heighlights")
+            }}</span></span
+          >
         </h2>
         <p class="mt-4 text-sm leading-relaxed">
-          <span class="font-bold text-[#E31C52]">৩০০+ উদ্যোক্তার আস্থা</span>
-          নিয়ে আমরা এগিয়ে যাচ্ছি সামনে। ২০২২ সাল থেকে এই
-          <span class="font-bold">৩ বছরে ৩৫০+ উদ্দোক্তাদের সাথে কাজ</span>
-          করে
-          <span class="font-bold text-[#E31C52]"
-            >২০০+ কাস্টমাইজড ল্যান্ডিং পেজ</span
-          >
-          এবং
-          <span class="font-bold text-[#E31C52]">১৫০+ ই-কমার্স ওয়েবসাইট</span>
-          তৈরি করেছি। প্রতিটি প্রজেক্টেই আমরা ফোকাস করেছি
-          <span class="font-bold"
-            >ব্র্যান্ড গ্রোথ, কনভার্সন এবং রেজাল্ট-ড্রিভেন ডিজাইনে</span
-          >—যার ফলেই তৈরি হয়েছে শত শত সফলতার গল্প।
+          <i18n-t keypath="services.stats">
+            <template #strong1>
+              <b class="text-[#E31C52]">{{ $t("services.strong.1") }}</b>
+            </template>
+
+            <template #strong2>
+              <b class="font-bold">{{ $t("services.strong.2") }}</b>
+            </template>
+
+            <template #strong3>
+              <b class="text-[#E31C52]">{{ $t("services.strong.3") }}</b>
+            </template>
+
+            <template #strong4>
+              <b class="text-[#E31C52]">{{ $t("services.strong.4") }}</b>
+            </template>
+
+            <template #strong5>
+              <b>{{ $t("services.strong.5") }}</b>
+            </template>
+          </i18n-t>
         </p>
       </div>
 
@@ -54,7 +66,7 @@
             :to="service.link"
             class="text-xs px-3 py-1 border border-rose-500 text-rose-500 rounded-md hover:bg-rose-500 hover:text-white transition"
           >
-            বিস্তারিত দেখুন
+            {{ $t("services.view_details") }}
           </NuxtLink>
         </div>
       </div>
@@ -63,50 +75,45 @@
 </template>
 
 <script setup>
+import { useI18n } from "vue-i18n";
 import developerSkils from "~/assets/lottie/developerskills.json";
-
-const services = [
+const { t } = useI18n();
+const services = computed(() => [
   {
-    title: "হাই-কভার্টিং ল্যান্ডিং পেইজ ডিজাইন",
-    description:
-      "আপনার ব্যবসার কনভার্শন বাড়ান—আকর্ষণীয় ও ফাস্ট লোড হওয়া ল্যান্ডিং পেইজ দিয়ে গ্রাহকদের আকর্ষণ করুন!",
+    title: t("services.service_list.0.title"),
+    description: t("services.service_list.0.description"),
     icon: "hugeicons:laptop-phone-sync",
     link: "/landing-page",
   },
   {
-    title: "ওয়ার্ডপ্রেস ই-কমার্স ওয়েবসাইট ডিজাইন",
-    description:
-      "আপনার অঙ্কুরে ব্যবসাকে বিকশিত করুন—ওয়ার্ডপ্রেসে শক্তিশালী ও সুন্দর ই-কমার্স স্টোর তৈরি করুন!",
+    title: t("services.service_list.1.title"),
+    description: t("services.service_list.1.description"),
     icon: "hugeicons:store-location-01",
     link: "/ecommerce-website",
   },
   {
-    title: "কাস্টম ওয়েব অ্যাপ ডেভেলপমেন্ট",
-    description:
-      "আপনার স্বপ্নের অ্যাপ বাস্তবায়ন—লারাভেল ও ভিউজেস দিয়ে কাস্টমাইজড, দ্রুত ও নির্ভরযোগ্য অ্যাপ পান!",
+    title: t("services.service_list.2.title"),
+    description: t("services.service_list.2.description"),
     icon: "hugeicons:app-store",
     link: "/ecommerce-website",
   },
   {
-    title: "ওয়েবসাইট স্পীড অপ্টিমাইজেশন",
-    description:
-      "গ্রাহকদের মনোযোগ ধরে রাখুন—ওয়েবসাইটের গতি বাড়িয়ে দ্রুত লোডিং এবং উন্নত পারফরম্যান্স পাওয়া যাক!",
+    title: t("services.service_list.3.title"),
+    description: t("services.service_list.3.description"),
     icon: "hugeicons:dashboard-speed-01",
     link: "/website-management",
   },
   {
-    title: "পিক্সেল ও সার্ভার সাইড ট্রেকিং",
-    description:
-      "আপনার ব্যবসায় ডাটার শক্তি উপভোগ করুন—প্রফেশনাল ট্র্যাকিং দিয়ে বিক্রয় ও পারফরম্যান্স উন্নত করুন!",
+    title: t("services.service_list.4.title"),
+    description: t("services.service_list.4.description"),
     icon: "hugeicons:radar-01",
     link: "/website-management",
   },
   {
-    title: "মাসিক ওয়েবসাইট ম্যানেজমেন্ট",
-    description:
-      "চিন্তা ছাড়ুন, আমরা সব দেখভাল করব—ওয়েবসাইটের নিয়মিত রক্ষণাবেক্ষণ ও আপডেটে সময় বাঁচান!",
+    title: t("services.service_list.5.title"),
+    description: t("services.service_list.5.description"),
     icon: "hugeicons:ramadhan-month",
     link: "/website-management",
   },
-];
+]);
 </script>

@@ -1,8 +1,12 @@
 <script setup lang="ts">
 import { ref, computed, onMounted, onUnmounted } from "vue";
+import { useI18n } from "vue-i18n";
 import type { TimelineItem } from "@nuxt/ui";
 
-// Track screen width manually
+// i18n
+const { t } = useI18n();
+
+// Track screen width
 const width = ref<number>(0);
 
 const updateWidth = () => {
@@ -18,36 +22,34 @@ onUnmounted(() => {
   window.removeEventListener("resize", updateWidth);
 });
 
-// Breakpoint check
+// Mobile breakpoint
 const isMobile = computed(() => width.value < 768);
 
-const items = ref<TimelineItem[]>([
+// Multilingual timeline items
+const items = computed<TimelineItem[]>(() => [
   {
-    title: "বিস্তারিত আলোচনা",
-    description:
-      "ক্লায়েন্টের প্রয়োজন অনুযায়ী বিস্তারিত আলোচনা ও প্রজেক্টের লক্ষ্য নির্ধারণ।",
+    title: t("process.step1.title"),
+    description: t("process.step1.description"),
     icon: "hugeicons:time-setting-03",
   },
   {
-    title: "মার্কেট এনালাইসি করে ডিজাইন",
-    description:
-      "UI/UX ডিজাইন তৈরি করা, ল্যান্ডিং পেজ বা ওয়েবসাইটের লেআউট প্রস্তাব।",
+    title: t("process.step2.title"),
+    description: t("process.step2.description"),
     icon: "hugeicons:paint-board",
   },
   {
-    title: "ডেভেলপমেন্ট স্টেজ",
-    description: "Laravel বা WordPress-এ ওয়েবসাইট/ল্যান্ডিং পেজ ডেভেলপ করা।",
+    title: t("process.step3.title"),
+    description: t("process.step3.description"),
     icon: "hugeicons:laptop-programming",
   },
   {
-    title: "টেস্টিং ও রিভিউ",
-    description:
-      "ক্লায়েন্টের সাথে ফাইনাল রিভিউ, বাগ ফিক্স এবং ফাংশনালিটি পরীক্ষা।",
+    title: t("process.step4.title"),
+    description: t("process.step4.description"),
     icon: "hugeicons:checkmark-circle-03",
   },
   {
-    title: "ডেলিভারি ও লঞ্চ",
-    description: "সর্বশেষ ফাইনাল ওয়েবসাইট হোস্টিং করা এবং লঞ্চ সম্পন্ন করা।",
+    title: t("process.step5.title"),
+    description: t("process.step5.description"),
     icon: "hugeicons:live-streaming-01",
   },
 ]);
@@ -55,12 +57,14 @@ const items = ref<TimelineItem[]>([
 
 <template>
   <section class="py-16 relative">
-    <div class="text-center mb-10">
+    <div class="text-center mb-10 max-w-2xl mx-auto px-3">
       <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-        আমরা যে ভাবে <span class="text-rose-500">কাজ করি</span>
+        {{ t("process.title") }}
+        <span class="text-rose-500">{{ t("process.highlight") }}</span>
       </h2>
+
       <p class="mt-2 text-sm sm:text-lg">
-        আইডিয়া থেকে লঞ্চ পর্যন্ত—আপনার ব্যবসাকে এগিয়ে নিতে আমাদের কাজের প্রতিটি ধাপই পরিকল্পিত ও প্রমাণিত।
+        {{ t("process.subtitle") }}
       </p>
     </div>
 

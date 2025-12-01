@@ -1,4 +1,183 @@
 {
-  "welcome": "Welcome",
-  "hero_title": "Grow your business with us"
+  "menu": {
+    "home": "Home",
+    "services": "Services",
+    "landing_page": "Landing Page Design",
+    "landing_page_desc": "Attractive landing pages for new entrepreneurs.",
+    "ecommerce": "E-commerce Website",
+    "ecommerce_desc": "Custom WordPress e-commerce solutions to boost sales.",
+    "custom_app": "Custom Web App",
+    "custom_app_desc": "We use Laravel, Vue.js & MySQL for scalable apps.",
+    "smm": "Social Media Marketing",
+    "smm_desc": "Increase sales via branding & targeted audience.",
+    "portfolio": "Case Study",
+    "about": "About Us",
+    "contact": "Contact"
+  },
+  "footer": {
+    "copyright": "Copyright ©2025",
+    "rights": "All rights reserved.",
+    "home": "Home",
+    "landing_page": "Landing Page Design",
+    "ecommerce": "E-commerce Website",
+    "portfolio": "Portfolio",
+    "contact": "Contact"
+  },
+  "hero": {
+    "tagline": "Bangladesh's #1 Web Solution",
+    "main_line": "Boost your sales with",
+    "highlight": "Professional Website",
+    "main_line_2": "for your business",
+    "description": "Create a fast-loading, SEO-optimized website for your business. Use our proven methods to triple your online sales and simplify your digital business.",
+    "cta_contact": "Contact Now",
+    "cta_services": "Our Services",
+    "clients": "Satisfied Clients",
+    "projects": "Completed Projects",
+    "years": "Years Experience",
+    "rating": "Average Rating",
+    "stat1_title": "100% Satisfaction",
+    "stat1_desc": "Guarantee",
+    "stat2_title": "24/7 Support",
+    "stat2_desc": "Anytime"
+  },
+  "services": {
+    "title": "Our",
+    "heighlights": "Services",
+    "stats": "We have the trust of {strong1}. Since 2022, we have worked with {strong2}, creating {strong3} and {strong4}. Each project focuses on {strong5}.",
+    "strong": {
+      "1": "300+ entrepreneurs",
+      "2": "350+ entrepreneurs in 3 years",
+      "3": "200+ customized landing pages",
+      "4": "150+ eCommerce websites",
+      "5": "brand growth, conversions, and result-driven design"
+    },
+    "view_details": "View Details",
+    "service_list": [
+      {
+        "title": "High-Converting Landing Page",
+        "description": "Boost your business conversion—engage customers with {strong}!"
+      },
+      {
+        "title": "WordPress E-commerce Website",
+        "description": "Grow your budding business—create {strong} on WordPress!"
+      },
+      {
+        "title": "Custom Web App Development",
+        "description": "Bring your dream app to life—get {strong}, fast and reliable applications!"
+      },
+      {
+        "title": "Website Speed Optimization",
+        "description": "Keep users engaged—{strong} and improve performance!"
+      },
+      {
+        "title": "Pixel & Server-Side Tracking",
+        "description": "Unlock the power of data—enhance sales and performance with {strong}!"
+      },
+      {
+        "title": "Monthly Website Management",
+        "description": "Relax, we handle everything—regular maintenance and updates for {strong}!"
+      }
+    ]
+  },
+  "process": {
+    "title": "How We",
+    "highlight": "Work",
+    "subtitle": "From idea to launch — every stage of our workflow is strategic and proven to grow your business.",
+
+    "step1": {
+      "title": "Detailed Discussion",
+      "description": "We understand your requirements and define the project goals clearly."
+    },
+    "step2": {
+      "title": "Market Research & Design",
+      "description": "We design the UI/UX with a strategic layout for landing pages or websites."
+    },
+    "step3": {
+      "title": "Development Stage",
+      "description": "We develop your website or landing page using Laravel or WordPress."
+    },
+    "step4": {
+      "title": "Testing & Review",
+      "description": "We perform bug fixes and final reviews to ensure everything runs smoothly."
+    },
+    "step5": {
+      "title": "Delivery & Launch",
+      "description": "We host, deploy, and prepare your website for a successful launch."
+    }
+  },
+  "partners": {
+    "title": "Our ",
+    "highlight": "Partner Brands",
+    "subtitle": "Hundreds of entrepreneurs have achieved 3–4x growth through our websites and landing pages — you can be the next success story."
+  },
+  "founder": {
+    "title": "A few words about the Founder",
+    "p1": "I am a software developer coming from a general background. Since childhood, I had a strong passion for computers and programming. That curiosity led me to start my journey. In 2025, I founded a digital agency named Bikroyon. Since then, I have been helping brands increase their sales through websites and social media. I have worked on more than 350 projects including e-commerce websites, landing pages, and custom web applications. My goal is to build websites that are effective and result-driven for every client.",
+    "p2": "My core work philosophy is to understand the client's needs and provide the best solution. I believe a great website is not just a combination of design and features—it is a powerful tool for business growth and success. That's why I work with full dedication in every project to deliver the highest quality service.",
+    "name": "Abdul Baset Bappy",
+    "role": "Software Developer"
+  },
+  "team": {
+    "title": "Our",
+    "highlight": "Family",
+    "subtitle": "Every member of our team is skilled and dedicated, working to ensure your business success.",
+    "members": [
+      {
+        "name": "Abdul Baset Bappy",
+        "role": "Software Developer, Founder"
+      },
+      {
+        "name": "Mahmudul Hasan Tuhin",
+        "role": "Software Engineer, Co-Founder"
+      },
+      {
+        "name": "Md. Rashedul Rafi",
+        "role": "Graphics Designer"
+      },
+      {
+        "name": "Abu Zor",
+        "role": "Social Media Manager"
+      }
+    ]
+  },
+  "support": {
+    "title": "For 24/7 support, stay connected on",
+    "highlight": "Telegram",
+    "subtitle": "Private Support Channel",
+    "description1": "We have a private Telegram support channel for our service users where I personally answer your questions. We promise — all questions will be answered within 24 hours. In most cases, you’ll get a reply within 1 hour.",
+    "description2": "Additionally, you can join the channel to get live work updates, guidelines, and special tips.",
+    "button": "Join Chat Group"
+  },
+  "testimonials": {
+    "title": "Entrepreneur's ",
+    "highlight": "Experience",
+    "subtitle": "We believe in work more than promises. Hear directly from entrepreneurs about their successes."
+  },
+  "portfolio": {
+    "title": "Our",
+    "highlight": "Portfolio",
+    "description": "I always strive to provide the highest quality service to clients. Alhamdulillah, I have maintained this consistency since 2022.",
+    "tabs": {
+      "landing": {
+        "title": "Landing Page Design",
+        "description": "300+ Completed · 3 Running",
+        "button": "See More"
+      },
+      "ecommerce": {
+        "title": "E-Commerce Website",
+        "description": "50+ Completed · 2 Running",
+        "button": "See More"
+      },
+      "custom": {
+        "title": "Custom Website",
+        "description": "12 Completed · 1 Running",
+        "button": "See More"
+      },
+      "smm": {
+        "title": "Social Media Marketing",
+        "description": "30 Completed · 4 Running",
+        "button": "See More"
+      }
+    }
+  }
 }

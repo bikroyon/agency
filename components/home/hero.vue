@@ -1,3 +1,18 @@
+<script setup lang="ts">
+import { ref, computed } from "vue";
+import { useI18n } from "vue-i18n";
+
+const { t } = useI18n();
+
+// Stats reactive to locale
+const stats = computed(() => [
+  { value: "300+", label: t("hero.clients") },
+  { value: "350+", label: t("hero.projects") },
+  { value: "3+", label: t("hero.years") },
+  { value: "4.9", label: t("hero.rating") },
+]);
+</script>
+
 <template>
   <!-- HERO SECTION -->
   <section class="relative py-4 overflow-hidden">
@@ -20,22 +35,19 @@
             class="inline-block mb-4 px-5 py-2 text-xs font-semibold rounded-full"
             style="background: #e31c5215; color: #e31c52"
           >
-            বাংলাদেশের #১ ওয়েব সলিউশন
+            {{ t("hero.tagline") }}
           </span>
 
           <h1
             class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4"
           >
-            সেলস বাড়ানোর জন্য<br />
-            <span class="block text-[#E31C52]">প্রফেশনাল ওয়েবসাইট</span>
-            তৈরি করুন
+            {{ t("hero.main_line") }}<br />
+            <span class="block text-[#E31C52]">{{ t("hero.highlight") }}</span>
+            {{ t("hero.main_line_2") }}
           </h1>
 
           <p class="text-sm mb-4 leading-relaxed max-w-xl">
-            আপনার ব্যবসার জন্য <b>দ্রুত লোডিং</b> এবং SEO অপটিমাইজড ওয়েবসাইট
-            তৈরি করুন। আমাদের <b>প্রমাণিত পদ্ধতি</b> ব্যবহার করে আপনার অনলাইন
-            <b>সেলস</b> নিশ্চিতভাবে <b>৩ গুণ বাড়ান</b> এবং আপনার ডিজিটাল
-            ব্যবসাকে আরও সহজ করুন।
+            {{ t("hero.description") }}
           </p>
 
           <!-- CTA BUTTONS -->
@@ -46,15 +58,15 @@
               to="https://wa.me/8801904015818"
               class="text-white font-semibold rounded-xl px-8 py-2 shadow-lg flex items-center justify-center gap-2 btn-primary"
             >
-              সরাসরি যোগাযোগ করুন
+              {{ t("hero.cta_contact") }}
               <Icon name="hugeicons:whatsapp" class="w-5 h-5" />
             </NuxtLink>
 
             <NuxtLink
-              href="#services"
+              to="#services"
               class="btn-outline font-semibold rounded-xl px-8 py-2 flex items-center justify-center gap-2"
             >
-              আমাদের সার্ভিস সমূহ
+              {{ t("hero.cta_services") }}
               <Icon name="hugeicons:service" class="w-5 h-5" />
             </NuxtLink>
           </div>
@@ -69,7 +81,7 @@
               <h3 class="text-lg md:text-2xl font-bold text-rose-600">
                 {{ stat.value }}
               </h3>
-              <p class="text-xs text-gray-600 mt-1">{{ stat.label }}</p>
+              <p class="text-xs mt-1">{{ stat.label }}</p>
             </div>
           </div>
         </div>
@@ -88,7 +100,7 @@
             ></iframe>
           </div>
 
-          <!-- FLOATING CARD LEFT -->
+          <!-- FLOATING CARDS LEFT & RIGHT (unchanged) -->
           <div
             class="absolute -bottom-6 -left-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
           >
@@ -103,13 +115,12 @@
                 />
               </div>
               <div>
-                <div class="font-bold">১০০% সন্তুষ্টি</div>
-                <div class="text-sm">গ্যারান্টি</div>
+                <div class="font-bold">{{ t("hero.stat1_title") }}</div>
+                <div class="text-sm">{{ t("hero.stat1_desc") }}</div>
               </div>
             </div>
           </div>
 
-          <!-- FLOATING CARD RIGHT -->
           <div
             class="absolute -top-6 -right-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
           >
@@ -124,8 +135,8 @@
                 />
               </div>
               <div>
-                <div class="font-bold">২৪/৭ সাপোর্ট</div>
-                <div class="text-sm">যেকোনো সময়</div>
+                <div class="font-bold">{{ t("hero.stat2_title") }}</div>
+                <div class="text-sm">{{ t("hero.stat2_desc") }}</div>
               </div>
             </div>
           </div>
@@ -135,16 +146,7 @@
     </div>
   </section>
 </template>
-<script setup lang="ts">
-import { ref, onMounted } from "vue";
 
-const stats = [
-  { value: "৩০০+", label: "সন্তুষ্ট ক্লায়েন্ট" },
-  { value: "৩৫০+", label: "সম্পন্ন প্রজেক্ট" },
-  { value: "৩+", label: "বছরের অভিজ্ঞতা" },
-  { value: "৪.৯", label: "গড় রেটিং" },
-];
-</script>
 
 <style scoped>
 /* Responsive fixes */

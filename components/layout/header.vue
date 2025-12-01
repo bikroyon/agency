@@ -1,67 +1,72 @@
-<script setup>
+<script setup lang="ts">
+import { ref } from "vue";
+import { useI18n } from "vue-i18n";
+import { useRouter } from "vue-router";
+
 const mobileOpen = ref(false);
 const router = useRouter();
-// Automatically close mobile menu on route change
+
 router.afterEach(() => {
   mobileOpen.value = false;
 });
-const items = [
+
+const { t } = useI18n();
+
+// Menu items with i18n keys
+const items =  computed(() =>[
   {
-    label: "হোম",
+    label: t("menu.home"),
     icon: "hugeicons:home-11",
     to: "/",
   },
   {
-    label: "সেবা সমূহ",
+    label: t("menu.services"),
     icon: "hugeicons:service",
     children: [
       {
-        label: "ল্যান্ডিং পেজ ডিজাইন",
-        description:
-          "কম খরচে নতুন উদোক্তাদের জন্য আকর্ষণীয় ল্যান্ডিং পেজ ডিজাইন।",
+        label: t("menu.landing_page"),
+        description: t("menu.landing_page_desc"),
         icon: "hugeicons:store-02",
         to: "/landing-page",
       },
       {
-        label: "ই-কমার্স ওয়েবসাইট",
-        description:
-          "বিক্রয় বৃদ্ধির জন্য কাস্টমাইজড ওয়ার্ডপ্রেস ই-কমার্স সলিউশন।",
+        label: t("menu.ecommerce"),
+        description: t("menu.ecommerce_desc"),
         icon: "hugeicons:activity-04",
         to: "/ecommerce-website",
       },
       {
-        label: "কাস্টম ওয়েব অ্যাপ",
-        description:
-          "আমরা স্কেলেবল অ্যাপের জন্য Laravel, Vue.js, Mysql ব্যবহার করি।",
+        label: t("menu.custom_app"),
+        description: t("menu.custom_app_desc"),
         icon: "hugeicons:computer-check",
-        to: "#",
+        to: "/custom-app",
       },
       {
-        label: "সোশ্যাল মিডিয়া মার্কেটিং",
-        description:
-          "সঠিক ব্র্যান্ডিং এবং টার্গেট অডিয়েন্সের মাধ্যমে বিক্রয় বৃদ্ধি।",
+        label: t("menu.smm"),
+        description: t("menu.smm_desc"),
         icon: "hugeicons:calendar-love-01",
         to: "/website-management",
       },
     ],
   },
   {
-    label: "কেস স্টাডি",
+    label: t("menu.portfolio"),
     icon: "hugeicons:workflow-circle-01",
     to: "/Portfolio",
   },
   {
-    label: "আমাদের সম্পর্কে",
+    label: t("menu.about"),
     icon: "hugeicons:user-group",
     to: "/about-us",
   },
   {
-    label: "যোগাযোগ",
+    label: t("menu.contact"),
     icon: "hugeicons:contact",
     to: "/contacts",
   },
-];
+]);
 </script>
+
 
 <template>
   <!-- Header -->
