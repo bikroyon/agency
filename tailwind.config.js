@@ -10,7 +10,7 @@ module.exports = {
   theme: {
     extend: {
       colors: {
-        "dark-bg": "#030712",
+        "dark-bg": "oklch(13% 0.028 261.692)",
       },
       fontFamily: {
         sans: ["Hind Siliguri", "ui-sans-serif", "system-ui"],

@@ -1,6 +1,6 @@
 <script setup>
 useHead({
-  titleTemplate: "বাপ্পী · %s"
+  titleTemplate: "Bikroyon · %s"
 });
 
 const route = useRoute();
@@ -11,18 +11,18 @@ const serverMeta = {
   ogType: "website",
   ogLocale: "en_US",
   twitterCard: "summary",
-  twitterCreator: "@abdullahbappy",
+  twitterCreator: "@bikroyon",
 };
 
 useSeoMeta({
   title: () => route.meta.title,
   description: () => route.meta.description,
-  ogTitle: () => `Bappy · ${route.meta.title}`,
+  ogTitle: () => `Bikroyon · ${route.meta.title}`,
   ogImage: () => serverMeta.ogImage,
-  twitterTitle: () => `Bappy · ${route.meta.title}`,
+  twitterTitle: () => `Bikroyon · ${route.meta.title}`,
   ogDescription: () => route.meta.description,
   twitterDescription: () => route.meta.description,
-  ogUrl: () => `https://abdulbasetbappy.vercel.app/${route.path}`,
+  ogUrl: () => `https://bikroyon.com/${route.path}`,
   ...serverMeta
 });
 </script>
