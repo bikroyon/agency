@@ -1,5 +1,8 @@
 @import "tailwindcss";
 @import "@nuxt/ui";
+.dark {
+  --ui-bg: #121212;
+}
 @font-face {
   font-family: "Hind Siliguri";
   src: url("/fonts/HindSiliguri-Light.woff2") format("woff2");

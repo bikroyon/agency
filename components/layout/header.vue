@@ -82,7 +82,7 @@ const items = [
         <!-- Icons -->
         <div class="flex items-center gap-4 text-white">
           <ClientOnly>
-            <UColorModeButton color="neutral" />
+            <UColorModeButton color="error" variant="nutral" />
           </ClientOnly>
           <UButton
             to="https://wa.me/+8801799568976"
