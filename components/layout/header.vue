@@ -24,30 +24,33 @@ const items = [
       },
       {
         label: "ই-কমার্স ওয়েবসাইট",
-        description: "বিক্রয় বৃদ্ধির জন্য কাস্টমাইজড ওয়ার্ডপ্রেস ই-কমার্স সলিউশন।",
+        description:
+          "বিক্রয় বৃদ্ধির জন্য কাস্টমাইজড ওয়ার্ডপ্রেস ই-কমার্স সলিউশন।",
         icon: "hugeicons:activity-04",
         to: "/ecommerce-website",
       },
       {
         label: "কাস্টম ওয়েব অ্যাপ",
-        description: "আমরা স্কেলেবল অ্যাপের জন্য Laravel, Vue.js, Mysql ব্যবহার করি।",
+        description:
+          "আমরা স্কেলেবল অ্যাপের জন্য Laravel, Vue.js, Mysql ব্যবহার করি।",
         icon: "hugeicons:computer-check",
         to: "#",
       },
       {
         label: "সোশ্যাল মিডিয়া মার্কেটিং",
-        description: "সঠিক ব্র্যান্ডিং এবং টার্গেট অডিয়েন্সের মাধ্যমে বিক্রয় বৃদ্ধি।",
+        description:
+          "সঠিক ব্র্যান্ডিং এবং টার্গেট অডিয়েন্সের মাধ্যমে বিক্রয় বৃদ্ধি।",
         icon: "hugeicons:calendar-love-01",
         to: "/website-management",
       },
     ],
   },
   {
-    label: "পোর্টফোলিও",
+    label: "কেস স্টাডি",
     icon: "hugeicons:workflow-circle-01",
     to: "/Portfolio",
   },
-    {
+  {
     label: "আমাদের সম্পর্কে",
     icon: "hugeicons:user-group",
     to: "/about-us",
@@ -82,7 +85,8 @@ const items = [
         <!-- Icons -->
         <div class="flex items-center gap-4 text-white">
           <ClientOnly>
-            <UColorModeButton color="error" variant="nutral" />
+            <LangSwitcher />
+            <UColorModeButton color="error" />
           </ClientOnly>
           <UButton
             to="https://wa.me/+8801799568976"
@@ -114,7 +118,6 @@ const items = [
       class="fixed md:hidden inset-0 z-40 bg-gray-100 dark:bg-[#02091e] p-6 flex flex-col justify-start"
     >
       <div class="text-lg font-semibold mt-16 mb-6">মেনু</div>
-
       <UNavigationMenu
         :items="items"
         color="error"
@@ -122,7 +125,6 @@ const items = [
         class="text-base"
       />
       <div class="flex gap-3 pt-6 mt-auto border-t border-white/10">
-        <UColorModeButton color="neutral" />
         <UButton
           icon="hugeicons:github-01"
           size="md"
@@ -135,6 +137,8 @@ const items = [
           color="error"
           variant="subtle"
         />
+        <UColorModeButton color="error" />
+        <LangSwitcher />
       </div>
     </div>
   </transition>

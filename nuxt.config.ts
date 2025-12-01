@@ -98,7 +98,18 @@ export default defineNuxtConfig({
     "nuxt-lottie",
     "@nuxtjs/partytown",
     "@nuxt/icon",
+    '@nuxtjs/i18n'
   ],
+  i18n: {
+    baseUrl: 'https://bikroyon.com',
+    strategy: 'prefix',   // URL /en /bn
+    defaultLocale: 'bn',
+    locales: [
+      { code: 'en', iso: 'en-US', file: 'en.json', name: 'English' },
+      { code: 'bn', iso: 'bn-BD', file: 'bn.json', name: 'বাংলা' }
+    ],
+     vueI18n: './i18n.config.ts'
+  },
   css: ["~/assets/css/main.css"],
   lottie: {
     componentName: "Lottie",
