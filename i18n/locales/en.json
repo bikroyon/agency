@@ -1,5 +1,6 @@
 {
   "menu": {
+    "name": "Menu",
     "home": "Home",
     "services": "Services",
     "landing_page": "Landing Page Design",
@@ -179,5 +180,41 @@
         "button": "See More"
       }
     }
+  },
+  "landing_section": {
+    "title_first": "Make your Brand's first Impression with a ",
+    "highlight": "Foundation of Trust",
+    "title_last": "— start with a perfect Single Page Website.",
+    "description": "With 300+ landing page design experience, I know how to make a business credible and converting. If you haven’t created your landing page yet, you’re one step behind your competitors. We create pages that really work, tailored to your brand, goals, and audience.",
+    "contact_button": "Contact Now",
+    "details_button": "See Details"
+  },
+  "landing_defination": {
+    "what_is": "Landing Page?",
+    "what_is_highlight":"What is a ",
+    "what_is_description": "A landing page is a special web page focused on a product, service, or offer. Its purpose is to encourage the visitor to take a specific action, such as filling out a form, signing up, or making a purchase.",
+    "why_needed": "Why do you need a ",
+    "why_needed_highlight": "Landing Page?",
+    "why_needed_description": "Understanding how Facebook's algorithm works will help you realize why a landing page is essential. Some users prefer to send messages directly via Facebook inbox, so Facebook separates them. Additionally, users who order directly from landing pages or websites create a separate audience. Using a landing page allows you to target your audience more effectively and increase conversions.",
+    "benefits_heading": "Benefits of having a landing page:",
+    "benefits_list": [
+      "Run ads with server-side tracking and pixel setup to make more sales",
+      "Retarget visitors who left footprints on your website to increase conversions",
+      "Easily manage orders",
+      "Automatic sales will continue",
+      "One-click automatic order entry for Studfast, Pathao courier",
+      "Stock management capabilities",
+      "Invoice print/download",
+      "All necessary features are built-in"
+    ],
+    "result":"See Live Result",
+    "cpa_heading_first": "See in the image — Product worth ",
+    "cpa_heading_highlight_first": "1440 BDT",
+    "cpa_heading_last": " is sold for only ",
+    "cpa_heading_highlight_last": "105 BDT",
+    "cpa_subheading": "Smart Landing + Strategy = Sell with less effort",
+    "cpa_note": "*Regularly tested. InshaAllah, results will improve!*",
+    "cpa_img_note":"This is Campaign Report from a Running Business",
+    "cta_button": "Contact Now"
   }
 }

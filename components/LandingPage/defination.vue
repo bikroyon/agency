@@ -7,7 +7,7 @@
     <div class="text-center mb-2">
       <!-- Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-        <span class="text-rose-500">ল্যান্ডিং পেইজ</span> কী?
+        <span class="text-rose-500">{{ t('landing_defination.what_is_highlight') }}</span>{{ t('landing_defination.what_is') }}
       </h2>
     </div>
     <!-- Landing Page Explanation -->
@@ -15,36 +15,29 @@
       class="max-w-4xl mx-auto text-center sm:text-base md:text-lg space-y-2"
     >
       <p class="mt-4 px-2 text-sm sm:text-base md:text-lg">
-        ল্যান্ডিং পেইজ হল একটি বিশেষ ওয়েব পেইজ যা মূলত কোন প্রোডাক্ট, সার্ভিস বা
-        অফারের উপর ফোকাস করে। এর উদ্দেশ্য ভিজিটরকে একটি নির্দিষ্ট অ্যাকশন নেওয়ার
-        জন্য উৎসাহিত করা, যেমন ফর্ম পূরণ করা, সাইনআপ করা বা প্রোডাক্ট কেনা।
+        {{ t('landing_defination.what_is_description') }}
       </p>
     </div>
     <!-- Landing Page Explanation -->
     <div class="text-center mb-2 mt-12">
       <!-- Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-        কেন ল্যান্ডিং পেইজ<span class="text-rose-500"> প্রয়োজন?</span>
+         {{ t('landing_defination.why_needed') }}<span class="text-rose-500">  {{ t('landing_defination.why_needed_highlight') }}</span>
       </h2>
     </div>
     <div
       class="max-w-4xl mx-auto text-center sm:text-base md:text-lg space-y-2"
     >
       <p class="mt-4 text-sm px-2 sm:text-base md:text-lg leading-relaxed">
-        ফেসবুকের এলগোরিদম কিভাবে কাজ করে তা বোঝার পরই আপনি বুঝতে পারবেন কেন একটি
-        ল্যান্ডিং পেজ অপরিহার্য। কিছু ব্যবহারকারী সরাসরি ফেসবুকের ইনবক্সে মেসেজ
-        পাঠাতে পছন্দ করেন, তাই ফেসবুক তাদের আলাদা করে রেখেছে। পাশাপাশি, যারা
-        বিভিন্ন ল্যান্ডিং পেজ বা ওয়েবসাইট থেকে ডাইরেক্ট অর্ডার করে, তাদের জন্য
-        আলাদা অডিয়েন্স তৈরি করা হয়। তাই ল্যান্ডিং পেজ ব্যবহার করলে টার্গেট
-        অডিয়েন্সকে আরও কার্যকরভাবে আনা এবং কনভার্সন বাড়ানো সম্ভব হয়।
+         {{ t('landing_defination.why_needed_description') }}
       </p>
     </div>
     <section class="py-10 px-4">
       <div
-        class="md:max-w-4xl mx-auto bg-white dark:bg-slate-900 rounded-2xl shadow-lg p-6 sm:p-10 border border-gray-100 dark:border-slate-800"
+        class="md:max-w-4xl mx-auto bg-white dark:bg-[#121212] rounded-2xl shadow-lg p-6 sm:p-10 border border-gray-100 dark:border-slate-800"
       >
         <h2 class="text-xl sm:text-2xl font-bold text-center mb-6">
-          একটি ল্যান্ডিং পেজে থাকলে আপনি যে সুবিধাগুলো পাবেন:
+         {{ t('landing_defination.why_needed') }}
         </h2>
 
         <!-- Benefits List -->
@@ -59,7 +52,7 @@
               class="text-green-500 w-6 h-6 mt-1 flex-shrink-0"
             />
             <span class="text-sm sm:text-base leading-relaxed">
-              {{ item }}
+             {{ Object.values(item)[0] }}
             </span>
           </li>
         </ul>
@@ -74,7 +67,7 @@
             class="mb-4 px-6 py-2 text-sm flex items-center justify-center gap-4 font-bold border border-rose-200 dark:border-rose-900 rounded-full"
             style="background: #e31c5215; color: #e31c52"
           >
-            <p>লাইভ রেজাল্ট দেখুন</p>
+            <p>  {{ t('landing_defination.result') }}</p>
             <span class="relative flex size-3">
               <span
                 class="absolute inline-flex h-full w-full animate-ping rounded-full bg-[#E31C52] opacity-75"
@@ -88,20 +81,19 @@
 
         <!-- Main Heading -->
         <h2 class="text-3xl md:text-4xl font-bold mb-2 leading-tight">
-          ছবিতে দেখুন — <span style="color: #e31c52">১৪৪০ টাকা</span> দামের
-          প্রোডাক্ট <br />
-          সেল করতে খরচ হচ্ছে মাত্র
-          <span style="color: #e31c52">১০৫ টাকা</span>
+          {{t('landing_defination.cpa_heading_first')}}<span style="color: #e31c52">{{t('landing_defination.cpa_heading_highlight_first')}}</span> <br />
+          {{t('landing_defination.cpa_heading_last')}}
+          <span style="color: #e31c52"> {{t('landing_defination.cpa_heading_highlight_last')}}</span>
         </h2>
 
         <!-- Sub Heading -->
         <p
           class="text-xl md:text-3xl font-bold my-4 bg-gradient-to-r from-slate-900 via-rose-500 to-slate-600 inline-block text-transparent bg-clip-text"
         >
-          স্মার্ট ল্যান্ডিং + স্ট্র্যাটেজি = কম কষ্টে সেল
+          {{t('landing_defination.cpa_subheading')}}
         </p>
         <p class="text-xs sm:text-sm mb-1 italic">
-          *রেগুলার টেস্ট করা হয়েছে। ইনশাআল্লাহ রেজাল্ট আরো ভালো আসবে!*
+          {{t('landing_defination.cpa_note')}} 
         </p>
 
         <!-- Peacock Ads Manager Screenshot -->
@@ -119,32 +111,39 @@
 
         <!-- Bottom Caption -->
         <p class="text-xs mb-4">
-          ক্যাম্পেইন রিপোর্টের স্ক্রিনশট (ড্যাশবোর্ড থেকে নেওয়া)
+          {{t('landing_defination.cpa_img_note')}}
         </p>
 
         <!-- CTA Button -->
-        <
-          href="https://wa.me/8809638365975"
+        <NuxtLink
+          to="https://wa.me/8809638365975"
           target="_blank"
           class="inline-flex items-center gap-4 px-12 py-3 rounded-2xl text-white font-bold text-sm md:text-xl shadow-2xl shadow-red-600/50 transform hover:scale-105 transition-all duration-300"
           style="background: linear-gradient(135deg, #e31c52, #c4173f)"
         >
-          এখনই যোগাযোগ করুন
-        </>
+         {{t("landing_defination.cta_button")}}
+        </NuxtLink>
       </div>
     </section>
   </div>
 </template>
 <script setup lang="ts">
-const benefits = [
-  "সার্ভার সাইড ট্র্যাকিং সহ পিক্সেল সেটআপ করে এড রান করে প্রচুর সেল করতে পারবেন",
-  "যারা ওয়েবসাইটে এসে ফুট প্রিন্ট রেখে চলে গেছে তাদের রিটার্গেটিং করে আপনার সেলকে অনেক বাড়াতে পারবেন",
-  "অর্ডার সহজে ম্যানেজ করতে পারবেন",
-  "অটোম্যাটিক সেল হতে থাকবে",
-  "স্টুডফাস্ট, পাঠাও কুরিয়ার এক ক্লিকে অর্ডার ডিটেইল অটোমেটিক এনট্রি",
-  "স্টক ম্যানেজ করার সুবিধাও থাকবে",
-  "ইনভয়েস প্রিন্ট / ডাউনলোড",
-  "তাছাড়া প্রয়োজনীয় সকল ফিচার ইনবিল্ট করা থাকে",
-];
+const { t } = useI18n({ useScope: 'global' });
+
+// Manually create computed array of objects with numeric keys
+const benefits = computed(() => [
+  { 1: t('landing_defination.benefits_list.0') },
+  { 2: t('landing_defination.benefits_list.1') },
+  { 3: t('landing_defination.benefits_list.2') },
+  { 4: t('landing_defination.benefits_list.3') },
+  { 5: t('landing_defination.benefits_list.4') },
+  { 6: t('landing_defination.benefits_list.5') },
+  { 7: t('landing_defination.benefits_list.6') },
+  { 8: t('landing_defination.benefits_list.7') },
+]);
 </script>
+
+
+
+
 <style scoped></style>

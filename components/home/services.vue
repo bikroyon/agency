@@ -1,3 +1,48 @@
+<script setup lang="ts">
+import developerSkils from "~/assets/lottie/developerskills.json";
+const { t } = useI18n({ useScope: "global" });
+
+const localePath = useLocalePath();
+
+const services = computed(() => [
+  {
+    title: t("services.service_list.0.title"),
+    description: t("services.service_list.0.description"),
+    icon: "hugeicons:laptop-phone-sync",
+    link: localePath("/landing-page"),
+  },
+  {
+    title: t("services.service_list.1.title"),
+    description: t("services.service_list.1.description"),
+    icon: "hugeicons:store-location-01",
+    link: localePath("/ecommerce-website"),
+  },
+  {
+    title: t("services.service_list.2.title"),
+    description: t("services.service_list.2.description"),
+    icon: "hugeicons:app-store",
+    link: localePath("/ecommerce-website"),
+  },
+  {
+    title: t("services.service_list.3.title"),
+    description: t("services.service_list.3.description"),
+    icon: "hugeicons:dashboard-speed-01",
+    link: localePath("/website-management"),
+  },
+  {
+    title: t("services.service_list.4.title"),
+    description: t("services.service_list.4.description"),
+    icon: "hugeicons:radar-01",
+    link: localePath("/website-management"),
+  },
+  {
+    title: t("services.service_list.5.title"),
+    description: t("services.service_list.5.description"),
+    icon: "hugeicons:ramadhan-month",
+    link: localePath("/website-management"),
+  },
+]);
+</script>
 <template>
   <section id="services" class="py-8 sm:py-18 px-2 relative">
     <div
@@ -73,47 +118,3 @@
     </div>
   </section>
 </template>
-
-<script setup>
-import { useI18n } from "vue-i18n";
-import developerSkils from "~/assets/lottie/developerskills.json";
-const { t } = useI18n();
-const services = computed(() => [
-  {
-    title: t("services.service_list.0.title"),
-    description: t("services.service_list.0.description"),
-    icon: "hugeicons:laptop-phone-sync",
-    link: "/landing-page",
-  },
-  {
-    title: t("services.service_list.1.title"),
-    description: t("services.service_list.1.description"),
-    icon: "hugeicons:store-location-01",
-    link: "/ecommerce-website",
-  },
-  {
-    title: t("services.service_list.2.title"),
-    description: t("services.service_list.2.description"),
-    icon: "hugeicons:app-store",
-    link: "/ecommerce-website",
-  },
-  {
-    title: t("services.service_list.3.title"),
-    description: t("services.service_list.3.description"),
-    icon: "hugeicons:dashboard-speed-01",
-    link: "/website-management",
-  },
-  {
-    title: t("services.service_list.4.title"),
-    description: t("services.service_list.4.description"),
-    icon: "hugeicons:radar-01",
-    link: "/website-management",
-  },
-  {
-    title: t("services.service_list.5.title"),
-    description: t("services.service_list.5.description"),
-    icon: "hugeicons:ramadhan-month",
-    link: "/website-management",
-  },
-]);
-</script>

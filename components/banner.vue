@@ -1,8 +1,6 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import Community from "~/assets/lottie/Community.json";
-
-const { t } = useI18n();
+const { t } = useI18n({ useScope: "global" });
 </script>
 
 <template>

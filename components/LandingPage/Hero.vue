@@ -1,3 +1,6 @@
+<script setup lang="ts">
+const { t } = useI18n({ useScope: "global" });
+</script>
 <template>
     <section class="py-8 md:py-16 pt-8 md:pt-8">
               <div
@@ -7,26 +10,24 @@
         <div class="max-w-5xl mx-auto px-4 text-center">
             <!-- Title -->
             <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug ">
-                আপনার ব্র্যান্ডের প্রথম ইম্প্রেশনটাই হয়ে উঠুক <span class="text-rose-500">বিশ্বাসের ভিত্তি</span>
-                — শুরু হোক একটি নিখুঁত ল্যান্ডিং পেজ দিয়ে।
+               {{ t('landing_section.title_first') }} <span class="text-rose-500">{{ t('landing_section.highlight') }}</span>
+               {{t('landing_section.title_last')}}
             </h2>
 
             <!-- Description -->
             <p class="mt-4 text-sm sm:text-lg">
-                ৩০০+ ল্যান্ডিং পেইজ ডিজাইনের অভিজ্ঞতায় আমি জানি কীভাবে একটি ব্যবসাকে বিশ্বাসযোগ্য ও কনভার্টিং বানাতে হয়।
-                আপনি যদি এখনও আপনার ল্যান্ডিং পেজ তৈরি না করে থাকেন, তাহলে আপনার প্রতিযোগীদের থেকে এক ধাপ পিছিয়ে আছেন।
-                আপনার ব্র্যান্ড, লক্ষ্য আর অডিয়েন্স বুঝেই তৈরি করি এমন পেইজ যা সত্যিই কাজ করে।
+              {{t('landing_section.description')}}
             </p>
 
             <!-- Buttons -->
             <div class="mt-6 flex justify-center gap-4 flex-wrap">
                 <NuxtLink to="https://wa.me/+8801799568976"
                     class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 rounded-md hover:bg-rose-700 transition">
-                    <Icon name="hugeicons:whatsapp" /> <span>যোগাযোগ করুন</span>
+                    <Icon name="hugeicons:whatsapp" /> <span>{{t('landing_section.contact_button')}}</span>
                 </NuxtLink>
                 <NuxtLink to="#pricing"
                     class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-100 transition">
-                    <span>বিস্তারিত দেখুন</span>
+                    <span>{{t('landing_section.details_button')}}</span>
                     <Icon name="hugeicons:arrow-down-double" />
                 </NuxtLink>
             </div>
@@ -41,9 +42,5 @@
         </div>
     </section>
 </template>
-
-<script setup>
-
-</script>
 
 <style scoped></style>

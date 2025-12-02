@@ -17,7 +17,7 @@
         <!-- Buttons -->
         <div class="flex justify-between gap-3">
           <button class="border border-gray-600 px-3 py-1.5 text-xs sm:text-sm flex justify-center items-center gap-2 rounded hover:bg-gray-100">
-            <span>সরাসরি দেখুন</span>
+            <span>Live</span>
             <Icon name="material-symbols:arrow-outward-rounded"/>
           </button>
         </div>

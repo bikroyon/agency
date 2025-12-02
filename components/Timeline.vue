@@ -1,10 +1,9 @@
 <script setup lang="ts">
-import { ref, computed, onMounted, onUnmounted } from "vue";
-import { useI18n } from "vue-i18n";
 import type { TimelineItem } from "@nuxt/ui";
 
 // i18n
-const { t } = useI18n();
+const { t } = useI18n({ useScope: "global" });
+
 
 // Track screen width
 const width = ref<number>(0);

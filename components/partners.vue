@@ -1,7 +1,5 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
-
-const { t } = useI18n();
+const { t } = useI18n({ useScope: "global" });
 const brandLogos = [
   "/brands/DailyFoodShop.png",
   "/brands/FalaqFood.png",

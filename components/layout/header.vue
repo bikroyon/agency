@@ -1,23 +1,20 @@
 <script setup lang="ts">
-import { ref } from "vue";
-import { useI18n } from "vue-i18n";
-import { useRouter } from "vue-router";
-
 const mobileOpen = ref(false);
 const router = useRouter();
+const localePath = useLocalePath();
 
 router.afterEach(() => {
   mobileOpen.value = false;
 });
 
-const { t } = useI18n();
+const { t } = useI18n({ useScope: "global" });
 
 // Menu items with i18n keys
-const items =  computed(() =>[
+const items = computed(() => [
   {
     label: t("menu.home"),
     icon: "hugeicons:home-11",
-    to: "/",
+    to: localePath("/"),
   },
   {
     label: t("menu.services"),
@@ -27,46 +24,45 @@ const items =  computed(() =>[
         label: t("menu.landing_page"),
         description: t("menu.landing_page_desc"),
         icon: "hugeicons:store-02",
-        to: "/landing-page",
+        to: localePath("/landing-page"),
       },
       {
         label: t("menu.ecommerce"),
         description: t("menu.ecommerce_desc"),
         icon: "hugeicons:activity-04",
-        to: "/ecommerce-website",
+        to: localePath("/ecommerce-website"),
       },
       {
         label: t("menu.custom_app"),
         description: t("menu.custom_app_desc"),
         icon: "hugeicons:computer-check",
-        to: "/custom-app",
+        to: localePath("/custom-app"),
       },
       {
         label: t("menu.smm"),
         description: t("menu.smm_desc"),
         icon: "hugeicons:calendar-love-01",
-        to: "/website-management",
+        to: localePath("/website-management"),
       },
     ],
   },
   {
     label: t("menu.portfolio"),
     icon: "hugeicons:workflow-circle-01",
-    to: "/Portfolio",
+    to: localePath("/portfolio"),
   },
   {
     label: t("menu.about"),
     icon: "hugeicons:user-group",
-    to: "/about-us",
+    to: localePath("/about-us"),
   },
   {
     label: t("menu.contact"),
     icon: "hugeicons:contact",
-    to: "/contacts",
+    to: localePath("/contacts"),
   },
 ]);
 </script>
-
 
 <template>
   <!-- Header -->
@@ -89,8 +85,8 @@ const items =  computed(() =>[
         />
         <!-- Icons -->
         <div class="flex items-center gap-4 text-white">
+          <LangSwitcher />
           <ClientOnly>
-            <LangSwitcher />
             <UColorModeButton color="error" />
           </ClientOnly>
           <UButton
@@ -120,9 +116,9 @@ const items =  computed(() =>[
     <div
       v-if="mobileOpen"
       id="mobile-menu"
-      class="fixed md:hidden inset-0 z-40 bg-gray-100 dark:bg-[#02091e] p-6 flex flex-col justify-start"
+      class="fixed md:hidden inset-0 z-40 bg-gray-100 dark:bg-[#121212] p-6 flex flex-col justify-start"
     >
-      <div class="text-lg font-semibold mt-16 mb-6">মেনু</div>
+      <div class="text-lg font-semibold mt-16 mb-6">{{ t("menu.name") }}</div>
       <UNavigationMenu
         :items="items"
         color="error"

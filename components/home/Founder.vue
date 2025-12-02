@@ -1,6 +1,10 @@
 <script setup lang="ts">
 import { useI18n } from "vue-i18n";
-const { t } = useI18n();
+const { t } = useI18n({
+  inheritLocale: true,
+  useScope: "global"
+});
+
 </script>
 <template>
   <section class="py-20 sm:pb-20 sm:pb-pt-8 px-2">
