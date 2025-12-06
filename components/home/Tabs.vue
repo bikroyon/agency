@@ -1,12 +1,10 @@
 <script setup lang="ts">
-import { useI18n } from "vue-i18n";
 import gsap from "gsap";
 
 const { t } = useI18n({ useScope: "global" });
 const currentTab = ref(0);
 const tabContent = ref<HTMLElement | null>(null);
 const localePath = useLocalePath();
-
 // Portfolio tabs (titles and descriptions multilingual)
 const tabs = computed(() => [
   {

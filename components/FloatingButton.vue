@@ -18,7 +18,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
     <span
       class="absolute inline-flex h-full w-full rounded-full bg-rose-400 opacity-75 animate-ping"
     ></span>
-    <Icon name="hugeicons:whatsapp" class="w-8 h-8"/>
+    <Icon name="hugeicons:whatsapp" class="w-8 h-8 text-white dark:text-white"/>
   </NuxtLink>
 </template>
 

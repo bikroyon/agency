@@ -1,12 +1,14 @@
 <script setup lang="ts">
-const items = [
-  "https://picsum.photos/468/468?random=1",
-  "https://picsum.photos/468/468?random=2",
-  "https://picsum.photos/468/468?random=3",
-  "https://picsum.photos/468/468?random=4",
-  "https://picsum.photos/468/468?random=5",
-  "https://picsum.photos/468/468?random=6",
-];
+const { t } = useI18n({ useScope: "global" });
+
+const items = computed(() => [
+  t("landing_portfolio_section.images.0"),
+  t("landing_portfolio_sectionlanding_portfolio_section.images.1"),
+  t("landing_portfolio_section.images.2"),
+  t("landing_portfolio_section.images.3"),
+  t("landing_portfolio_section.images.4"),
+  t("landing_portfolio_section.images.5"),
+]);
 </script>
 
 <template>
@@ -15,11 +17,10 @@ const items = [
     <div class="text-center mb-10">
       <!-- Heading -->
       <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
-        আমাদের তৈরি করা কিছু <span class="text-rose-500">ল্যান্ডিং পেইজে</span>
+        {{t("landing_portfolio_section.heading_first")}} <span class="text-rose-500">{{t("landing_portfolio_section.heading_highlight")}}</span>
       </h2>
       <p class="mt-2 text-sm sm:text-lg">
-        আমাদের তৈরি ল্যান্ডিং পেজ শুধু সুন্দর নয়—এটি সাইকোলজিক্যালি কনভার্টিং
-        করার মতো করে তৈরি।
+        {{t("landing_portfolio_section.subheading")}}
       </p>
     </div>
     <!-- Carousel -->

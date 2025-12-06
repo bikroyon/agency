@@ -5,7 +5,7 @@ const { locale, setLocale } = useI18n();
 </script>
 
 <template>
-  <div class="flex items-center gap-2">
+  <div class="flex items-center gap-2" v-if="locale.length <= 1">
     <!-- Show English only if current locale is NOT English -->
     <UButton
       v-if="locale !== 'en'"

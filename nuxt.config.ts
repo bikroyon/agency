@@ -84,7 +84,7 @@ export default defineNuxtConfig({
       script: [
         {
           type: "text/partytown",
-          src: "https://abdulbasetbappy.vercel.app/",
+          src: "https://bikroyon.com/",
           async: true,
         },
       ],
@@ -102,10 +102,9 @@ export default defineNuxtConfig({
   ],
   i18n: {
     baseUrl: "https://bikroyon.com",
-    strategy: "prefix",
-    defaultLocale: "en",
+    strategy: "no_prefix",
+    defaultLocale: "bn",
     locales: [
-      { code: "en", iso: "en-US", file: "en.json", name: "English" },
       { code: "bn", iso: "bn-BD", file: "bn.json", name: "বাংলা" },
     ],
     detectBrowserLanguage: {

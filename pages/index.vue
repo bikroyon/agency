@@ -8,7 +8,7 @@
       <HomeFounder />
       <HomeTabs />
       <Testimonials />
-      <HomeTeam />
+      <Team />
       <Banner />
     </div>
   </div>

@@ -44,7 +44,7 @@ const services = computed(() => [
 ]);
 </script>
 <template>
-  <section id="services" class="py-8 sm:py-18 px-2 relative">
+  <section id="services" class="py-8 px-2 relative">
     <div
       class="absolute inset-0 h-full w-full opacity-40 -z-10 bg-[radial-gradient(#99a1af_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"
     ></div>
@@ -60,7 +60,7 @@ const services = computed(() => [
           <span class=""
             >{{ $t("services.title") }}
             <span class="text-rose-500">{{
-              $t("services.heighlights")
+              $t("services.highlight")
             }}</span></span
           >
         </h2>

@@ -9,20 +9,40 @@
     "ecommerce_desc": "Custom WordPress e-commerce solutions to boost sales.",
     "custom_app": "Custom Web App",
     "custom_app_desc": "We use Laravel, Vue.js & MySQL for scalable apps.",
-    "smm": "Social Media Marketing",
-    "smm_desc": "Increase sales via branding & targeted audience.",
+    "smm": "Custom Landing page App",
+    "smm_desc": "Fraud Checking, Modern UI, User dashboard and Many More.",
     "portfolio": "Case Study",
     "about": "About Us",
     "contact": "Contact"
   },
   "footer": {
-    "copyright": "Copyright ©2025",
-    "rights": "All rights reserved.",
-    "home": "Home",
-    "landing_page": "Landing Page Design",
-    "ecommerce": "E-commerce Website",
-    "portfolio": "Portfolio",
-    "contact": "Contact"
+    "brand_title": "Bikroyon",
+    "brand_tagline": "We build premium websites and custom web applications. Your digital solution for business growth.",
+
+    "services_title": "Our Services",
+    "services": {
+      "wordpress": "WordPress Web Design",
+      "webapp": "Custom Web App",
+      "ai": "AI Automation",
+      "security": "Secure Website"
+    },
+
+    "quick_links_title": "Quick Links",
+    "quick_links": {
+      "home": "Home",
+      "about": "About Us",
+      "portfolio": "Portfolio",
+      "contacts": "Contact Us"
+    },
+
+    "contact_title": "Contact Info",
+    "contact": {
+      "address": "Dhaka, Bangladesh",
+      "phone": "+880 1799 568 976",
+      "email": "infobikroyon.com"
+    },
+
+    "copyright": "© 2025 Bikroyon. All rights reserved."
   },
   "hero": {
     "tagline": "Bangladesh's #1 Web Solution",
@@ -43,7 +63,7 @@
   },
   "services": {
     "title": "Our",
-    "heighlights": "Services",
+    "highlight": "Services",
     "stats": "We have the trust of {strong1}. Since 2022, we have worked with {strong2}, creating {strong3} and {strong4}. Each project focuses on {strong5}.",
     "strong": {
       "1": "300+ entrepreneurs",
@@ -142,12 +162,12 @@
     ]
   },
   "support": {
-    "title": "For 24/7 support, stay connected on",
-    "highlight": "Telegram",
-    "subtitle": "Private Support Channel",
-    "description1": "We have a private Telegram support channel for our service users where I personally answer your questions. We promise — all questions will be answered within 24 hours. In most cases, you’ll get a reply within 1 hour.",
-    "description2": "Additionally, you can join the channel to get live work updates, guidelines, and special tips.",
-    "button": "Join Chat Group"
+    "title": "We",
+    "highlight": " listen, understand, and guide ",
+    "subtitle": " how your business can grow faster.",
+    "description1": "In our free consultation, we analyze your business goals, challenges, and opportunities. We provide practical and actionable advice to help you grow your business quickly and effectively.",
+    "description2": "We are here 24/7 for support and consultation. Don’t hesitate—reach out and see the difference.",
+    "button": "Get Free Consultation"
   },
   "testimonials": {
     "title": "Entrepreneur's ",
@@ -191,7 +211,7 @@
   },
   "landing_defination": {
     "what_is": "Landing Page?",
-    "what_is_highlight":"What is a ",
+    "what_is_highlight": "What is a ",
     "what_is_description": "A landing page is a special web page focused on a product, service, or offer. Its purpose is to encourage the visitor to take a specific action, such as filling out a form, signing up, or making a purchase.",
     "why_needed": "Why do you need a ",
     "why_needed_highlight": "Landing Page?",
@@ -207,14 +227,492 @@
       "Invoice print/download",
       "All necessary features are built-in"
     ],
-    "result":"See Live Result",
+    "result": "See Live Result",
     "cpa_heading_first": "See in the image — Product worth ",
     "cpa_heading_highlight_first": "1440 BDT",
     "cpa_heading_last": " is sold for only ",
     "cpa_heading_highlight_last": "105 BDT",
     "cpa_subheading": "Smart Landing + Strategy = Sell with less effort",
     "cpa_note": "*Regularly tested. InshaAllah, results will improve!*",
-    "cpa_img_note":"This is Campaign Report from a Running Business",
+    "cpa_img_note": "This is Campaign Report from a Running Business",
     "cta_button": "Contact Now"
+  },
+  "landing_features_section": {
+    "heading_first": "We",
+    "heading_highlight": "Provide",
+    "subheading": "Our landing pages are not only beautiful—they are psychologically optimized to convert.",
+
+    "features": [
+      {
+        "icon": "hugeicons:store-verified-02",
+        "title": "Premium Quality",
+        "description": "Thousands of entrepreneur reviews give us the confidence—our designs are not only visually great, they create a strong business impact."
+      },
+      {
+        "icon": "hugeicons:mobile-protection",
+        "title": "Responsive Design",
+        "description": "Over 80% of visitors in Bangladesh use mobile, so responsive design is essential for conversions and brand value."
+      },
+      {
+        "icon": "hugeicons:server-stack-02",
+        "title": "Server-Side Tracking",
+        "description": "We set up server-side tracking & pixels so you get complete customer data for smarter marketing decisions."
+      },
+      {
+        "icon": "hugeicons:dashboard-speed-01",
+        "title": "Super Fast",
+        "description": "Get lightning-fast load time under 3 seconds—ensuring zero customer drop-offs."
+      },
+      {
+        "icon": "hugeicons:bubble-chat-question",
+        "title": "Technical Support",
+        "description": "We provide lifetime support plus a premium non-technical course to help you manage everything easily."
+      },
+      {
+        "icon": "hugeicons:store-management-01",
+        "title": "Easy Management",
+        "description": "Our landing pages are designed so you can manage everything easily without technical complexity."
+      }
+    ],
+
+    "btn_contact": "Contact Now",
+    "btn_details": "View Details"
+  },
+  "landing_portfolio_section": {
+    "heading_first": "Some of our",
+    "heading_highlight": "Landing Pages",
+    "subheading": "Our landing pages are not just beautiful—they are psychologically optimized to convert.",
+    "images": [
+      "https://picsum.photos/468/468?random=1",
+      "https://picsum.photos/468/468?random=2",
+      "https://picsum.photos/468/468?random=3",
+      "https://picsum.photos/468/468?random=4",
+      "https://picsum.photos/468/468?random=5",
+      "https://picsum.photos/468/468?random=6"
+    ]
+  },
+  "landing_pricing": {
+    "heading_first": "Our",
+    "heading_highlight": "Pricing Plans",
+    "subheading": "Our landing pages are not only beautiful—they are psychologically optimized for high conversion.",
+    "money_symbole": "৳",
+    "recomended": "Our Suggested",
+    "money_per": "/Project",
+    "toggle_left": "Without",
+    "toggle_right": "With Domain & Hosting",
+    "cta_button": "I want this Package",
+    "plans": {
+      "0": {
+        "name": "Regular Package",
+        "monthly": "5,000",
+        "yearly": "3,000",
+        "description": "If you need advanced features and want to take your business to the next level, this package is perfect. Premium themes & plugins are not included.",
+        "features_title": "You are Getting:",
+        "features": [
+          "Premium sales funnel design",
+          "Premium plugins used",
+          "Easy order system & automation",
+          "Auto invoice print & live chat",
+          "Full tutorial provided",
+          "Professional server-side tracking",
+          "Speed optimization",
+          "Support from 6 AM to 6:30 PM"
+        ]
+      },
+      "1": {
+        "name": "Complete Package",
+        "monthly": "7,500",
+        "yearly": "4,500",
+        "description": "This is our all-in-one premium package. Perfect for those who want maximum results & top-level support. Includes all premium themes & plugins.",
+        "features_title": "You are Getting:",
+        "features": [
+          "Premium sales funnel design",
+          "Premium plugins used",
+          "Easy order system & automation",
+          "Auto invoice print & live chat",
+          "Full tutorial provided",
+          "Professional server-side tracking",
+          "Speed optimization",
+          "Support from 6 AM to 6:30 PM"
+        ]
+      }
+    }
+  },
+  "landing_faq": {
+    "heading_line1": "Frequently Asked",
+    "heading_highlight": "Questions",
+    "subtext": "We have listed the most common questions customers ask. Please read this FAQ before messaging us—this will save you time and give you instant answers.",
+
+    "q1": "What benefits do I get after purchasing a package?",
+    "a1": "Depending on your selected plan, you will get a complete ready-to-launch sales funnel, premium plugins, automation system, and full support.",
+
+    "q2": "How long does it take to deliver after payment?",
+    "a2": "Normally, your project will be delivered within 5–7 business days after confirming the payment.",
+
+    "q3": "Do I need my own domain and hosting?",
+    "a3": "No. You can either use your own domain & hosting or choose our hosting-included package.",
+
+    "q4": "Can I edit the content myself?",
+    "a4": "Yes. We design your funnel so you can easily edit any content, and we also provide tutorials.",
+
+    "q5": "Will live chat or invoice system be included?",
+    "a5": "These features are available in selected packages. You can also add them separately.",
+
+    "q6": "Will the website be mobile friendly?",
+    "a6": "Absolutely. All our funnels and websites are fully responsive and mobile-friendly.",
+
+    "q7": "Will I get support after delivery?",
+    "a7": "Yes. Every package includes a certain period of free support. You can also purchase extended support.",
+
+    "q8": "Can I customize my package?",
+    "a8": "Yes. You can customize the features according to your needs and our team will guide you."
+  },
+  "portfolio_page": {
+    "title": "Our",
+    "highlight": "Portfolio",
+    "description": "I always strive to provide the highest quality service to clients. Alhamdulillah, I have maintained this consistency since 2022.",
+    "tabs": {
+      "landing": {
+        "title": "Landing Page Design",
+        "description": "300+ Completed · 3 Running",
+        "button": "See More"
+      },
+      "ecommerce": {
+        "title": "E-Commerce Website",
+        "description": "50+ Completed · 2 Running",
+        "button": "See More"
+      },
+      "custom": {
+        "title": "Custom Website",
+        "description": "12 Completed · 1 Running",
+        "button": "See More"
+      },
+      "smm": {
+        "title": "Social Media Marketing",
+        "description": "30 Completed · 4 Running",
+        "button": "See More"
+      }
+    }
+  },
+  "contact_page": {
+    "title": "Get in",
+    "highlight": "Touch",
+    "description": "You can contact us directly using any of the following methods.",
+    "form": {
+      "heading": "Send a Message",
+      "name": "Name",
+      "email": "Email*",
+      "mobile": "Mobile*",
+      "message": "Message",
+      "name_placeholder": "Enter your name",
+      "email_placeholder": "Your email is required",
+      "mobile_placeholder": "Your mobile number is required",
+      "message_placeholder": "Write your message here",
+      "submit": "Submit"
+    },
+    "success_message": "Your message has been sent successfully!",
+    "contact_times": "Contact Hours: 10 AM to 10 PM",
+    "contacts": {
+      "mobile": "Mobile",
+      "whatsapp": "Whatsapp",
+      "email": "Email",
+      "facebook": "Facebook",
+      "youtube": "YouTube",
+      "linkedin": "LinkedIn",
+      "location": "Jamalpur Sadar, Jamalpur, Mymensingh"
+    }
+  },
+  "about_page": {
+    "heroSection": {
+      "title": "We are",
+      "highlight": "Bikroyon",
+      "paragraphs1": "Bikroyon is a professional web development, digital marketing, and AI automation agency in Bangladesh. Since 2020, we have been designing and developing custom websites, landing pages, and complete digital solutions for our clients. Our main goal is to help every client's business grow quickly and efficiently online.",
+      "paragraphs2": "Our team consists of skilled WordPress and Laravel developers, UI/UX designers, and digital marketing experts. We don't just create websites; we create effective, SEO-friendly, and conversion-focused digital products for businesses.",
+      "paragraphs3": "We believe that every client is unique. Hence, each of our projects is fully customized. Our work enhances your brand visibility, builds customer trust, and boosts online sales. Our design and development process always ensures responsive, secure, and fast-loading websites.",
+      "missionTitle": "Our Mission",
+      "missionParagraph": "Our mission is to ensure the digital success of every client. We don’t just build websites; we create a strong online presence for your brand. Working with Bikroyon means you get custom solutions, fast support, and professional design that keeps your business ahead in a competitive market."
+    },
+    "skills": {
+      "heading": "Our",
+      "heading_highlight": "Skills",
+      "subtitle": "Bikroyon provides industry-leading web development, design, and marketing services. We build modern, effective solutions to strengthen your online presence.",
+
+      "cards": {
+        "wordpress": {
+          "title": "WordPress Web Design",
+          "desc": "Premium-quality websites built using WordPress, Elementor, and WooCommerce."
+        },
+        "webapp": {
+          "title": "Custom Web App",
+          "desc": "Secure and scalable web applications built using Laravel, Vue.js, and Nuxt.js."
+        },
+        "ai": {
+          "title": "AI Automation",
+          "desc": "Advanced workflow automation using n8n, Zapier, and other AI automation platforms."
+        },
+        "security": {
+          "title": "Secure & Fast Websites",
+          "desc": "Performance-optimized, secure, and fast-loading websites that stand out in competition."
+        }
+      }
+    },
+    "tools": {
+      "title": "The ",
+      "highlight": "Technologies ",
+      "title_last": "We Use",
+      "subtitle": "We carefully choose the best and most professional tools for every project. These technologies make our work faster, more efficient, and high-quality."
+    },
+    "why_choose": {
+      "title_first": "Why ",
+      "title_highlight": "Bikroyon",
+      "title_last": " Should Be Your First Choice?",
+
+      "subtitle": "Why Our Clients Love Working With Us",
+
+      "description": "We don’t just build websites — we create high-performing digital products for your business. Every project is customized, fast, secure, and ROI-focused. Our goal is not just a website, but making your business successful online.",
+
+      "benefits": [
+        {
+          "strong": "Customized Design & Development:",
+          "text": "Every project is tailored to match your brand. Features and functionalities are built based on your business goals."
+        },
+        {
+          "strong": "SEO & Conversion-Focused Websites:",
+          "text": "Our designs load fast, are SEO-friendly, and optimized to increase conversions."
+        },
+        {
+          "strong": "Dedicated Support:",
+          "text": "Even after launch, we ensure your website remains secure, updated, and fully functional."
+        },
+        {
+          "strong": "Digital Marketing & Social Media Support:",
+          "text": "We run SEO, ads, and social media campaigns to help your business grow faster."
+        },
+        {
+          "strong": "Trusted & Proven Agency:",
+          "text": "With 5+ years of experience, hundreds of successful projects, and many satisfied clients, we deliver trust and reliability."
+        },
+        {
+          "strong": "Flexible Packages:",
+          "text": "Whether you’re a small business or a large enterprise, we offer packages that fit your budget."
+        }
+      ],
+
+      "cta": "Contact Now"
+    }
+  },
+  "ecommerce_page": {
+    "hero": {
+      "heading_first": "Elevate Your Brand with a Complete Online Presence Through a Website That’s Not Just",
+      "heading_highlight": "Beautiful — But Truly Effective",
+      "heading_last": ".",
+
+      "description": "With 30+ successful website projects under my belt, I know exactly how to build a credible, high-converting website that drives real business growth. If you don’t have a professional website yet, you’re already falling behind in the digital race. I create custom websites that perfectly reflect your brand, goals, and audience — websites that increase sales and build unbreakable customer trust.",
+
+      "cta_primary": "Let’s Talk Now",
+      "cta_secondary": "See Pricing & Packages",
+
+      "whatsapp_icon": "WhatsApp",
+      "arrow_down_icon": "Scroll Down"
+    },
+    "why_choose": {
+      "heading_first": "Why Our",
+      "heading_highlight": "WordPress Websites",
+      "heading_last": "Are Truly Exceptional?",
+
+      "subheading": "We don’t just build websites — we solve real business problems and turn visitors into loyal customers.",
+
+      "problems_title": "Common WordPress Website Problems",
+"problems": [
+    "Generic design, zero brand match",
+    "Slow loading, high visitor loss",
+    "No automation (Manual work only)",
+    "Poor security, high hacking risk",
+    "Cannot handle growth (Non-scalable)"
+  ],
+  "solutions_title": "Our Expert WordPress Fixes",
+  "solutions": [
+    "100% Custom, brand-focused design",
+    "Guaranteed lightning-fast speed (95+ score)",
+    "Smart automation for maximum time savings",
+    "Bank-level security and protection",
+    "Fully scalable for unlimited business growth"
+  ]
+    },
+    "ecommerce_benefits": {
+      "heading_first": "What You Gain with a Professional",
+      "heading_highlight": "E-commerce Website",
+      "heading_last": "",
+      "subheading": "A powerful online store that runs 24/7, automates everything, and multiplies your sales — even while you sleep.",
+
+      "items": [
+        {
+          "icon": "hugeicons:store-verified-01",
+          "title": "Your Business Open 24/7",
+          "description": "Customers can browse and place orders anytime — even at 3 AM — without you being present."
+        },
+        {
+          "icon": "hugeicons:dashboard-speed-01",
+          "title": "Nationwide Fast Delivery",
+          "description": "Integrated with top courier services for fast, reliable, and trackable delivery across Bangladesh."
+        },
+        {
+          "icon": "hugeicons:rocket-01",
+          "title": "10× More Sales via Ads",
+          "description": "Run highly profitable Facebook & Google ads that bring ready-to-buy customers directly to your store."
+        },
+        {
+          "icon": "hugeicons:ai-chip",
+          "title": "Easy to Manage",
+          "description": "Orders, inventory, customers — manage everything from a single smart dashboard."
+        },
+        {
+          "icon": "hugeicons:activity-04",
+          "title": "Marketing 10× Easier",
+          "description": "Promotions, flash sales, abandoned cart recovery — all automated and super simple."
+        },
+        {
+          "icon": "hugeicons:payment-02",
+          "title": "Payment Methods",
+          "description": "bKash, Nagad, Rocket, Card, SSLCommerz — fully automated payment & instant confirmation."
+        },
+        {
+          "icon": "hugeicons:chart-increase",
+          "title": "Real-Time Sales Reports",
+          "description": "Daily, weekly, monthly sales, profit, best-selling products — clear reports at a glance."
+        },
+        {
+          "icon": "hugeicons:customer-service",
+          "title": "Customer Support",
+          "description": "Live chat, WhatsApp, Messenger, call button — handle customers instantly and build loyalty."
+        },
+        {
+          "icon": "hugeicons:account-setting-03",
+          "title": "Brand Trust & Value",
+          "description": "A professional e-commerce website instantly makes your brand look bigger, trusted, and established."
+        }
+      ]
+    },
+    "portfolio_section": {
+      "heading_first": "Some of our",
+      "heading_highlight": "Websites",
+      "subheading": "From small businesses to growing brands — here are the solutions we’ve built."
+    },
+    "features_section": {
+      "heading_first": "We",
+      "heading_highlight": "Provide",
+      "subheading": "Our landing pages are not only beautiful—they are psychologically optimized to convert.",
+      "features": [
+        {
+          "icon": "hugeicons:store-verified-02",
+          "title": "Premium Quality",
+          "description": "Thousands of entrepreneur reviews give us the confidence—our designs are not only visually great, they create a strong business impact."
+        },
+        {
+          "icon": "hugeicons:mobile-protection",
+          "title": "Responsive Design",
+          "description": "Over 80% of visitors in Bangladesh use mobile, so responsive design is essential for conversions and brand value."
+        },
+        {
+          "icon": "hugeicons:server-stack-02",
+          "title": "Server-Side Tracking",
+          "description": "We set up server-side tracking & pixels so you get complete customer data for smarter marketing decisions."
+        },
+        {
+          "icon": "hugeicons:dashboard-speed-01",
+          "title": "Super Fast",
+          "description": "Get lightning-fast load time under 3 seconds—ensuring zero customer drop-offs."
+        },
+        {
+          "icon": "hugeicons:bubble-chat-question",
+          "title": "Technical Support",
+          "description": "We provide lifetime support plus a premium non-technical course to help you manage everything easily."
+        },
+        {
+          "icon": "hugeicons:store-management-01",
+          "title": "Easy Management",
+          "description": "Our landing pages are designed so you can manage everything easily without technical complexity."
+        }
+      ],
+
+      "btn_contact": "Contact Now",
+      "btn_details": "View Details"
+    },
+    "faq": {
+      "heading_line1": "Frequently Asked",
+      "heading_highlight": "Questions",
+      "subtext": "We have listed the most common questions customers ask. Please read this FAQ before messaging us—this will save you time and give you instant answers.",
+
+      "q1": "What benefits do I get after purchasing a package?",
+      "a1": "Depending on your selected plan, you will get a complete ready-to-launch sales funnel, premium plugins, automation system, and full support.",
+
+      "q2": "How long does it take to deliver after payment?",
+      "a2": "Normally, your project will be delivered within 5–7 business days after confirming the payment.",
+
+      "q3": "Do I need my own domain and hosting?",
+      "a3": "No. You can either use your own domain & hosting or choose our hosting-included package.",
+
+      "q4": "Can I edit the content myself?",
+      "a4": "Yes. We design your funnel so you can easily edit any content, and we also provide tutorials.",
+
+      "q5": "Will live chat or invoice system be included?",
+      "a5": "These features are available in selected packages. You can also add them separately.",
+
+      "q6": "Will the website be mobile friendly?",
+      "a6": "Absolutely. All our funnels and websites are fully responsive and mobile-friendly.",
+
+      "q7": "Will I get support after delivery?",
+      "a7": "Yes. Every package includes a certain period of free support. You can also purchase extended support.",
+
+      "q8": "Can I customize my package?",
+      "a8": "Yes. You can customize the features according to your needs and our team will guide you."
+    },
+    "pricing": {
+      "heading_first": "Our",
+      "heading_highlight": "Pricing Plans",
+      "subheading": "Choose a plan that fits your business needs.",
+      "money_symbole": "৳",
+      "recomended": "Our Suggested",
+      "money_per": "/Project",
+      "toggle_left": "Without",
+      "toggle_right": "With Domain & Hosting",
+      "cta_button": "I want this Package",
+      "plans": {
+        "0": {
+          "name": "Regular Package",
+          "monthly": "5,000",
+          "yearly": "3,000",
+          "description": "If you need advanced features and want to take your business to the next level, this package is perfect. Premium themes & plugins are not included.",
+          "features_title": "You are Getting:",
+          "features": [
+            "Premium sales funnel design",
+            "Premium plugins used",
+            "Easy order system & automation",
+            "Auto invoice print & live chat",
+            "Full tutorial provided",
+            "Professional server-side tracking",
+            "Speed optimization",
+            "Support from 6 AM to 6:30 PM"
+          ]
+        },
+        "1": {
+          "name": "Complete Package",
+          "monthly": "7,500",
+          "yearly": "4,500",
+          "description": "This is our all-in-one premium package. Perfect for those who want maximum results & top-level support. Includes all premium themes & plugins.",
+          "features_title": "You are Getting:",
+          "features": [
+            "Premium sales funnel design",
+            "Premium plugins used",
+            "Easy order system & automation",
+            "Auto invoice print & live chat",
+            "Full tutorial provided",
+            "Professional server-side tracking",
+            "Speed optimization",
+            "Support from 6 AM to 6:30 PM"
+          ]
+        }
+      }
+    }
   }
 }

@@ -2,6 +2,7 @@
   <div class="mx-auto container p-2 md:p-16">
     <WebsiteHero />
     <WebsiteWhyEcommerce />
+    <WebsiteProblem/>
     <WebsiteFeatures />
     <WebsiteCaruosle />
     <WebsitePricingTable/>

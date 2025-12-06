@@ -28,13 +28,14 @@ const { t } = useI18n({ useScope: "global" });
 
           <!-- Button -->
           <NuxtLink
-            to="https://t.me/+rnbKFoqzg7kyNjQ1"
+            to="https://wa.me/+8801904015818?text=ফ্রি পরামর্শ নিতে চাই।"
+            target="_blank"
             class="bg-rose-500 dark:bg-rose-600 hover:bg-rose-500 hover:dark:bg-rose-700 w-fit text-slate-50 px-4 py-2 rounded-lg flex items-center justify-center gap-2"
           >
-            <span class="text-xs sm:text-sm md:text-base">{{
+            <Icon name="hugeicons:whatsapp" />
+            <p class="text-xs sm:text-sm md:text-base">{{
               t("support.button")
-            }}</span>
-            <Icon name="material-symbols:group-add-rounded" />
+            }}</p>
           </NuxtLink>
         </div>
       </div>

@@ -1,66 +1,66 @@
 <template>
-    <section class="py-16 px-6 md:px-20">
-        <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
-            <!-- Left Side (Image and Text) -->
-            <div class="flex justify-start flex-col">
-                <div class="flex items-center h-[220px] overflow-hidden">
-                    <Lottie style="height: 400px;" :data="Thinking"/>
-                </div>
-                <h2 class="text-left text-3xl font-bold">
-                  সচরাচর জানতে চাওয়া<br>
-                  <span class="text-rose-500">প্রশ্নের উত্তর</span>
-                </h2>
-                <p class="leading-relaxed text-xs sm:text-sm">
-                    আপনাদের কমন কিছু প্রশ্নের উত্তর আমরা এখানে লিস্ট করে দিয়েছি। আমাদের কে প্রশ্ন করার
-                    পূর্বে এই লিস্টটি একবার পড়ে নেওয়ার অনুরোধ থাকলো। তাহলে আমাদের উত্তরের জন্য
-                    আপনাকে অপেক্ষা করতে হবে না এবং আপনার মূল্যবান সময় বেঁচে যাবে।
-                </p>
-            </div>
-
-            <!-- Right Side (FAQ Accordion) -->
-            <div class="">
-                <UAccordion :items="faqItems" color="blue" class="" />
-            </div>
+  <section class="py-6 pt-0 sm:py-16 px-6 md:px-20">
+    <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-12">
+      <!-- Left Side (Image and Text) -->
+      <div class="flex justify-start flex-col">
+        <div class="flex items-center h-[220px] overflow-hidden">
+          <Lottie style="height: 400px" :data="Thinking" />
         </div>
-    </section>
+        <h2 class="text-left text-3xl md:text-3xl font-bold mb-1">
+          {{ t("ecommerce_page.faq.heading_line1") }}<br />
+          <span class="text-rose-500">{{ t("ecommerce_page.faq.heading_highlight") }}</span>
+        </h2>
+        <p class="leading-relaxed text-xs sm:text-sm">
+          {{ t("ecommerce_page.faq.subtext") }}
+        </p>
+      </div>
+
+      <!-- Right Side (FAQ Accordion) -->
+      <div class="">
+        <UAccordion :items="faqItems" color="blue" class="" />
+      </div>
+    </div>
+  </section>
 </template>
 
 <script setup>
-import Thinking from '~/assets/lottie/Thinking.json'
-const faqItems = [
+import Thinking from "~/assets/lottie/Thinking.json";
+const { t } = useI18n({ useScope: "global" });
+
+const faqItems = computed(() => [
   {
-    label: 'প্যাকেজ কেনার পর আমি কি কি সুবিধা পাবো?',
-    content: 'আপনি আমাদের প্লান অনুযায়ী একটি সম্পূর্ণ রেডি-টু-লঞ্চ সেলস ফানেল, প্রিমিয়াম প্লাগইন, অটোমেশন সিস্টেম এবং ফুল সাপোর্ট পাবেন।'
+    label: t("ecommerce_page.faq.q1"),
+    content: t("ecommerce_page.faq.a1"),
   },
   {
-    label: 'পেমেন্ট করার পরে কতদিনে কাজ ডেলিভারি পাবো?',
-    content: 'সাধারণত পেমেন্ট নিশ্চিত হওয়ার ৫-৭ কার্যদিবসের মধ্যে আপনার কাজ সম্পূর্ণ করে ডেলিভার করা হবে।'
+    label: t("ecommerce_page.faq.q2"),
+    content: t("ecommerce_page.faq.a2"),
   },
   {
-    label: 'আমাদের কি নিজস্ব ডোমেইন-হোস্টিং লাগবে?',
-    content: 'না, আপনি চাইলে আমাদের হোস্টিং সহ প্যাকেজ নিতে পারেন, অথবা আপনার নিজস্ব ডোমেইন-হোস্টিং ব্যবহার করতে পারেন।'
+    label: t("ecommerce_page.faq.q3"),
+    content: t("ecommerce_page.faq.a3"),
   },
   {
-    label: 'আমি কি নিজের মতো করে কনটেন্ট পরিবর্তন করতে পারবো?',
-    content: 'হ্যাঁ, আমরা এমনভাবে ফানেল ডিজাইন করি যাতে আপনি সহজেই কনটেন্ট এডিট করতে পারেন। পাশাপাশি টিউটোরিয়ালও দিবো।'
+    label: t("ecommerce_page.faq.q4"),
+    content: t("ecommerce_page.faq.a4"),
   },
   {
-    label: 'লাইভ চ্যাট বা ইনভয়েস সিস্টেম কি সব প্যাকেজে থাকবে?',
-    content: 'না, এই ফিচারগুলো নির্দিষ্ট প্যাকেজে অন্তর্ভুক্ত। আপনি চাইলে আলাদাভাবে যুক্তও করতে পারবেন।'
+    label: t("ecommerce_page.faq.q5"),
+    content: t("ecommerce_page.faq.a5"),
   },
   {
-    label: 'ওয়েবসাইট কি মোবাইল ফ্রেন্ডলি হবে?',
-    content: 'অবশ্যই। আমাদের সব ফানেল এবং ওয়েবসাইট ডিজাইন রেসপনসিভ এবং মোবাইল ফ্রেন্ডলি।'
+    label: t("ecommerce_page.faq.q6"),
+    content: t("ecommerce_page.faq.a6"),
   },
   {
-    label: 'প্রজেক্ট ডেলিভারির পর সাপোর্ট পাবো কি?',
-    content: 'হ্যাঁ, প্রতিটি প্যাকেজে নির্দিষ্ট সময়ের জন্য ফ্রি সাপোর্ট থাকে। চাইলে অতিরিক্ত সাপোর্টও নিতে পারবেন।'
+    label: t("ecommerce_page.faq.q7"),
+    content: t("ecommerce_page.faq.a7"),
   },
   {
-    label: 'প্যাকেজ কাস্টমাইজ করা যাবে কি?',
-    content: 'হ্যাঁ, আপনি চাইলে আপনার চাহিদা অনুযায়ী কাস্টমাইজ প্যাকেজ তৈরি করতে পারবেন। আমাদের টিম আপনাকে গাইড করবে।'
-  }
-]
+    label: t("ecommerce_page.faq.q8"),
+    content: t("ecommerce_page.faq.a8"),
+  },
+]);
 </script>
 
 <style lang="scss" scoped></style>

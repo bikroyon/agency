@@ -1,148 +1,130 @@
-<template>
-    <div>
-        <!-- Section Heading -->
-        <div class="text-center mb-6">
-            <h2 class="text-3xl md:text-4xl font-bold">
-                আমাদের কিছু <span class="text-rose-500">কাজ</span>
-            </h2>
-            <p class="mt-2">
-                আমি সবসময় চেষ্টা করি একটা ভালো মানের সার্ভিস ক্লাইন্টদের দিতে। আলহামদুলিল্লাহ্‌ এই ধারাবাহিকতা আমি ২০২০
-                সাল থেকে ধরে রেখেছি
-            </p>
-        </div>
+<script setup lang="ts">
+import gsap from "gsap";
 
-        <!-- Tabs Navigation -->
-        <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-4">
-            <div v-for="(tab, index) in tabs" :key="index" @click="changeTab(index)" :class="[
-                'cursor-pointer p-2 sm:p-4 rounded-lg w-auto shadow transition duration-300',
-                currentTab === index ? 'bg-rose-100 dark:bg-slate-800 border border-rose-300 dark:border-slate-700 shadow-md' : 'border border-slate-300 dark:border-slate-700 hover:bg-slate-50 hover:dark:bg-slate-900'
-            ]">
-                <div class="flex items-start gap-1 sm:gap-3">
-                    <Icon :name="tab.icon" class="text-lg sm:text-2xl text-rose-600" />
-                    <div>
-                        <h4 class="font-bold text-xs sm:text-base">{{ tab.title }}</h4>
-                        <p class="text-xs sm:text-sm text-gray-500">{{ tab.description }}</p>
-                    </div>
-                </div>
-            </div>
-        </div>
+const { t } = useI18n({ useScope: "global" });
+const currentTab = ref(0);
+const tabContent = ref<HTMLElement | null>(null);
+const localePath = useLocalePath();
+// Portfolio tabs (titles and descriptions multilingual)
+const tabs = computed(() => [
+  {
+    title: t("portfolio_page.tabs.landing.title"),
+    description: t("portfolio_page.tabs.landing.description"),
+    icon: "hugeicons:ai-web-browsing",
+    button: { title: t("portfolio_page.tabs.landing.button"), link: "/portfolio" },
+    courses: [
+      {
+        title: "আম বিক্রির ল্যান্ডিং পেইজ",
+        image: "https://placehold.co/400",
+        tags: ["JavaScript", "MongoDB", "React"],
+        description:
+          "This items is related to Landing Page. i can say more about it",
+      },
+      {
+        title: "React Native App Dev",
+        image: "https://placehold.co/400",
+        tags: ["Mobile", "React", "Native"],
+      },
+      {
+        title: "Full Stack JS (MERN)",
+        image: "https://placehold.co/400",
+        tags: ["JavaScript", "MongoDB", "React"],
+      },
+    ],
+  },
+  {
+    title: t("portfolio_page.tabs.ecommerce.title"),
+    description: t("portfolio_page.tabs.ecommerce.description"),
+    icon: "hugeicons:activity-04",
+    button: { title: t("portfolio_page.tabs.ecommerce.button"), link: "/portfolio" },
+    courses: [
+      {
+        title: "UX/UI Design Bootcamp",
+        image: "https://placehold.co/400",
+        tags: ["Design", "Figma", "UX"],
+      },
+    ],
+  },
+  {
+    title: t("portfolio_page.tabs.custom.title"),
+    description: t("portfolio_page.tabs.custom.description"),
+    icon: "hugeicons:ai-beautify",
+    button: { title: t("portfolio_page.tabs.custom.button"), link: "/portfolio" },
+    courses: [
+      {
+        title: "Big Data with Spark",
+        image: "https://placehold.co/400",
+        tags: ["Big Data", "Spark", "ETL"],
+      },
+    ],
+  },
+  {
+    title: t("portfolio_page.tabs.smm.title"),
+    description: t("portfolio_page.tabs.smm.description"),
+    icon: "hugeicons:ai-voice",
+    button: { title: t("portfolio_page.tabs.smm.button"), link: "/portfolio" },
+    courses: [
+      {
+        title: "Digital Marketing",
+        image: "https://placehold.co/400",
+        tags: ["SEO", "Ads", "Strategy"],
+      },
+    ],
+  },
+]);
 
-        <!-- Animated Content -->
-        <div ref="tabContent" class="overflow-hidden p-8 pt-0">
-            <PortfolioTabContent :courses="tabs[currentTab].courses" />
-        </div>
-        <!-- Buttons -->
-        <div class="flex justify-center items-center pb-8 gap-3">
-            <NuxtLink to="/contacts"
-                class="flex justify-center items-center gap-2 bg-rose-600 text-white px-4 py-2 text-sm rounded hover:bg-rose-700">
-                <span>যোগাযোগ করুন</span>
-                <Icon name="hugeicons:contact-book" class="h-4 w-4" />
-            </NuxtLink>
-        </div>
-    </div>
-</template>
-
-<script setup>
-import { ref } from 'vue'
-import gsap from 'gsap'
-const currentTab = ref(0)
-const tabContent = ref(null)
-const tabs = [
-    {
-        title: 'Our Landing Pages',
-        description: '৩০০+ কমপ্লিট · ৩ রানিং',
-        icon: 'mdi:web',
-        button: {
-            title: 'See More',
-            link: '#'
-        },
-        courses: [
-            {
-                title: 'Full Stack JS (MERN)',
-                image: 'https://placehold.co/400',
-                tags: ['JavaScript', 'MongoDB', 'React'],
-                description: 'This items is related to Landing Page. i can say more about it'
-            },
-            {
-                title: 'React Native App Dev',
-                image: 'https://placehold.co/400',
-                tags: ['Mobile', 'React', 'Native'],
-            },
-            {
-                title: 'Full Stack JS (MERN)',
-                image: 'https://placehold.co/400',
-                tags: ['JavaScript', 'MongoDB', 'React'],
-            },
-            {
-                title: 'React Native App Dev',
-                image: 'https://placehold.co/400',
-                tags: ['Mobile', 'React', 'Native'],
-            },
-            {
-                title: 'Full Stack JS (MERN)',
-                image: 'https://placehold.co/400',
-                tags: ['JavaScript', 'MongoDB', 'React'],
-            },
-            {
-                title: 'React Native App Dev',
-                image: 'https://placehold.co/400',
-                tags: ['Mobile', 'React', 'Native'],
-            },
-        ],
-    },
-    {
-        title: 'E-Commerce Website',
-        description: '৫০+ কমপ্লিট · ১ রানিং',
-        icon: 'mdi:lightbulb-on-outline',
-        button: {
-            title: 'See More',
-            link: '#'
-        },
-        courses: [
-            {
-                title: 'UX/UI Design Bootcamp',
-                image: 'https://placehold.co/400',
-                tags: ['Design', 'Figma', 'UX'],
-            },
-        ],
-    },
-    {
-        title: 'Custom Web App',
-        description: '১ কমপ্লিট · ১ রানিং',
-        icon: 'mdi:briefcase-outline',
-        button: {
-            title: 'See More',
-            link: '#'
-        },
-        courses: [
-            {
-                title: 'Digital Marketing',
-                image: 'https://placehold.co/400',
-                tags: ['SEO', 'Ads', 'Strategy'],
-            },
-        ],
-    },
-    {
-        title: 'My Courses',
-        description: '১ রানিং',
-        icon: 'mdi:database',
-        button: {
-            title: 'See More',
-            link: '#'
-        },
-        courses: [
-            {
-                title: 'Big Data with Spark',
-                image: 'https://placehold.co/400',
-                tags: ['Big Data', 'Spark', 'ETL'],
-            },
-        ],
-    },
-]
-
-function changeTab(index) {
-    if (currentTab.value === index) return
-    gsap.fromTo(tabContent.value, { opacity: 0, y: 30 }, { opacity: 1, y: 0, duration: 0.4 })
-    currentTab.value = index
+function changeTab(index: number) {
+  if (currentTab.value === index || !tabContent.value) return;
+  gsap.fromTo(
+    tabContent.value,
+    { opacity: 0, y: 30 },
+    { opacity: 1, y: 0, duration: 0.4 }
+  );
+  currentTab.value = index;
 }
 </script>
+
+<template>
+  <div v-if="tabs.length">
+    <!-- Section Heading -->
+    <div class="text-center mb-4 sm:mb-10 max-w-2xl mx-auto px-3">
+      <h2 class="text-3xl md:text-4xl font-bold">
+        {{ t("portfolio_page.title") }}
+        <span class="text-rose-500">{{ t("portfolio_page.highlight") }}</span>
+      </h2>
+      <p class="text-gray-600 dark:text-gray-300 text-sm sm:text-base mt-2">
+        {{ t("portfolio_page.description") }}
+      </p>
+    </div>
+
+    <!-- Tabs Navigation -->
+    <div class="grid grid-cols-2 sm:grid-cols-4 gap-2 sm:gap-4 mb-4">
+      <div
+        v-for="(tab, index) in tabs"
+        :key="index"
+        @click="changeTab(index)"
+        :class="[
+          'cursor-pointer p-2 sm:p-4 rounded-lg w-auto shadow transition duration-300',
+          currentTab === index
+            ? 'bg-rose-50 dark:bg-slate-800 border border-rose-200 dark:border-slate-700 shadow dark:shadow-slate-950 shadow-rose-300'
+            : 'border border-rose-300 shadow shadow-rose-300 dark:shadow-slate-950 dark:border-slate-700 hover:bg-rose-50 hover:dark:bg-slate-900',
+        ]"
+      >
+        <div class="flex items-start gap-1 sm:gap-3">
+          <Icon :name="tab.icon" class="text-lg sm:text-2xl text-rose-600" />
+          <div>
+            <h4 class="font-bold text-xs sm:text-base">{{ tab.title }}</h4>
+            <p class="text-xs sm:text-sm text-gray-500">
+              {{ tab.description }}
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Animated Content -->
+    <div ref="tabContent" class="overflow-hidden p-2 md:p-4 pt-0">
+      <PortfolioTabContent :courses="tabs[currentTab].courses" />
+    </div>
+  </div>
+</template>
