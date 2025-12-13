@@ -1,28 +1,23 @@
 <template>
-  <section class="py-16 pt-8 relative overflow-hidden">
-    <!-- Background Pattern -->
-      <div
-        class="-z-10 absolute bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#8080800a_1px,transparent_1px)] bg-[size:14px_24px]"
-      ></div>
-      <div
-        class="-z-10 absolute bottom-0 left-0 right-0 top-0 h-full opacity-85 w-full bg-[radial-gradient(circle_500px_at_50%_300px,#fbfbfb36,#000)]"
-      ></div>
+  <section class="py-8 md:py-16 pt-8 md:pt-8">
+    <div
+      class="absolute -z-10 bottom-0 left-0 right-0 top-0 bg-[linear-gradient(to_right,#4f4f4f2e_1px,transparent_1px),linear-gradient(to_bottom,#4f4f4f2e_1px,transparent_1px)] bg-[size:14px_24px] [mask-image:radial-gradient(ellipse_80%_50%_at_50%_0%,#000_70%,transparent_110%)]"
+    ></div>
 
 
     <div class="max-w-6xl mx-auto px-4 pt-12 text-center">
       <!-- Heading -->
       <h1 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
-        আপনার ব্যবসার জন্য একটি
-        <span class="text-rose-500">কাস্টম ওয়েব অ্যাপ</span>— যা শুধু
-        ফিচারসমৃদ্ধ নয়, বরং পারফরম্যান্স-ড্রিভেন এবং স্কেলেবল।
+        {{ t("custom_app.hero.heading_first") }}
+        <span class="text-rose-500">{{
+          t("custom_app.hero.heading_highlight")
+        }}</span>
+        {{ t("custom_app.hero.heading_last") }}
       </h1>
 
       <!-- Description -->
       <p class="mt-4 text-sm sm:text-lg text-gray-700 dark:text-gray-300">
-        আমরা তৈরি করি আপনার ব্যবসার চাহিদা অনুযায়ী কাস্টম ওয়েব অ্যাপ্লিকেশন—
-        Laravel, Node.js, Vue.js, Nuxt.js ব্যবহার করে। দ্রুত, নিরাপদ, স্কেলেবল
-        এবং অটোমেশন–ফোকাসড সমাধান যা আপনার ব্যবসাকে ডিজিটাল প্রতিযোগিতায় এগিয়ে
-        রাখে।
+        {{ t("custom_app.hero.description") }}
       </p>
 
       <!-- CTA Buttons -->
@@ -32,14 +27,14 @@
           class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 rounded-md hover:bg-rose-700 transition"
         >
           <Icon name="hugeicons:whatsapp" />
-          <span>ফ্রি কনসালটেশন নিন</span>
+          <span>{{ t("custom_app.hero.cta_primary") }}</span>
         </NuxtLink>
 
         <NuxtLink
           to="#features"
-          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-100 hover:dark:bg-slate-800 transition"
+          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-100 hover:dark:bg-rose-500 hover:text-white transition"
         >
-          <span>ফিচার দেখুন</span>
+          <span>{{ t("custom_app.hero.cta_secondary") }}</span>
           <Icon name="hugeicons:arrow-down-double" />
         </NuxtLink>
       </div>
@@ -63,6 +58,8 @@
   </section>
 </template>
 
-<script setup></script>
+<script setup>
+const { t } = useI18n({ useScope: "global" });
+</script>
 
 <style scoped></style>

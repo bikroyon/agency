@@ -49,7 +49,7 @@ const services = computed(() => [
       class="absolute inset-0 h-full w-full opacity-40 -z-10 bg-[radial-gradient(#99a1af_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"
     ></div>
     <div
-      class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 sm:gap-12 pt-20"
+      class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 sm:gap-12 py-8"
     >
       <!-- Left Side: Image and Text -->
       <div class="w-full lg:w-[40%] text-center lg:text-left">

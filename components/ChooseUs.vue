@@ -3,12 +3,14 @@
     <div class="max-w-5xl mx-auto px-4">
 
       <!-- Heading -->
+      <!-- Heading -->
       <div class="text-center mb-10">
         <h2 class="text-3xl sm:text-4xl font-bold">
-          কেন আমাদের <span class="text-rose-500">বেছে নিবেন?</span>
+          {{ t('custom_app.custom_app_why_choose_section.heading_first') }}
+          <span class="text-rose-500">{{ t('custom_app.custom_app_why_choose_section.heading_highlight') }}</span>
         </h2>
         <p class="mt-3 text-gray-700 dark:text-gray-300 text-sm sm:text-lg">
-          আমরা শুধু ওয়েব অ্যাপ তৈরি করি না — আপনার ব্যবসাকে স্কেল, অটোমেট ও দ্রুত বৃদ্ধি করার সমাধান তৈরি করি।
+          {{ t('custom_app.custom_app_why_choose_section.subheading') }}
         </p>
       </div>
 
@@ -39,45 +41,19 @@
   </section>
 </template>
 
-<script setup>
-const whyChoose = [
-  {
-    icon: "hugeicons:shield-key",
-    title: "এন্টারপ্রাইজ লেভেল সিকিউরিটি",
-    description:
-      "ডেটা এনক্রিপশন, সিকিউর সার্ভার, রোল-ম্যানেজমেন্টসহ সর্বোচ্চ সিকিউরিটি নিশ্চিত করে অ্যাপ তৈরি করি।"
-  },
-  {
-    icon: "hugeicons:settings-02",
-    title: "১০০% কাস্টম সলিউশন",
-    description:
-      "আপনার ব্যবসার উপযোগী কাস্টম ফিচার, ড্যাশবোর্ড, অটোমেশন এবং API ইন্টিগ্রেশন যুক্ত করা হয়।"
-  },
-  {
-    icon: "hugeicons:dashboard-speed-01",
-    title: "সুপার ফাস্ট পারফরম্যান্স",
-    description:
-      "অপ্টিমাইজড কোড, ক্যাশিং ও লাইটওয়েট আর্কিটেকচার ব্যবহার করে দ্রুত ও স্মুথ পারফরম্যান্স নিশ্চিত করি।"
-  },
-  {
-    icon: "hugeicons:agreement-02",
-    title: "দীর্ঘমেয়াদী সাপোর্ট ও মেইনটেন্যান্স",
-    description:
-      "লঞ্চের পরেও নিয়মিত আপডেট, বাগ ফিক্স, মনিটরিং ও টেকনিক্যাল সাপোর্ট প্রদান করি।"
-  },
-  {
-    icon: "hugeicons:time-02",
-    title: "সময়মতো প্রজেক্ট ডেলিভারি",
-    description:
-      "এজাইল মেথডোলজি, স্প্রিন্ট ও টাইমলাইনে কঠোরভাবে কাজ করি যাতে প্রতিটি প্রজেক্ট সময়মতো শেষ হয়।"
-  },
-  {
-    icon: "hugeicons:activity-02",
-    title: "ROI ফোকাসড ডেভেলপমেন্ট",
-    description:
-      "আপনার ব্যবসার স্কেলিং, অটোমেশন ও খরচ সেভিং-এর দিকে নজর রেখে সলিউশন তৈরি করি।"
-  }
-];
+<script setup lang="ts">
+import { computed } from 'vue'
+const { t } = useI18n({ useScope: 'global' })
+
+const whyChoose = computed(() => [
+  { icon: 'mdi-shield-key', title: t('custom_app.custom_app_why_choose_section.items.0.title'), description: t('custom_app.custom_app_why_choose_section.items.0.description') },
+  { icon: 'mdi-cog-outline', title: t('custom_app.custom_app_why_choose_section.items.1.title'), description: t('custom_app.custom_app_why_choose_section.items.1.description') },
+  { icon: 'mdi-speedometer', title: t('custom_app.custom_app_why_choose_section.items.2.title'), description: t('custom_app.custom_app_why_choose_section.items.2.description') },
+  { icon: 'mdi-file-check-outline', title: t('custom_app.custom_app_why_choose_section.items.3.title'), description: t('custom_app.custom_app_why_choose_section.items.3.description') },
+  { icon: 'mdi-timer-sand', title: t('custom_app.custom_app_why_choose_section.items.4.title'), description: t('custom_app.custom_app_why_choose_section.items.4.description') },
+  { icon: 'mdi-finance', title: t('custom_app.custom_app_why_choose_section.items.5.title'), description: t('custom_app.custom_app_why_choose_section.items.5.description') },
+])
 </script>
+
 
 <style scoped></style>

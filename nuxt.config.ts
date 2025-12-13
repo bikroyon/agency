@@ -102,10 +102,11 @@ export default defineNuxtConfig({
   ],
   i18n: {
     baseUrl: "https://bikroyon.com",
-    strategy: "no_prefix",
+    strategy: "prefix",
     defaultLocale: "bn",
     locales: [
       { code: "bn", iso: "bn-BD", file: "bn.json", name: "বাংলা" },
+      { code: "en", iso: "en-EN", file: "en.json", name: "English" },
     ],
     detectBrowserLanguage: {
       useCookie: true,
@@ -114,6 +115,7 @@ export default defineNuxtConfig({
     },
     vueI18n: "./i18n.config.ts",
   },
+  
   css: ["~/assets/css/main.css"],
   lottie: {
     componentName: "Lottie",

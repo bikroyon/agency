@@ -1,5 +1,5 @@
 <template>
-  <div>
+   <div class="mx-auto container p-2 md:p-16">
     <CustomAppHero />
     <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
       <CustomAppWhy />

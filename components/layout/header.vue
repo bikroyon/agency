@@ -42,7 +42,7 @@ const items = computed(() => [
         label: t("menu.smm"),
         description: t("menu.smm_desc"),
         icon: "hugeicons:calendar-love-01",
-        to: localePath("/landing-page-app"),
+        to: localePath("/social-media-management"),
       },
     ],
   },

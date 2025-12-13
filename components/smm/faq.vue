@@ -7,13 +7,13 @@
           <Lottie style="height: 400px" :data="Thinking" />
         </div>
         <h2 class="text-left text-3xl md:text-3xl font-bold mb-1">
-          {{ t("custom_app.faq_section.heading_first") }}<br />
+          {{ t("smm.faq_section.heading_first") }}<br />
           <span class="text-rose-500">{{
-            t("custom_app.faq_section.heading_highlight")
+            t("smm.faq_section.heading_highlight")
           }}</span>
         </h2>
         <p class="leading-relaxed text-xs sm:text-sm">
-          {{ t("custom_app.faq_section.description") }}
+          {{ t("smm.faq_section.description") }}
         </p>
       </div>
       <!-- Right Side (FAQ Accordion) -->
@@ -33,43 +33,43 @@ const { t } = useI18n({ useScope: "global" });
 const faqItems = [
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.0.label"),
-    content: t("custom_app.faq_section.items.0.content"),
+    label: t("smm.faq_section.items.0.label"),
+    content: t("smm.faq_section.items.0.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.1.label"),
-    content: t("custom_app.faq_section.items.1.content"),
+    label: t("smm.faq_section.items.1.label"),
+    content: t("smm.faq_section.items.1.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.2.label"),
-    content: t("custom_app.faq_section.items.2.content"),
+    label: t("smm.faq_section.items.2.label"),
+    content: t("smm.faq_section.items.2.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.3.label"),
-    content: t("custom_app.faq_section.items.3.content"),
+    label: t("smm.faq_section.items.3.label"),
+    content: t("smm.faq_section.items.3.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.4.label"),
-    content: t("custom_app.faq_section.items.4.content"),
+    label: t("smm.faq_section.items.4.label"),
+    content: t("smm.faq_section.items.4.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.5.label"),
-    content: t("custom_app.faq_section.items.5.content"),
+    label: t("smm.faq_section.items.5.label"),
+    content: t("smm.faq_section.items.5.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.6.label"),
-    content: t("custom_app.faq_section.items.6.content"),
+    label: t("smm.faq_section.items.6.label"),
+    content: t("smm.faq_section.items.6.content"),
   },
   {
     icon: "mdi-help-circle-outline",
-    label: t("custom_app.faq_section.items.7.label"),
-    content: t("custom_app.faq_section.items.7.content"),
+    label: t("smm.faq_section.items.7.label"),
+    content: t("smm.faq_section.items.7.content"),
   },
 ];
 </script>

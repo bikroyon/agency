@@ -4,15 +4,16 @@
     "home": "Home",
     "services": "Services",
     "landing_page": "Landing Page Design",
-    "landing_page_desc": "Attractive landing pages for new entrepreneurs.",
-    "ecommerce": "E-commerce Website",
-    "ecommerce_desc": "Custom WordPress e-commerce solutions to boost sales.",
-    "custom_app": "Custom Web App",
-    "custom_app_desc": "We use Laravel, Vue.js & MySQL for scalable apps.",
-    "smm": "Custom Landing page App",
-    "smm_desc": "Fraud Checking, Modern UI, User dashboard and Many More.",
+    "landing_page_desc": "Clean, attractive landing pages that turn visitors into customers.",
+    "ecommerce": "WordPress Website Design",
+    "ecommerce_desc": "Custom WordPress websites built to boost online sales.",
+    "custom_app": "Custom Web App Development",
+    "custom_app_desc": "Scalable web apps built with Laravel, Vue.js, and MySQL.",
+    "smm": "Social Media Management",
+    "smm_desc": "We grow your brand and build a strong social media presence.",
     "portfolio": "Case Study",
     "about": "About Us",
+    "blog": "Blogs",
     "contact": "Contact"
   },
   "footer": {
@@ -523,21 +524,21 @@
       "subheading": "We don’t just build websites — we solve real business problems and turn visitors into loyal customers.",
 
       "problems_title": "Common WordPress Website Problems",
-"problems": [
-    "Generic design, zero brand match",
-    "Slow loading, high visitor loss",
-    "No automation (Manual work only)",
-    "Poor security, high hacking risk",
-    "Cannot handle growth (Non-scalable)"
-  ],
-  "solutions_title": "Our Expert WordPress Fixes",
-  "solutions": [
-    "100% Custom, brand-focused design",
-    "Guaranteed lightning-fast speed (95+ score)",
-    "Smart automation for maximum time savings",
-    "Bank-level security and protection",
-    "Fully scalable for unlimited business growth"
-  ]
+      "problems": [
+        "Generic design, zero brand match",
+        "Slow loading, high visitor loss",
+        "No automation (Manual work only)",
+        "Poor security, high hacking risk",
+        "Cannot handle growth (Non-scalable)"
+      ],
+      "solutions_title": "Our Expert WordPress Fixes",
+      "solutions": [
+        "100% Custom, brand-focused design",
+        "Guaranteed lightning-fast speed (95+ score)",
+        "Smart automation for maximum time savings",
+        "Bank-level security and protection",
+        "Fully scalable for unlimited business growth"
+      ]
     },
     "ecommerce_benefits": {
       "heading_first": "What You Gain with a Professional",
@@ -713,6 +714,337 @@
           ]
         }
       }
+    }
+  },
+  "custom_app": {
+    "hero": {
+      "heading_first": "A Custom Web App for Your Business",
+      "heading_highlight": "Built for Performance",
+      "heading_last": "— scalable, secure, and feature-rich.",
+
+      "description": "We build custom web applications tailored to your business needs using Laravel, Node.js, Vue.js, and Nuxt.js. Fast, secure, scalable, and automation-focused solutions that help your business stay ahead in the digital competition.",
+
+      "cta_primary": "Get a Free Consultation",
+      "cta_secondary": "Learn More"
+    },
+    "why": {
+      "title_before": "Why",
+      "title_highlight": "Custom Web Apps",
+      "title_after": "are Important for Your Business?",
+
+      "subtitle": "Ready-made websites don’t always fit business needs. Custom web apps are built around your workflow, goals, and user experience—making them smarter, faster, more secure, and high ROI-driven.",
+
+      "benefits": [
+        {
+          "icon": "mdi:cog-outline",
+          "title": "Built for Your Business",
+          "desc": "Every feature is designed around your actual business workflow—nothing unnecessary."
+        },
+        {
+          "icon": "mdi:chart-line",
+          "title": "Scalable & Performance Optimized",
+          "desc": "Your app stays fast and stable even as users grow."
+        },
+        {
+          "icon": "mdi:shield-check",
+          "title": "Enterprise-Level Security",
+          "desc": "Built with Laravel, Node.js, and modern security standards."
+        },
+        {
+          "icon": "mdi:autorenew",
+          "title": "Automation Ready",
+          "desc": "Save time and cost using n8n, Zapier, or custom workflows."
+        },
+        {
+          "icon": "mdi:storefront-outline",
+          "title": "Better User Experience",
+          "desc": "Fast, intuitive apps improve customer satisfaction and sales."
+        },
+        {
+          "icon": "mdi:tools",
+          "title": "Fully Customizable",
+          "desc": "Design, features, dashboards, and reports—everything your way."
+        }
+      ],
+
+      "cta": "Talk to Us Directly"
+    },
+    "industries_section": {
+      "heading_before": "We create solutions for",
+      "heading_highlight": "these industries",
+      "heading_after": "",
+
+      "subheading": "We build custom web apps, automation systems, and digital solutions for various sectors.",
+
+      "items": [
+        {
+          "title": "E-commerce & Online Shops",
+          "description": "Complete custom systems including order management, inventory, payments, and automation."
+        },
+        {
+          "title": "Healthcare & Clinics",
+          "description": "Appointments, patient data management, reporting, and automated solutions."
+        },
+        {
+          "title": "Educational Institutions & Coaching",
+          "description": "Online classes, student management, and exam modules."
+        },
+        {
+          "title": "Logistics & Courier Services",
+          "description": "Parcel tracking, delivery routing, and automated billing systems."
+        },
+        {
+          "title": "Restaurants & Cloud Kitchens",
+          "description": "Order management, kitchen printing, stock tracking, and delivery solutions."
+        },
+        {
+          "title": "Corporate & Agencies",
+          "description": "Workflow automation, portals, and custom dashboard systems."
+        }
+      ]
+    },
+    "custom_app_problem_section": {
+      "heading_first": "Why our",
+      "heading_highlight": "Custom Web App",
+      "heading_last": "is exceptional?",
+      "subheading": "We understand the problem and create solutions — making your business stronger and smarter.",
+
+      "problems": {
+        "title": "Common Business Problems",
+        "items": [
+          "Your website lacks features according to your business needs.",
+          "Slow loading causes customers to lose interest.",
+          "Processes are manual due to lack of automation.",
+          "Weak security puts your data at risk.",
+          "Not scalable — the system crashes as your business grows."
+        ]
+      },
+
+      "solutions": {
+        "title": "Our Custom Solutions",
+        "items": [
+          "Fully customized web app tailored to your business model.",
+          "Extremely fast, lightweight, and optimized for performance.",
+          "Automated systems — saves time and reduces errors.",
+          "Enterprise-grade security layers and protection.",
+          "Scalable architecture — system grows as your business grows."
+        ]
+      }
+    },
+    "custom_app_why_choose_section": {
+      "heading_first": "Why",
+      "heading_highlight": "Choose Us?",
+      "subheading": "We don’t just build web apps — we create solutions to scale, automate, and accelerate your business growth.",
+      "items": [
+        {
+          "title": "Enterprise-Level Security",
+          "description": "We build apps with data encryption, secure servers, and role management to ensure top-notch security."
+        },
+        {
+          "title": "100% Custom Solutions",
+          "description": "Custom features, dashboards, automation, and API integrations tailored to your business needs."
+        },
+        {
+          "title": "Super-Fast Performance",
+          "description": "Optimized code, caching, and lightweight architecture for fast and smooth performance."
+        },
+        {
+          "title": "Long-Term Support & Maintenance",
+          "description": "Regular updates, bug fixes, monitoring, and technical support even after launch."
+        },
+        {
+          "title": "On-Time Project Delivery",
+          "description": "We follow agile methodology, sprints, and strict timelines to ensure every project is delivered on time."
+        },
+        {
+          "title": "ROI-Focused Development",
+          "description": "We focus on scaling, automation, and cost-saving solutions to maximize your ROI."
+        }
+      ]
+    },
+    "faq_section": {
+      "heading_first": "Frequently Asked",
+      "heading_highlight": "Questions & Answers",
+      "description": "We have listed answers to some common questions here. Please read this list before messaging us. This will save your time and you will get immediate answers.",
+      "items": [
+        {
+          "label": "What is custom app development?",
+          "content": "Custom app development is creating a fully custom web or mobile app tailored to your business requirements."
+        },
+        {
+          "label": "What types of apps can be built with Laravel?",
+          "content": "With Laravel, you can build e-commerce, management systems, CRM, ERP, booking systems, SaaS apps, and any type of web application."
+        },
+        {
+          "label": "Why use Node.js?",
+          "content": "Node.js is used for real-time apps, chat systems, API development, scalable backend, and high-performance applications."
+        },
+        {
+          "label": "What can Vue.js do?",
+          "content": "Vue.js is used to build fast-loading SPAs, dashboards, admin panels, interactive UI, and modern front-end experiences."
+        },
+        {
+          "label": "How long does app development take?",
+          "content": "Basic apps take 7–15 days, mid-level apps 15–30 days, and large projects 30–60 days to complete."
+        },
+        {
+          "label": "Do you provide support after app delivery?",
+          "content": "Yes, free support is provided for a limited time after project delivery. Additional support is available via maintenance plans."
+        },
+        {
+          "label": "What is the cost of development?",
+          "content": "Costs depend on app features. Small apps cost 15–30k, mid-level apps 30–70k, and custom systems may exceed 70k."
+        },
+        {
+          "label": "How can I place an order?",
+          "content": "You can place an order by contacting us directly via our website, Facebook page, or WhatsApp."
+        }
+      ]
+    }
+  },
+  "smm": {
+    "hero": {
+      "heading_first": "We Manage",
+      "heading_highlight": "Social Media",
+      "heading_last": "with custom content to grow your brand",
+      "description": "We design posts, stories, graphics, and campaigns for Facebook, Instagram, LinkedIn, Twitter, and more. Strengthen your brand identity, boost customer engagement, and take your social presence to a professional level.",
+      "cta_primary": "Contact Us",
+      "cta_secondary": "Learn More",
+      "video": "https://youtu.be/ObMfg8EcXGY?si=4WizBhoq9MvNz0H9"
+    },
+    "why": {
+      "heading_first": "Our",
+      "heading_highlight": "Solutions",
+      "heading_last": "",
+      "subheading": "Ready-made templates can't always meet your marketing needs. Our custom SMM services are tailored to your business goals, brand, and customer engagement—fast, effective, and ROI-focused.",
+      "benefits": [
+        {
+          "title": "Content Creation",
+          "desc": "Creative posts, captions, and visual designs for social media."
+        },
+        {
+          "title": "Account Management",
+          "desc": "Planning, scheduling, and monitoring content across all your brand accounts."
+        },
+        {
+          "title": "Ad Campaign Optimization",
+          "desc": "Managing and customizing Facebook, Instagram, and LinkedIn ad campaigns."
+        },
+        {
+          "title": "Influencer & Collaboration",
+          "desc": "Boost engagement with relevant influencers and brand partnerships."
+        },
+        {
+          "title": "Analytics & Reporting",
+          "desc": "Real-time reports and analysis to improve marketing strategy."
+        },
+        {
+          "title": "Full Customization",
+          "desc": "Everything tailored according to your brand’s tone, visuals, and strategy."
+        }
+      ],
+      "cta": "Start Service Now"
+    },
+    "prob_solve_smm": {
+      "heading_first": "Why",
+      "heading_highlight": "Exceptional",
+      "heading_last": "Our Services",
+      "subheading": "We manage your social media profiles and campaigns — making your brand stronger and more customer-focused.",
+
+      "problems": {
+        "title": "Common Problems",
+        "items": [
+          "Irregular posting on social media platforms.",
+          "Low follower growth and engagement.",
+          "Inconsistent brand visuals and identity.",
+          "Lead or conversion tracking is not accurate.",
+          "Limited resources and time make campaign management difficult."
+        ]
+      },
+
+      "solutions": {
+        "title": "Our Custom Solutions",
+        "items": [
+          "Regular and planned social media content.",
+          "Strategies to increase engagement and followers.",
+          "Maintain brand consistency with strong visual identity.",
+          "Lead tracking and reporting for better insights.",
+          "Automation and scheduled posting to save time and cost."
+        ]
+      }
+    },
+    "smm_defination": {
+      "what_is": " Social Media Management",
+      "what_is_highlight": "What is",
+      "what_is_description": "Social Media Management (SMM) is a process that increases your brand’s online presence and customer engagement. We provide planned content, posting, engagement, and reporting.",
+
+      "why_needed": "Why ",
+      "why_needed_highlight": "it is important for your business?",
+      "why_needed_description": "Without effective social media presence, brands may lose visibility and sales. SMM aligns with your business goals, audience, and marketing strategy.",
+
+      "benefits_heading": "Benefits of Social Media Management",
+      "benefits_list": [
+        "Regular and planned posting",
+        "Follower growth and engagement",
+        "Maintaining brand consistency",
+        "Lead tracking and reporting",
+        "Maximized ROI",
+        "Save time and cost",
+        "Custom campaign strategy",
+        "Increased brand visibility"
+      ]
+    },
+    "portfolio": {
+      "heading_first": "Buisness",
+      "heading_highlight": "We Managed",
+      "subheading": "Our landing pages are not just beautiful—they are psychologically optimized to convert.",
+      "images": [
+        "https://picsum.photos/468/468?random=1",
+        "https://picsum.photos/468/468?random=2",
+        "https://picsum.photos/468/468?random=3",
+        "https://picsum.photos/468/468?random=4",
+        "https://picsum.photos/468/468?random=5",
+        "https://picsum.photos/468/468?random=6"
+      ]
+    },
+    "faq_section": {
+      "heading_first": "Frequently Asked",
+      "heading_highlight": "Questions",
+      "description": "We have listed common questions about Social Media Management (SMM) here. Please read this list before messaging us. This will save your time and help you get answers quickly.",
+      "items": [
+        {
+          "label": "What is Social Media Management?",
+          "content": "Social Media Management (SMM) is a process to enhance your brand's online presence and improve customer engagement."
+        },
+        {
+          "label": "Why is SMM important?",
+          "content": "Without a social media presence, brands may lose visibility and sales. SMM aligns with your business goals, audience, and marketing strategy."
+        },
+        {
+          "label": "What services does SMM provide?",
+          "content": "Content creation, posting, engagement, analytics, and reporting—all are included in SMM services."
+        },
+        {
+          "label": "How often are posts made?",
+          "content": "Posts are made weekly or daily depending on your brand’s needs and strategy."
+        },
+        {
+          "label": "How is follower growth achieved?",
+          "content": "Organic and paid follower growth is achieved through strategic content, engagement, and advertisements."
+        },
+        {
+          "label": "Will I get reporting and analytics?",
+          "content": "Yes, we provide regular reports and analytics to track your business success."
+        },
+        {
+          "label": "How much does SMM cost?",
+          "content": "Cost depends on the package and services. Small businesses have basic packages, and larger brands have custom packages."
+        },
+        {
+          "label": "How can I order SMM services?",
+          "content": "You can directly contact us via website, Facebook page, or WhatsApp to order SMM services."
+        }
+      ]
     }
   }
 }

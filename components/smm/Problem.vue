@@ -4,14 +4,14 @@
       <!-- Heading -->
       <div class="text-center mb-12">
         <h2 class="text-3xl sm:text-4xl font-bold">
-          {{ t("custom_app.custom_app_problem_section.heading_first") }}
+          {{ t("smm.prob_solve_smm.heading_first") }}
           <span class="text-rose-500">
-            {{ t("custom_app.custom_app_problem_section.heading_highlight") }}
+            {{ t("smm.prob_solve_smm.heading_highlight") }}
           </span>
-          {{ t("custom_app.custom_app_problem_section.heading_last") }}
+          {{ t("smm.prob_solve_smm.heading_last") }}
         </h2>
         <p class="mt-3 text-gray-600 dark:text-gray-300 text-sm sm:text-lg">
-          {{ t("custom_app.custom_app_problem_section.subheading") }}
+          {{ t("smm.prob_solve_smm.subheading") }}
         </p>
       </div>
 
@@ -20,7 +20,7 @@
         <!-- Problems -->
         <div class="p-6 bg-gray-50 dark:bg-slate-800/60 rounded-xl shadow">
           <h3 class="text-xl font-semibold mb-4 text-red-500">
-            {{ t("custom_app.custom_app_problem_section.problems.title") }}
+            {{ t("smm.prob_solve_smm.problems.title") }}
           </h3>
           <ul class="space-y-4">
             <li
@@ -39,7 +39,7 @@
           <h3
             class="text-xl font-semibold mb-4 text-rose-600 dark:text-rose-400"
           >
-            {{ t("custom_app.custom_app_problem_section.solutions.title") }}
+            {{ t("smm.prob_solve_smm.solutions.title") }}
           </h3>
           <ul class="space-y-4">
             <li
@@ -65,23 +65,23 @@ const { t } = useI18n({ useScope: "global" });
 const problems = computed(() => [
   {
     icon: "hugeicons:cancel-01",
-    text: t("custom_app.custom_app_problem_section.problems.items.0"),
+    text: t("smm.prob_solve_smm.problems.items.0"),
   },
   {
     icon: "hugeicons:cancel-01",
-    text: t("custom_app.custom_app_problem_section.problems.items.1"),
+    text: t("smm.prob_solve_smm.problems.items.1"),
   },
   {
     icon: "hugeicons:cancel-01",
-    text: t("custom_app.custom_app_problem_section.problems.items.2"),
+    text: t("smm.prob_solve_smm.problems.items.2"),
   },
   {
     icon: "hugeicons:cancel-01",
-    text: t("custom_app.custom_app_problem_section.problems.items.3"),
+    text: t("smm.prob_solve_smm.problems.items.3"),
   },
   {
     icon: "hugeicons:cancel-01",
-    text: t("custom_app.custom_app_problem_section.problems.items.4"),
+    text: t("smm.prob_solve_smm.problems.items.4"),
   },
 ]);
 
@@ -89,23 +89,23 @@ const problems = computed(() => [
 const solutions = computed(() => [
   {
     icon: "hugeicons:checkmark-circle-01",
-    text: t("custom_app.custom_app_problem_section.solutions.items.0"),
+    text: t("smm.prob_solve_smm.solutions.items.0"),
   },
   {
     icon: "hugeicons:checkmark-circle-01",
-    text: t("custom_app.custom_app_problem_section.solutions.items.1"),
+    text: t("smm.prob_solve_smm.solutions.items.1"),
   },
   {
     icon: "hugeicons:checkmark-circle-01",
-    text: t("custom_app.custom_app_problem_section.solutions.items.2"),
+    text: t("smm.prob_solve_smm.solutions.items.2"),
   },
   {
     icon: "hugeicons:checkmark-circle-01",
-    text: t("custom_app.custom_app_problem_section.solutions.items.3"),
+    text: t("smm.prob_solve_smm.solutions.items.3"),
   },
   {
     icon: "hugeicons:checkmark-circle-01",
-    text: t("custom_app.custom_app_problem_section.solutions.items.4"),
+    text: t("smm.prob_solve_smm.solutions.items.4"),
   },
 ]);
 </script>
