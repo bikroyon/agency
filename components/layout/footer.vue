@@ -48,7 +48,7 @@ const { t } = useI18n({ useScope: "global" });
             }}</NuxtLink>
           </li>
           <li>
-            <NuxtLink :to="$localePath('/landing-page-app')" class="">{{
+            <NuxtLink :to="$localePath('/social-media-management')" class="">{{
               t("footer.services.ai")
             }}</NuxtLink>
           </li>

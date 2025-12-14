@@ -12,7 +12,7 @@ const { t } = useI18n({ useScope: "global" });
       <div class="max-w-xl flex items-center flex-col">
         <div class="text-left sm:pl-10">
           <!-- Heading -->
-          <h2 class="text-3xl md:text-3xl font-bold">
+          <h2 class="text-2xl md:text-3xl font-bold">
             {{ t("support.title") }}
             <span class="text-rose-500">{{ t("support.highlight") }}</span>
             {{ t("support.subtitle") }}

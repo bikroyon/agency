@@ -296,7 +296,7 @@
     "heading_first": "Our",
     "heading_highlight": "Pricing Plans",
     "subheading": "Our landing pages are not only beautiful—they are psychologically optimized for high conversion.",
-    "money_symbole": "৳",
+    "money_symbole": "$",
     "recomended": "Our Suggested",
     "money_per": "/Project",
     "toggle_left": "Without",
@@ -904,13 +904,13 @@
   },
   "smm": {
     "hero": {
-      "heading_first": "We Manage",
+      "heading_first": "We Grow Brands Through",
       "heading_highlight": "Social Media",
-      "heading_last": "with custom content to grow your brand",
-      "description": "We design posts, stories, graphics, and campaigns for Facebook, Instagram, LinkedIn, Twitter, and more. Strengthen your brand identity, boost customer engagement, and take your social presence to a professional level.",
-      "cta_primary": "Contact Us",
-      "cta_secondary": "Learn More",
-      "video": "https://youtu.be/ObMfg8EcXGY?si=4WizBhoq9MvNz0H9"
+      "heading_last": "with strategy-driven content and smart automation",
+      "description": "We don’t just post—we plan, create, and optimize. From scroll-stopping content to performance-focused campaigns across Facebook, Instagram, LinkedIn, X (Twitter), and more, we help brands build authority, increase engagement, and turn followers into customers.",
+      "cta_primary": "Get a Free Consultation",
+      "cta_secondary": "Know More About us",
+      "video": "https://www.youtube.com/embed/vDNcC0XHXMg?si=Z2xRK87g8ZbcaqZE"
     },
     "why": {
       "heading_first": "Our",
@@ -920,35 +920,36 @@
       "benefits": [
         {
           "title": "Content Creation",
-          "desc": "Creative posts, captions, and visual designs for social media."
+          "desc": "Creative posts, captions, and graphics designed to capture attention, boost engagement, and strengthen your brand identity."
         },
         {
           "title": "Account Management",
-          "desc": "Planning, scheduling, and monitoring content across all your brand accounts."
+          "desc": "Strategic planning, scheduling, and monitoring across all your social accounts for consistent branding and professional presence."
         },
         {
           "title": "Ad Campaign Optimization",
-          "desc": "Managing and customizing Facebook, Instagram, and LinkedIn ad campaigns."
+          "desc": "Manage and optimize Facebook, Instagram, and LinkedIn ads to maximize ROI, generate leads, and increase conversions."
         },
         {
           "title": "Influencer & Collaboration",
-          "desc": "Boost engagement with relevant influencers and brand partnerships."
+          "desc": "Partner with relevant influencers and brands to expand reach, credibility, and audience engagement."
         },
         {
           "title": "Analytics & Reporting",
-          "desc": "Real-time reports and analysis to improve marketing strategy."
+          "desc": "Real-time insights and performance reports to refine strategies and ensure measurable results."
         },
         {
           "title": "Full Customization",
-          "desc": "Everything tailored according to your brand’s tone, visuals, and strategy."
+          "desc": "Tailored strategies and campaigns aligned with your brand’s tone, visuals, and business goals."
         }
       ],
-      "cta": "Start Service Now"
+      "cta": "Free Consultation",
+      "cta_pricing": "See Pricing"
     },
     "prob_solve_smm": {
-      "heading_first": "Why",
+      "heading_first": "Why We are",
       "heading_highlight": "Exceptional",
-      "heading_last": "Our Services",
+      "heading_last": "",
       "subheading": "We manage your social media profiles and campaigns — making your brand stronger and more customer-focused.",
 
       "problems": {
@@ -979,7 +980,7 @@
       "what_is_description": "Social Media Management (SMM) is a process that increases your brand’s online presence and customer engagement. We provide planned content, posting, engagement, and reporting.",
 
       "why_needed": "Why ",
-      "why_needed_highlight": "it is important for your business?",
+      "why_needed_highlight": "it is important?",
       "why_needed_description": "Without effective social media presence, brands may lose visibility and sales. SMM aligns with your business goals, audience, and marketing strategy.",
 
       "benefits_heading": "Benefits of Social Media Management",
@@ -995,9 +996,9 @@
       ]
     },
     "portfolio": {
-      "heading_first": "Buisness",
-      "heading_highlight": "We Managed",
-      "subheading": "Our landing pages are not just beautiful—they are psychologically optimized to convert.",
+      "heading_first": "Our",
+      "heading_highlight": " Work",
+      "subheading": "We manage, design, and grow social media pages with strategic content that drives results.",
       "images": [
         "https://picsum.photos/468/468?random=1",
         "https://picsum.photos/468/468?random=2",
@@ -1045,6 +1046,51 @@
           "content": "You can directly contact us via website, Facebook page, or WhatsApp to order SMM services."
         }
       ]
+    },
+    "pricing": {
+      "heading_first": "Our",
+      "heading_highlight": "Service Pricing",
+      "subheading": "Data-driven social media management designed to grow your brand, engage your audience, and generate real business results in the US & UK markets.",
+      "money_symbole": "$",
+      "recomended": "Most Popular",
+      "cta_button": "Get Started Today",
+      "plans": {
+        "0": {
+          "name": "Growth Package",
+          "monthly": "250",
+          "money_per": "/Month",
+          "description": "Ideal for small businesses and startups looking to build a strong social presence and consistent engagement. Focused on organic growth and brand awareness.",
+          "features_title": "What’s Included:",
+          "features": [
+            "Social media strategy for US & UK audience",
+            "Content calendar & posting schedule",
+            "12–16 high-quality posts per month",
+            "Professional captions with hashtags",
+            "Brand-consistent visual design",
+            "Community management (comments & inbox)",
+            "Basic analytics & monthly report",
+            "Support during US & UK business hours"
+          ]
+        },
+        "1": {
+          "name": "Authority Package",
+          "monthly": "499",
+          "money_per": "/Month",
+          "description": "A complete social media management solution for brands that want faster growth, higher engagement, and measurable ROI. Perfect for scaling businesses.",
+          "features_title": "What’s Included:",
+          "features": [
+            "Advanced social media strategy & competitor analysis",
+            "20–30 premium posts per month",
+            "High-conversion copywriting for US & UK markets",
+            "Custom branded graphics & reels",
+            "Daily community management",
+            "Paid ads setup & management (ad budget not included)",
+            "Conversion tracking & performance optimization",
+            "Detailed analytics & growth report",
+            "Priority support during US & UK business hours"
+          ]
+        }
+      }
     }
   }
 }

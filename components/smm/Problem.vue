@@ -1,24 +1,28 @@
 <template>
   <section class="py-16">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto">
       <!-- Heading -->
-      <div class="text-center mb-12">
-        <h2 class="text-3xl sm:text-4xl font-bold">
+      <div class="text-center mb-10">
+        <h2 class="text-2xl sm:text-4xl font-bold">
           {{ t("smm.prob_solve_smm.heading_first") }}
           <span class="text-rose-500">
             {{ t("smm.prob_solve_smm.heading_highlight") }}
           </span>
           {{ t("smm.prob_solve_smm.heading_last") }}
         </h2>
-        <p class="mt-3 text-gray-600 dark:text-gray-300 text-sm sm:text-lg">
+        <p
+          class="sm:mt-3 text-gray-600 dark:text-gray-300 text-xs sm:text-lg max-w-2xl mx-auto"
+        >
           {{ t("smm.prob_solve_smm.subheading") }}
         </p>
       </div>
 
       <!-- Problem vs Solution -->
-      <div class="grid md:grid-cols-2 gap-10">
+      <div class="grid md:grid-cols-2 gap-5 sm:gap-10 mb-10">
         <!-- Problems -->
-        <div class="p-6 bg-gray-50 dark:bg-slate-800/60 rounded-xl shadow">
+        <div
+          class="p-3 sm:p-6 bg-gray-50 dark:bg-slate-800/60 rounded-xl shadow"
+        >
           <h3 class="text-xl font-semibold mb-4 text-red-500">
             {{ t("smm.prob_solve_smm.problems.title") }}
           </h3>
@@ -28,16 +32,16 @@
               :key="index"
               class="flex gap-3"
             >
-              <Icon :name="item.icon" class="text-red-500 text-xl" />
-              <p>{{ item.text }}</p>
+              <Icon :name="item.icon" class="text-red-500 w-5 h-5" />
+              <p class="text-sm">{{ item.text }}</p>
             </li>
           </ul>
         </div>
 
         <!-- Solutions -->
-        <div class="p-6 bg-rose-50 dark:bg-rose-800/20 rounded-xl shadow">
+        <div class="p-6 bg-green-50 dark:bg-green-800/20 rounded-xl shadow">
           <h3
-            class="text-xl font-semibold mb-4 text-rose-600 dark:text-rose-400"
+            class="text-xl font-semibold mb-4 text-green-600 dark:text-green-400"
           >
             {{ t("smm.prob_solve_smm.solutions.title") }}
           </h3>
@@ -47,18 +51,34 @@
               :key="index"
               class="flex gap-3"
             >
-              <Icon :name="item.icon" class="text-rose-500 text-xl" />
-              <p>{{ item.text }}</p>
+              <Icon :name="item.icon" class="text-green-500 w-5 h-5" />
+              <p class="text-sm">{{ item.text }}</p>
             </li>
           </ul>
         </div>
+      </div>
+
+      <!-- Buttons -->
+      <div class="mt-1 sm:mt-0 flex justify-center gap-2 sm:gap-4 flex-wrap">
+        <NuxtLink
+          to="https://wa.me/+8801904015818"
+          class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 sm:px-5 sm:py-3 rounded-md hover:bg-rose-700 transition"
+        >
+          <Icon name="hugeicons:whatsapp" />
+          <span>{{ t("smm.why.cta") }}</span>
+        </NuxtLink>
+        <NuxtLink
+          to="#pricing"
+          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-600 hover:text-rose-50 transition"
+        >
+          <span>{{ t("smm.why.cta_pricing") }}</span>
+          <Icon name="hugeicons:arrow-down-double" />
+        </NuxtLink>
       </div>
     </div>
   </section>
 </template>
 <script setup lang="ts">
-import { computed } from "vue";
-
 const { t } = useI18n({ useScope: "global" });
 
 // Problems array as real array

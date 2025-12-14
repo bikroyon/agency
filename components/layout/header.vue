@@ -81,19 +81,19 @@ const items = computed(() => [
           :items="items"
           color="error"
           variant="link"
-          class="text-sm text-gray-500"
+          class="text-sm"
         />
         <!-- Icons -->
-        <div class="flex items-center gap-4 text-white">
+        <div class="flex items-center gap-4">
           <LangSwitcher />
           <ClientOnly>
             <UColorModeButton color="error" />
           </ClientOnly>
           <UButton
-            to="https://wa.me/+8801799568976"
+            to="https://wa.me/+88019015818"
             class="hidden sm:flex"
             icon="hugeicons:whatsapp"
-            size="md"
+            size="lg"
             color="error"
             variant="subtle"
             label="Whatsapp"
@@ -126,18 +126,39 @@ const items = computed(() => [
         class="text-base"
       />
       <div class="flex gap-3 pt-6 mt-auto border-t border-white/10">
-        <UButton
-          icon="hugeicons:github-01"
-          size="md"
-          color="error"
-          variant="subtle"
-        />
-        <UButton
-          icon="hugeicons:whatsapp"
-          size="md"
-          color="error"
-          variant="subtle"
-        />
+        <NuxtLink to="https://wa.me/+88019015818">
+          <UButton
+            icon="hugeicons:whatsapp"
+            size="md"
+            color="error"
+            variant="subtle"
+          />
+        </NuxtLink>
+        <NuxtLink to="https://www.youtube.com/@Bikroyon">
+          <UButton
+            icon="hugeicons:youtube"
+            size="md"
+            color="error"
+            variant="subtle"
+          />
+        </NuxtLink>
+
+        <NuxtLink to="">
+          <UButton
+            icon="hugeicons:facebook-02"
+            size="md"
+            color="error"
+            variant="subtle"
+          />
+        </NuxtLink>
+        <NuxtLink to="https://m.me/bikroyonbd">
+          <UButton
+            icon="hugeicons:messenger"
+            size="md"
+            color="error"
+            variant="subtle"
+          />
+        </NuxtLink>
         <UColorModeButton color="error" />
         <LangSwitcher />
       </div>

@@ -191,12 +191,12 @@ const testimonials: { user: UserProps; quote: string }[] = [
   <section class="py-16 relative">
     <!-- Section Heading -->
     <div class="text-center max-w-2xl mb-10 mx-auto px-3">
-      <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
+      <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
         {{ t("testimonials.title")
         }}<span class="text-rose-500"> {{ t("testimonials.highlight") }}</span>
       </h2>
-      <p class="mt-2 text-sm sm:text-lg">
-        {{ t("partners.subtitle") }}
+      <p class="mt-2 text-xs sm:text-lg">
+        {{ t("testimonials.subtitle") }}
       </p>
     </div>
 

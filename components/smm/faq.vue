@@ -6,7 +6,7 @@
         <div class="flex items-center h-[220px] overflow-hidden">
           <Lottie style="height: 400px" :data="Thinking" />
         </div>
-        <h2 class="text-left text-3xl md:text-3xl font-bold mb-1">
+        <h2 class="text-left text-2xl md:text-3xl font-bold mb-1">
           {{ t("smm.faq_section.heading_first") }}<br />
           <span class="text-rose-500">{{
             t("smm.faq_section.heading_highlight")
@@ -32,42 +32,34 @@ const { t } = useI18n({ useScope: "global" });
 
 const faqItems = [
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.0.label"),
     content: t("smm.faq_section.items.0.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.1.label"),
     content: t("smm.faq_section.items.1.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.2.label"),
     content: t("smm.faq_section.items.2.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.3.label"),
     content: t("smm.faq_section.items.3.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.4.label"),
     content: t("smm.faq_section.items.4.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.5.label"),
     content: t("smm.faq_section.items.5.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.6.label"),
     content: t("smm.faq_section.items.6.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("smm.faq_section.items.7.label"),
     content: t("smm.faq_section.items.7.content"),
   },

@@ -1,5 +1,5 @@
 <script setup lang="ts">
-const whatsappNumber = "0881904015818"; // Replace with your number
+const whatsappNumber = "+8801904015818"; // Replace with your number
 const message = encodeURIComponent(
   "Hello! I want to chat with you about You services."
 );

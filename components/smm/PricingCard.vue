@@ -3,7 +3,6 @@ const { t } = useI18n({ useScope: "global" });
 
 defineProps({
   plan: Object,
-  isAnnual: Boolean,
   highlighted: Boolean,
 });
 </script>
@@ -16,7 +15,7 @@ defineProps({
       <div
         class="inline-flex items-center text-xs font-semibold py-1.5 px-3 bg-rose-600 text-white rounded-full shadow-sm"
       >
-        {{ t("landing_pricing.recomended") }}
+        {{ t("smm.pricing.recomended") }}
       </div>
     </div>
     <div
@@ -26,39 +25,37 @@ defineProps({
       class="p-6 rounded-2xl bg-white dark:bg-slate-900 border shadow shadow-slate-950/5"
     >
       <div class="mb-5">
-        <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">
+        <div class="text-slate-900 dark:text-slate-200 font-semibold text-sm sm:text-base mb-1">
           {{ plan.name }}
         </div>
         <div class="inline-flex items-baseline mb-2">
-          <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl">{{
-            t("landing_pricing.money_symbole")
+          <span class="text-slate-900 dark:text-slate-200 font-bold text-xl sm:text-3xl">{{
+            t("smm.pricing.money_symbole")
           }}</span>
-          <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl">
-            {{ isAnnual ? plan.yearly : plan.monthly }}
+          <span class="text-slate-900 dark:text-slate-200 font-bold text-3xl sm:text-4xl">
+            {{ plan.monthly }}
           </span>
-          <span class="text-slate-500 font-medium">{{
-            t("landing_pricing.money_per")
-          }}</span>
+          <span class="text-slate-500 font-medium">{{plan.per}}</span>
         </div>
-        <p class="text-sm text-slate-500 mb-5">{{ plan.description }}</p>
+        <p class="text-xs sm:text-sm text-slate-500 mb-5">{{ plan.description }}</p>
         <NuxtLink
           to="#"
           :class="[
             highlighted
-              ? 'bg-rose-700 hover:bg-rose-600'
-              : 'bg-rose-700 hover:bg-rose-600',
+              ? 'bg-rose-500 hover:bg-rose-600'
+              : 'bg-rose-500 hover:bg-rose-600',
           ]"
-          class="w-full flex items-center justify-center gap-4 rounded-lg px-3.5 py-2.5 text-sm font-medium text-white transition"
+          class="w-full flex items-center justify-center gap-4 rounded-md px-3.5 py-2.5 text-sm font-medium text-white transition"
         >
           <Icon name="hugeicons:messenger" class="w-6 h-6" />
-          <span> {{ t("landing_pricing.cta_button") }} </span>
+          <span> {{ t("smm.pricing.cta_button") }} </span>
         </NuxtLink>
       </div>
 
-      <div class="text-slate-900 dark:text-slate-200 font-medium mb-3">
+      <div class="text-slate-900 dark:text-slate-200 font-medium text-sm sm:text-base mb-3">
         {{ plan.features_title }}
       </div>
-      <ul class="text-slate-600 dark:text-slate-400 text-sm space-y-3">
+      <ul class="text-slate-600 dark:text-slate-400 text-xs sm:text-sm space-y-2 sm:space-y-3">
         <li
           v-for="(feature, i) in plan.features"
           :key="i"

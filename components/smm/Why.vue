@@ -36,11 +36,10 @@ const smmBenefits = computed(() => [
 ])
 </script>
 <template>
-  <section class="py-16 px-4 sm:px-6 lg:px-8">
-    <div class="max-w-6xl mx-auto text-center">
-
+  <section class="py-4 sm:py-6">
+    <div class="max-w-7xl mx-auto px-4 text-center">
       <!-- Heading -->
-      <h2 class="text-3xl sm:text-4xl font-bold leading-snug">
+      <h2 class="text-2xl sm:text-4xl font-bold leading-snug">
         {{ t('smm.why.heading_first') }}
         <span class="text-rose-500">
           {{ t('smm.why.heading_highlight') }}
@@ -49,31 +48,53 @@ const smmBenefits = computed(() => [
       </h2>
 
       <!-- Subtitle -->
-      <p class="mt-4 text-gray-700 dark:text-gray-300 text-sm sm:text-lg max-w-3xl mx-auto">
+      <p class="sm:mt-4 text-gray-700 dark:text-gray-300 text-xs sm:text-lg max-w-3xl mx-auto">
         {{ t('smm.why.subheading') }}
       </p>
 
-      <!-- Benefits Grid -->
-      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-12">
+      <section class="py-8">
         <div
-          v-for="(benefit, index) in smmBenefits"
-          :key="index"
-          class=" p-6 rounded-lg shadow hover:shadow-md transition"
+          class="max-w-6xl mx-auto grid grid-cols-1 md:grid-cols-3 border border-gray-300 dark:border-gray-700 rounded-2xl p-2 md:p-3"
         >
-          <Icon :name="benefit.icon" class="text-rose-500 w-10 h-10 mb-3" />
-          <h3 class="font-semibold text-lg">{{ benefit.title }}</h3>
-          <p class="text-sm mt-2">{{ benefit.description }}</p>
+          <div
+            v-for="(feature, index) in smmBenefits"
+            :key="index"
+            class="p-3 md:p-4 flex flex-col items-center text-center border-gray-300 dark:border-gray-700"
+            :class="[
+              // add top border if not in first row
+              index >= 3 ? 'md:border-t' : '',
+              // add left border if not first in the row
+              index % 3 !== 0 ? 'md:border-l' : '',
+            ]"
+          >
+            <div class="text-rose-500">
+              <Icon :name="feature.icon" class="w-8 h-8 md:w-12 md:h-12" />
+            </div>
+            <h3
+              class="text-base md:text-xl font-semibold sm:mb-2"
+              v-html="feature.title"
+            />
+            <p class="text-xs md:text-xs leading-relaxed">
+              {{ feature.description }}
+            </p>
+          </div>
         </div>
-      </div>
-
-      <!-- CTA -->
-      <div class="mt-10">
-        <NuxtLink 
-          to="https://wa.me/+8801799568976"
-          class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-medium transition"
+      </section>
+      <!-- Buttons -->
+      <div class="mt-1 sm:mt-0 flex justify-center gap-2 sm:gap-4 flex-wrap">
+        <NuxtLink
+          to="https://wa.me/+8801904015818"
+          class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 sm:px-5 sm:py-3 rounded-md hover:bg-rose-700 transition"
         >
-          {{ t('smm.why.cta') }}
-          <Icon name="mdi-arrow-right" class="w-5 h-5" />
+          <Icon name="hugeicons:whatsapp" />
+          <span>{{ t("smm.why.cta") }}</span>
+        </NuxtLink>
+        <NuxtLink
+          to="#pricing"
+          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-600 hover:text-rose-50 transition"
+        >
+          <span>{{ t("smm.why.cta_pricing") }}</span>
+          <Icon name="hugeicons:arrow-down-double" />
         </NuxtLink>
       </div>
     </div>
