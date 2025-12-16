@@ -16,10 +16,10 @@ const items = computed(() => [
     <!-- Section Heading -->
     <div class="text-center mb-10">
       <!-- Heading -->
-      <h2 class="text-2xl sm:text-4xl font-bold">
+      <h2 class="text-3xl sm:text-4xl font-bold">
         {{t("smm.portfolio.heading_first")}} <span class="text-rose-500">{{t("smm.portfolio.heading_highlight")}}</span>
       </h2>
-      <p class="mt-2 text-xs sm:text-lg max-w-2xl mx-auto">
+      <p class="mt-2 text-sm sm:text-lg max-w-2xl mx-auto">
         {{t("smm.portfolio.subheading")}}
       </p>
     </div>
