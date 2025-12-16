@@ -5,7 +5,7 @@
     ></div>
     <div class="max-w-5xl mx-auto px-4 text-center">
       <!-- শিরোনাম -->
-      <h1 class="text-2xl sm:text-4xl md:text-5xl font-bold">
+      <h1 class="text-3xl sm:text-4xl md:text-5xl font-bold">
         {{ t("smm.hero.heading_first") }}
         <span class="text-rose-500">{{ t("smm.hero.heading_highlight") }}</span>
         <br class="hidden sm:block" />
@@ -13,7 +13,7 @@
       </h1>
 
       <!-- বর্ণনা -->
-      <p class="mt-4 text-gray-700 dark:text-gray-300 text-xs sm:text-lg">
+      <p class="mt-4 text-gray-700 dark:text-gray-300 text-sm sm:text-lg">
         {{ t("smm.hero.description") }}
       </p>
 
