@@ -1,12 +1,14 @@
 <template>
   <div>
     <HomeHero />
+
     <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
       <HomeServices />
-      <Timeline />
       <Partners />
       <HomeFounder />
-      <HomeTabs />
+    </div>
+    <Portfolio />
+    <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
       <Testimonials />
       <Team />
       <Banner />
@@ -16,10 +18,11 @@
 
 <script setup>
 definePageMeta({
-  title: "প্রফেশনাল ওয়েবসাইট ও ল্যান্ডিং পেজ ডিজাইন – বাংলাদেশের সেরা সার্ভিস",
+  title: "Web Development Agency | WordPress, Laravel & Nuxt.js Experts",
   description:
-    "৩০০+ সফল প্রজেক্টের অভিজ্ঞতায় আমরা দিচ্ছি বাংলাদেশের সেরা কাস্টম ওয়েবসাইট ও ল্যান্ডিং পেজ ডিজাইন সার্ভিস। দ্রুত সাপোর্ট, রেজাল্ট-ফোকাসড ডিজাইন ও ক্লায়েন্ট সন্তুষ্টি—এটাই আমাদের অঙ্গীকার।",
+    "We build high-performance websites and web applications using WordPress, Laravel, and Nuxt.js. Get fast, secure, and SEO-friendly web solutions for your business.",
 });
+
 
 const route = useRoute();
 

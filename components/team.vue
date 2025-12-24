@@ -15,19 +15,19 @@ interface TeamMember {
 
 const teamMembers = ref<TeamMember[]>([
   {
-    image: "https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-4.png",
+    image: "/teams/founder.png",
     socials: { facebook: "#", linkedin: "#", twitter: "#" }
   },
   {
-    image: "https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-1.png",
+    image: "/teams/co.webp",
     socials: { facebook: "#", linkedin: "#", twitter: "#" }
   },
   {
-    image: "https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-2.png",
+    image: "/teams/designer.png",
     socials: { facebook: "#", linkedin: "#", twitter: "#" }
   },
   {
-    image: "https://cdn.rareblocks.xyz/collection/clarity/images/team/1/team-member-3.png",
+    image: "/teams/abu.png" ,
     socials: { facebook: "#", linkedin: "#", twitter: "#" }
   }
 ]);
@@ -37,11 +37,11 @@ const teamMembers = ref<TeamMember[]>([
   <section class="py-10 px-4 md:p-16">
     <div class="text-center max-w-2xl mb-10 mx-auto px-3">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-        {{ t("team.title") }} <span class="text-rose-500">{{ t("team.highlight") }}</span>
+        {{ t("home.team.title") }} <span class="text-rose-500">{{ t("home.team.highlight") }}</span>
       </h2>
 
       <p class="mt-2 text-xs sm:text-base max-w-2xl mx-auto">
-        {{ t("team.subtitle") }}
+        {{ t("home.team.subtitle") }}
       </p>
     </div>
 
@@ -62,12 +62,12 @@ const teamMembers = ref<TeamMember[]>([
 
         <!-- NAME -->
         <p class="mt-3 text-sm sm:text-lg font-bold">
-          {{ t(`team.members.${index}.name`) }}
+          {{ t(`home.team.members.${index}.name`) }}
         </p>
 
         <!-- ROLE -->
         <p class="mt-1 text-xs sm:text-sm">
-          {{ t(`team.members.${index}.role`) }}
+          {{ t(`home.team.members.${index}.role`) }}
         </p>
 
         <!-- SOCIAL ICONS -->

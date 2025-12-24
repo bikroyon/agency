@@ -22,9 +22,9 @@ const solutionItems = computed(() => [
 
 <template>
   <section class="py-16">
-    <div class="max-w-6xl mx-auto px-6">
+    <div class="max-w-6xl mx-auto px-2 sm:px-6">
       <!-- Heading -->
-      <div class="text-center mb-12">
+      <div class="text-center mb-6 sm:mb-12">
         <h2 class="text-3xl sm:text-4xl font-bold">
           {{ t("ecommerce_page.why_choose.heading_first") }}
           <span class="text-rose-500">{{
@@ -38,34 +38,38 @@ const solutionItems = computed(() => [
       </div>
 
       <!-- Problem vs Solution -->
-      <div class="grid md:grid-cols-2 gap-10">
+      <div class="grid md:grid-cols-2 gap-4 sm:gap-10">
         <!-- Problems -->
-        <div class="p-6 bg-gray-50 dark:bg-slate-800/60 rounded-xl shadow">
-          <h3 class="text-xl font-semibold mb-4 text-red-500">
+        <div class="p-6 bg-yellow-50 dark:bg-yellow-800/20 rounded-xl shadow">
+          <h3 class="text-lg sm:text-xl font-semibold mb-4 text-yellow-500">
             {{ t("ecommerce_page.why_choose.problems_title") }}
           </h3>
           <ul class="space-y-4">
-            <li v-for="(item, i) in problemItems" :key="i" class="flex gap-3">
-              <Icon name="hugeicons:cancel-01" class="text-red-500 text-xl" />
-              <p>{{ item.label }}</p>
+            <li v-for="(item, i) in problemItems" :key="i" class="flex items-center gap-3">
+              <Icon name="hugeicons:alert-circle" class="text-yellow-500 text-xl" />
+              <p class="text-sm sm:text-base">{{ item.label }}</p>
             </li>
           </ul>
         </div>
 
         <!-- Solutions -->
-        <div class="p-6 bg-rose-50 dark:bg-rose-800/20 rounded-xl shadow">
+        <div class="p-6 bg-green-50 dark:bg-green-800/20 rounded-xl shadow">
           <h3
-            class="text-xl font-semibold mb-4 text-rose-600 dark:text-rose-400"
+            class="text-lg sm:text-xl font-semibold mb-4 text-green-600 dark:text-green-400"
           >
             {{ t("ecommerce_page.why_choose.solutions_title") }}
           </h3>
           <ul class="space-y-4">
-            <li v-for="(item, i) in solutionItems" :key="i" class="flex gap-3">
+            <li
+              v-for="(item, i) in solutionItems"
+              :key="i"
+              class="flex items-center gap-3"
+            >
               <Icon
                 name="hugeicons:checkmark-circle-01"
-                class="text-rose-500 text-xl"
+                class="text-green-500 text-xl"
               />
-              <p>{{ item.label }}</p>
+              <p class="text-sm sm:text-base">{{ item.label }}</p>
             </li>
           </ul>
         </div>

@@ -17,9 +17,9 @@
 
 <script setup>
 definePageMeta({
-  title: "কনভারশন-ফোকাসড কাস্টম ল্যান্ডিং পেজ ডিজাইন সার্ভিস",
+  title: "High-Converting Landing Page Design Services",
   description:
-    "বিশ্বস্ততা ও বিক্রয় বাড়াতে প্রমাণিত ডিজাইন কৌশল ব্যবহার করে তৈরি করি প্রফেশনাল ল্যান্ডিং পেজ। বাংলাদেশের অভিজ্ঞ ডিজাইনার দিয়ে তৈরি করুন রেজাল্ট-ড্রিভেন ল্যান্ডিং পেজ।",
+    "Get high-converting landing pages designed for speed, clarity, and results. Perfect for startups, campaigns, and lead generation.",
 });
 </script>
 

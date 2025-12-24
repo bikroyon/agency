@@ -123,7 +123,7 @@ function changeTab(index: number) {
     </div>
 
     <!-- Animated Content -->
-    <div ref="tabContent" class="overflow-hidden p-2 md:p-4 pt-0">
+    <div ref="tabContent" class="overflow-hidden px-0 pt-0">
       <PortfolioTabContent :courses="tabs[currentTab].courses" />
     </div>
   </div>

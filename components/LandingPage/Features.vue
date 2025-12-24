@@ -40,20 +40,19 @@
           </div>
         </div>
       </section>
-      <!-- Buttons -->
-      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+      <!-- CTA বাটন -->
+      <div id="video" class="mt-3 flex justify-center gap-2 sm:gap-4 flex-wrap">
         <NuxtLink
-          to="https://wa.me/+8801799568976"
-          class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 rounded-md hover:bg-rose-700 transition"
+          to="https://wa.me/+8801904015818"
+          class="bg-rose-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-rose-600 flex items-center gap-2 transition text-sm sm:text-base"
         >
-          <Icon name="hugeicons:whatsapp" />
-          <span>{{ t("landing_features_section.btn_contact") }}</span>
+          <Icon name="hugeicons:whatsapp" /> {{ t("smm.hero.cta_primary") }}
         </NuxtLink>
         <NuxtLink
-          to="#pricing"
-          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-600 hover:text-rose-50 transition"
+          to="#video"
+          class="border border-rose-500 text-rose-500 px-4 py-2 text-sm sm:text-base sm:px-6 sm:py-3 rounded-md hover:bg-rose-500 hover:dark:bg-rose-500 hover:text-white flex items-center gap-2 transition"
         >
-          <span>{{ t("landing_features_section.btn_details") }}</span>
+          {{ t("smm.hero.cta_secondary") }}
           <Icon name="hugeicons:arrow-down-double" />
         </NuxtLink>
       </div>

@@ -1,4 +1,10 @@
 <script setup lang="ts">
+definePageMeta({
+  title: "About Us | Professional Web Development Agency",
+  description:
+    "Learn more about our web development agency specializing in WordPress, Laravel, and Nuxt.js. We deliver scalable, business-focused digital solutions worldwide.",
+});
+
 const { t } = useI18n({ useScope: "global" });
 // Social links
 const socialLinks = [
@@ -116,38 +122,6 @@ const benefits = computed(() => [
             >
               <Icon :name="social.icon" class="w-7 h-7" />
             </NuxtLink>
-          </div>
-        </div>
-      </div>
-    </section>
-    <section
-      class="py-16 bg-gray-50 dark:bg-gray-900 px-4 sm:px-6 lg:px-8 rounded-4xl"
-    >
-      <div class="text-center">
-        <h2 class="text-3xl sm:text-4xl font-bold">
-          {{ t("about_page.skills.heading") }}
-          <span class="text-rose-500">{{
-            t("about_page.skills.heading_highlight")
-          }}</span>
-        </h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300 max-w-3xl mx-auto">
-          {{ t("about_page.skills.subtitle") }}
-        </p>
-        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-10">
-          <div
-            v-for="(card, i) in cards"
-            :key="i"
-            class="bg-white dark:bg-gray-800 p-6 rounded-lg shadow hover:shadow-md transition transform hover:-translate-y-1"
-          >
-            <Icon :name="card.icon" class="text-rose-500 w-8 h-8 mb-2" />
-
-            <h3 class="font-semibold text-lg">
-              {{ card.title }}
-            </h3>
-
-            <p class="text-gray-600 dark:text-gray-400 text-sm mt-1">
-              {{ card.description }}
-            </p>
           </div>
         </div>
       </div>

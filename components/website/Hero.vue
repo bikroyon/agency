@@ -7,40 +7,41 @@
       <!-- Title -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
         {{ $t("ecommerce_page.hero.heading_first") }}
-        <span class="text-rose-500">{{ $t("ecommerce_page.hero.heading_highlight") }}</span>{{ $t("ecommerce_page.hero.heading_last") }}
+        <span class="text-rose-500">{{
+          $t("ecommerce_page.hero.heading_highlight")
+        }}</span
+        >{{ $t("ecommerce_page.hero.heading_last") }}
       </h2>
 
       <!-- Description -->
       <p class="mt-4 text-sm sm:text-lg">
-        {{ $t('ecommerce_page.hero.description') }}
+        {{ $t("ecommerce_page.hero.description") }}
       </p>
 
-      <!-- Buttons -->
-      <div class="mt-6 flex justify-center gap-4 flex-wrap">
+      <!-- CTA বাটন -->
+      <div id="video" class="mt-6 flex justify-center gap-2 sm:gap-4 flex-wrap">
         <NuxtLink
-          to="https://wa.me/+8801799568976"
-          class="bg-rose-500 text-xs sm:text-base flex items-center justify-center gap-2 text-white px-4 py-1.5 rounded-md hover:bg-rose-700 transition"
+          to="https://wa.me/+8801904015818"
+          class="bg-rose-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-rose-600 flex items-center gap-2 transition text-sm sm:text-base"
         >
-          <Icon name="hugeicons:whatsapp" /> <span>{{ $t('ecommerce_page.hero.cta_primary') }}</span>
+          <Icon name="hugeicons:whatsapp" /> {{ t("smm.hero.cta_primary") }}
         </NuxtLink>
         <NuxtLink
-          to="#pricing"
-          class="border text-xs sm:text-base flex items-center justify-center gap-2 border-rose-500 text-rose-500 px-4 py-1.5 rounded-md hover:bg-rose-100 hover:dark:bg-slate-800 transition"
+          to="#video"
+          class="border border-rose-500 text-rose-500 px-4 py-2 text-sm sm:text-base sm:px-6 sm:py-3 rounded-md hover:bg-rose-500 hover:dark:bg-rose-500 hover:text-white flex items-center gap-2 transition"
         >
-          <span>{{ $t('ecommerce_page.hero.cta_secondary') }}</span>
+          {{ t("smm.hero.cta_secondary") }}
           <Icon name="hugeicons:arrow-down-double" />
         </NuxtLink>
       </div>
 
-      <!-- YouTube Video-->
-      <div class="mt-10 flex items-center justify-center">
+      <!-- ভিডিও/ইমেজ (ঐচ্ছিক) -->
+      <div class="mt-10 flex justify-center">
         <iframe
-          width="660"
-          height="415"
-          src="https://www.youtube.com/embed/6DAG3iFrdJk?si=KOOuL45HtPdRxVhJ"
+          :src="t('ecommerce_page.hero.video')"
           title="YouTube video player"
           frameborder="0"
-          class="rounded-lg shadow-2xl w-fit h-auto md:w-[660px] md:h-[415px]"
+          class="rounded-lg border-4 dark:border-stone-600 border-stone-200 shadow-2xl w-full h-[220px] sm:h-[315px] md:w-[660px] md:h-[415px]"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen

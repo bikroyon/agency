@@ -4,6 +4,7 @@
     <WebsiteWhyEcommerce />
     <WebsiteProblem/>
     <WebsiteFeatures />
+    <ChooseUs/>
     <WebsiteCaruosle />
     <WebsitePricingTable/>
     <Banner />
@@ -15,9 +16,11 @@
 
 <script setup>
 definePageMeta({
-    title: "ওয়েবসাইট ডিজাইন সার্ভিস – কাস্টম ও রেসপনসিভ ডিজাইন",
-    description: "বাংলাদেশের সেরা ওয়েবসাইট ডিজাইন সার্ভিস এখন আপনার হাতের মুঠোয়। ৩০০+ সফল প্রজেক্টের অভিজ্ঞতায় তৈরি করি মোবাইল-ফ্রেন্ডলি, কনভার্টিং ও SEO অপটিমাইজড ওয়েবসাইট।",
+  title: "WordPress Website Development Services",
+  description:
+    "Professional WordPress website development for businesses. Fast, secure, SEO-optimized, and easy-to-manage websites tailored to your goals.",
 });
+
 </script>
 
 <style scoped></style>

@@ -3,29 +3,27 @@
     "name": "Menu",
     "home": "Home",
     "services": "Services",
-    "landing_page": "Landing Page Design",
-    "landing_page_desc": "Clean, attractive landing pages that turn visitors into customers.",
+    "landing_page": "One Page Website Design",
+    "landing_page_desc": "Attractive landing pages that turn visitors into customers.",
     "ecommerce": "WordPress Website Design",
-    "ecommerce_desc": "Custom WordPress websites built to boost online sales.",
+    "ecommerce_desc": "Custom WordPress websites built to boost online sales 24/7.",
     "custom_app": "Custom Web App Development",
     "custom_app_desc": "Scalable web apps built with Laravel, Vue.js, and MySQL.",
     "smm": "Social Media Management",
     "smm_desc": "We grow your brand and build a strong social media presence.",
     "portfolio": "Case Study",
     "about": "About Us",
-    "blog": "Blogs",
     "contact": "Contact"
   },
   "footer": {
-    "brand_title": "Bikroyon",
     "brand_tagline": "We build premium websites and custom web applications. Your digital solution for business growth.",
 
     "services_title": "Our Services",
     "services": {
       "wordpress": "WordPress Web Design",
       "webapp": "Custom Web App",
-      "ai": "AI Automation",
-      "security": "Secure Website"
+      "ai": "Social Media Marketing",
+      "security": "One Page Website Design"
     },
 
     "quick_links_title": "Quick Links",
@@ -45,61 +43,90 @@
 
     "copyright": "© 2025 Bikroyon. All rights reserved."
   },
-  "hero": {
-    "tagline": "Bangladesh's #1 Web Solution",
-    "main_line": "Boost your sales with",
-    "highlight": "Professional Website",
-    "main_line_2": "for your business",
-    "description": "Create a fast-loading, SEO-optimized website for your business. Use our proven methods to triple your online sales and simplify your digital business.",
-    "cta_contact": "Contact Now",
-    "cta_services": "Our Services",
-    "clients": "Satisfied Clients",
-    "projects": "Completed Projects",
-    "years": "Years Experience",
-    "rating": "Average Rating",
-    "stat1_title": "100% Satisfaction",
-    "stat1_desc": "Guarantee",
-    "stat2_title": "24/7 Support",
-    "stat2_desc": "Anytime"
-  },
-  "services": {
-    "title": "Our",
-    "highlight": "Services",
-    "stats": "We have the trust of {strong1}. Since 2022, we have worked with {strong2}, creating {strong3} and {strong4}. Each project focuses on {strong5}.",
-    "strong": {
-      "1": "300+ entrepreneurs",
-      "2": "350+ entrepreneurs in 3 years",
-      "3": "200+ customized landing pages",
-      "4": "150+ eCommerce websites",
-      "5": "brand growth, conversions, and result-driven design"
+  "home": {
+    "hero": {
+      "tagline": "#1 Business Solution",
+      "main_line": "Boost your sales with",
+      "highlight": "Professional Website",
+      "main_line_2": "for your business",
+      "description": "Create a fast-loading, SEO-optimized website for your business. Use our proven methods to triple your online sales and simplify your digital business.",
+      "cta_contact": "Contact Now",
+      "cta_services": "Our Services",
+      "clients": "Happy Clients Worldwide",
+      "projects": "Projects Delivered",
+      "years": "Years of  Experience",
+      "rating": "Average Client Rating",
+      "stat1_title": "100% Satisfaction",
+      "stat1_desc": "Guarantee",
+      "stat2_title": "24/7 Support",
+      "stat2_desc": "Anytime"
     },
-    "view_details": "View Details",
-    "service_list": [
-      {
-        "title": "High-Converting Landing Page",
-        "description": "Boost your business conversion—engage customers with {strong}!"
+    "services": {
+      "title": "Our",
+      "highlight": "Services",
+      "stats": "We have the trust of {strong1}. Since 2022, we have worked with {strong2}, creating {strong3} and {strong4}. Each project focuses on {strong5}.",
+      "strong": {
+        "1": "300+ entrepreneurs",
+        "2": "350+ entrepreneurs in 3 years",
+        "3": "200+ customized landing pages",
+        "4": "150+ eCommerce websites",
+        "5": "brand growth, conversions, and result-driven design"
       },
-      {
-        "title": "WordPress E-commerce Website",
-        "description": "Grow your budding business—create {strong} on WordPress!"
-      },
-      {
-        "title": "Custom Web App Development",
-        "description": "Bring your dream app to life—get {strong}, fast and reliable applications!"
-      },
-      {
-        "title": "Website Speed Optimization",
-        "description": "Keep users engaged—{strong} and improve performance!"
-      },
-      {
-        "title": "Pixel & Server-Side Tracking",
-        "description": "Unlock the power of data—enhance sales and performance with {strong}!"
-      },
-      {
-        "title": "Monthly Website Management",
-        "description": "Relax, we handle everything—regular maintenance and updates for {strong}!"
-      }
-    ]
+      "view_details": "View Details",
+      "service_list": [
+        {
+          "title": "One-Page Website Design",
+          "description": "Increase conversions with a focused, fast-loading one-page website designed to engage users."
+        },
+        {
+          "title": "WordPress Website Development",
+          "description": "Grow your business with a scalable, SEO-friendly WordPress website that’s easy to manage."
+        },
+        {
+          "title": "Custom Web App Development",
+          "description": "Turn your ideas into secure, high-performance web applications built for speed and reliability."
+        },
+        {
+          "title": "Social Media Management",
+          "description": "Build brand engagement and drive results through strategic content and performance-driven campaigns."
+        }
+      ]
+    },
+    "partners": {
+      "title": "Our ",
+      "highlight": "Partner Brands",
+      "subtitle": "Hundreds of entrepreneurs have achieved 3–4x growth through our websites and landing pages — you can be the next success story."
+    },
+    "founder": {
+      "title": "A few words about the Founder",
+      "p1": "I am a software developer coming from a general background. Since childhood, I had a strong passion for computers and programming. That curiosity led me to start my journey. In 2025, I founded a digital agency named Bikroyon. Since then, I have been helping brands increase their sales through websites and social media. I have worked on more than 350 projects including e-commerce websites, landing pages, and custom web applications. My goal is to build websites that are effective and result-driven for every client.",
+      "p2": "My core work philosophy is to understand the client's needs and provide the best solution. I believe a great website is not just a combination of design and features—it is a powerful tool for business growth and success. That's why I work with full dedication in every project to deliver the highest quality service.",
+      "name": "Abdul Baset Bappy",
+      "role": "Software Developer"
+    },
+    "team": {
+      "title": "Our",
+      "highlight": "Team",
+      "subtitle": "Every member of our team is skilled and dedicated, working to ensure your business success.",
+      "members": [
+        {
+          "name": "Abdul Baset Bappy",
+          "role": "Software Developer, Founder"
+        },
+        {
+          "name": "Mahmudul Hasan Tuhin",
+          "role": "Software Engineer, Co-Founder"
+        },
+        {
+          "name": "Md. Rashedul Rafi",
+          "role": "Graphics Designer"
+        },
+        {
+          "name": "Abu Zor",
+          "role": "Social Media Manager"
+        }
+      ]
+    }
   },
   "process": {
     "title": "How We",
@@ -126,41 +153,6 @@
       "title": "Delivery & Launch",
       "description": "We host, deploy, and prepare your website for a successful launch."
     }
-  },
-  "partners": {
-    "title": "Our ",
-    "highlight": "Partner Brands",
-    "subtitle": "Hundreds of entrepreneurs have achieved 3–4x growth through our websites and landing pages — you can be the next success story."
-  },
-  "founder": {
-    "title": "A few words about the Founder",
-    "p1": "I am a software developer coming from a general background. Since childhood, I had a strong passion for computers and programming. That curiosity led me to start my journey. In 2025, I founded a digital agency named Bikroyon. Since then, I have been helping brands increase their sales through websites and social media. I have worked on more than 350 projects including e-commerce websites, landing pages, and custom web applications. My goal is to build websites that are effective and result-driven for every client.",
-    "p2": "My core work philosophy is to understand the client's needs and provide the best solution. I believe a great website is not just a combination of design and features—it is a powerful tool for business growth and success. That's why I work with full dedication in every project to deliver the highest quality service.",
-    "name": "Abdul Baset Bappy",
-    "role": "Software Developer"
-  },
-  "team": {
-    "title": "Our",
-    "highlight": "Family",
-    "subtitle": "Every member of our team is skilled and dedicated, working to ensure your business success.",
-    "members": [
-      {
-        "name": "Abdul Baset Bappy",
-        "role": "Software Developer, Founder"
-      },
-      {
-        "name": "Mahmudul Hasan Tuhin",
-        "role": "Software Engineer, Co-Founder"
-      },
-      {
-        "name": "Md. Rashedul Rafi",
-        "role": "Graphics Designer"
-      },
-      {
-        "name": "Abu Zor",
-        "role": "Social Media Manager"
-      }
-    ]
   },
   "support": {
     "title": "We",
@@ -508,13 +500,11 @@
       "heading_highlight": "Beautiful — But Truly Effective",
       "heading_last": ".",
 
-      "description": "With 30+ successful website projects under my belt, I know exactly how to build a credible, high-converting website that drives real business growth. If you don’t have a professional website yet, you’re already falling behind in the digital race. I create custom websites that perfectly reflect your brand, goals, and audience — websites that increase sales and build unbreakable customer trust.",
+      "description": "With 50+ successful website projects under our belt, We know exactly how to build a credible, high-converting website that drives real business growth. If you don’t have a professional website yet, you’re already falling behind in the digital race. We create websites that perfectly reflect your brand, goals, and audience and build unbreakable customer trust.",
 
       "cta_primary": "Let’s Talk Now",
       "cta_secondary": "See Pricing & Packages",
-
-      "whatsapp_icon": "WhatsApp",
-      "arrow_down_icon": "Scroll Down"
+      "video": "https://www.youtube.com/embed/6DAG3iFrdJk?si=KOOuL45HtPdRxVhJ"
     },
     "why_choose": {
       "heading_first": "Why Our",
@@ -523,7 +513,7 @@
 
       "subheading": "We don’t just build websites — we solve real business problems and turn visitors into loyal customers.",
 
-      "problems_title": "Common WordPress Website Problems",
+      "problems_title": "Common Website Problems",
       "problems": [
         "Generic design, zero brand match",
         "Slow loading, high visitor loss",
@@ -541,8 +531,8 @@
       ]
     },
     "ecommerce_benefits": {
-      "heading_first": "What You Gain with a Professional",
-      "heading_highlight": "E-commerce Website",
+      "heading_first": "What You Gain with a",
+      "heading_highlight": "WordPress Websites",
       "heading_last": "",
       "subheading": "A powerful online store that runs 24/7, automates everything, and multiplies your sales — even while you sleep.",
 
@@ -595,8 +585,8 @@
       ]
     },
     "portfolio_section": {
-      "heading_first": "Some of our",
-      "heading_highlight": "Websites",
+      "heading_first": "We",
+      "heading_highlight": "Build",
       "subheading": "From small businesses to growing brands — here are the solutions we’ve built."
     },
     "features_section": {

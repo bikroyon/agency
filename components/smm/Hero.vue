@@ -37,10 +37,10 @@
       <!-- ভিডিও/ইমেজ (ঐচ্ছিক) -->
       <div class="mt-10 flex justify-center">
         <iframe
-          :src="t('smm.hero.video')"
+          :src="t('ecommerce_page.hero.video')"
           title="YouTube video player"
           frameborder="0"
-          class="rounded-lg border-4 shadow-2xl w-full h-[220px]  sm:h-[315px] md:w-[660px] md:h-[415px]"
+          class="rounded-lg border-4 dark:border-stone-600 border-stone-200 shadow-2xl w-full h-[220px] sm:h-[315px] md:w-[660px] md:h-[415px]"
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
           referrerpolicy="strict-origin-when-cross-origin"
           allowfullscreen

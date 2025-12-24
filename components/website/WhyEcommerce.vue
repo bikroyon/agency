@@ -73,9 +73,9 @@ const items = computed(() => [
 </script>
 
 <template>
-  <section class="py-12 px-4 md:px-8 lg:px-16">
+  <section class="py-6 sm:py-12 px-2 md:px-8 lg:px-16">
     <!-- Title -->
-    <div class="text-center mb-10">
+    <div class="text-center mb-4 sm:mb-10">
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold leading-snug">
         {{ t("ecommerce_page.ecommerce_benefits.heading_first") }}
         <span class="text-rose-500">
@@ -99,10 +99,7 @@ const items = computed(() => [
         <div
           :class="`${item.bg} ${item.color} w-10 h-10 md:w-12 md:h-12 flex items-center justify-center rounded-lg p-2`"
         >
-          <Icon
-            :name="item.icon"
-            class="w-8 h-8 md:w-10 md:h-10"
-          />
+          <Icon :name="item.icon" class="w-8 h-8 md:w-10 md:h-10" />
         </div>
 
         <!-- Text -->
@@ -116,5 +113,22 @@ const items = computed(() => [
         </div>
       </div>
     </div>
+
+    <!-- Buttons -->
+      <div id="video" class="mt-3 sm:mt-6 flex justify-center gap-2 sm:gap-4 flex-wrap">
+        <NuxtLink
+          to="https://wa.me/+8801904015818"
+          class="bg-rose-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-rose-600 flex items-center gap-2 transition text-sm sm:text-base"
+        >
+          <Icon name="hugeicons:whatsapp" /> {{ t("smm.hero.cta_primary") }}
+        </NuxtLink>
+        <NuxtLink
+          to="#video"
+          class="border border-rose-500 text-rose-500 px-4 py-2 text-sm sm:text-base sm:px-6 sm:py-3 rounded-md hover:bg-rose-500 hover:dark:bg-rose-500 hover:text-white flex items-center gap-2 transition"
+        >
+          {{ t("smm.hero.cta_secondary") }}
+          <Icon name="hugeicons:arrow-down-double" />
+        </NuxtLink>
+      </div>
   </section>
 </template>

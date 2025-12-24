@@ -1,8 +1,8 @@
 <script setup>
 definePageMeta({
-  title: "Contact – Web & Landing Page Design",
+  title: "Contact Us | Get a Free Web Development Consultation",
   description:
-    "Contact us for custom website or conversion-focused landing page design.",
+    "Contact our web development team to discuss your project. Get a free consultation for WordPress websites, custom web apps, and digital solutions.",
 });
 
 const { t } = useI18n({ useScope: "global" });

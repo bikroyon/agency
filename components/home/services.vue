@@ -6,45 +6,34 @@ const localePath = useLocalePath();
 
 const services = computed(() => [
   {
-    title: t("services.service_list.0.title"),
-    description: t("services.service_list.0.description"),
+    title: t("home.services.service_list.0.title"),
+    description: t("home.services.service_list.0.description"),
     icon: "hugeicons:laptop-phone-sync",
     link: localePath("/landing-page"),
   },
   {
-    title: t("services.service_list.1.title"),
-    description: t("services.service_list.1.description"),
+    title: t("home.services.service_list.1.title"),
+    description: t("home.services.service_list.1.description"),
     icon: "hugeicons:store-location-01",
     link: localePath("/ecommerce-website"),
   },
   {
-    title: t("services.service_list.2.title"),
-    description: t("services.service_list.2.description"),
+    title: t("home.services.service_list.2.title"),
+    description: t("home.services.service_list.2.description"),
     icon: "hugeicons:app-store",
-    link: localePath("/ecommerce-website"),
+    link: localePath("/custom-app"),
   },
   {
-    title: t("services.service_list.3.title"),
-    description: t("services.service_list.3.description"),
+    title: t("home.services.service_list.3.title"),
+    description: t("home.services.service_list.3.description"),
     icon: "hugeicons:dashboard-speed-01",
-    link: localePath("/website-management"),
+    link: localePath("/social-media-management"),
   },
-  {
-    title: t("services.service_list.4.title"),
-    description: t("services.service_list.4.description"),
-    icon: "hugeicons:radar-01",
-    link: localePath("/website-management"),
-  },
-  {
-    title: t("services.service_list.5.title"),
-    description: t("services.service_list.5.description"),
-    icon: "hugeicons:ramadhan-month",
-    link: localePath("/website-management"),
-  },
+
 ]);
 </script>
 <template>
-  <section id="services" class="py-8 px-2 relative">
+  <section id="services" class="py-8 px-2 pt4 relative">
     <div
       class="absolute inset-0 h-full w-full opacity-40 -z-10 bg-[radial-gradient(#99a1af_1px,transparent_1px)] [background-size:16px_16px] [mask-image:radial-gradient(ellipse_50%_50%_at_50%_50%,#000_60%,transparent_100%)]"
     ></div>
@@ -52,38 +41,38 @@ const services = computed(() => [
       class="max-w-7xl mx-auto flex flex-col lg:flex-row items-center gap-6 sm:gap-12 py-8"
     >
       <!-- Left Side: Image and Text -->
-      <div class="w-full lg:w-[40%] text-center lg:text-left">
+      <div class="w-full lg:w-[45%] text-center lg:text-left">
         <div class="text-left h-[200px] overflow-hidden">
           <Lottie style="height: 200px" :data="developerSkils" />
         </div>
         <h2 class="text-3xl sm:text-3xl md:text-4xl font-bold">
           <span class=""
-            >{{ $t("services.title") }}
+            >{{ $t("home.services.title") }}
             <span class="text-rose-500">{{
-              $t("services.highlight")
+              $t("home.services.highlight")
             }}</span></span
           >
         </h2>
         <p class="mt-4 text-sm leading-relaxed">
-          <i18n-t keypath="services.stats">
+          <i18n-t keypath="home.services.stats">
             <template #strong1>
-              <b class="text-[#E31C52]">{{ $t("services.strong.1") }}</b>
+              <b class="">{{ $t("home.services.strong.1") }}</b>
             </template>
 
             <template #strong2>
-              <b class="font-bold">{{ $t("services.strong.2") }}</b>
+              <b class="font-bold">{{ $t("home.services.strong.2") }}</b>
             </template>
 
             <template #strong3>
-              <b class="text-[#E31C52]">{{ $t("services.strong.3") }}</b>
+              <b class="">{{ $t("home.services.strong.3") }}</b>
             </template>
 
             <template #strong4>
-              <b class="text-[#E31C52]">{{ $t("services.strong.4") }}</b>
+              <b class="">{{ $t("home.services.strong.4") }}</b>
             </template>
 
             <template #strong5>
-              <b>{{ $t("services.strong.5") }}</b>
+              <b>{{ $t("home.services.strong.5") }}</b>
             </template>
           </i18n-t>
         </p>
@@ -91,7 +80,7 @@ const services = computed(() => [
 
       <!-- Right Side: Tutorials Cards -->
       <div
-        class="w-full lg:w-[60%] grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-3 gap-2 sm:gap-6"
+        class="w-full lg:w-[55%] grid grid-cols-2 lg:grid-cols-2 xl:grid-cols-2 gap-2 sm:gap-6"
       >
         <div
           v-for="(service, index) in services"
@@ -101,17 +90,17 @@ const services = computed(() => [
           <div class="text-4xl mb-2 flex items-center justify-center">
             <Icon :name="service.icon" class="w-10 h-10 text-rose-500" />
           </div>
-          <h3 class="text-center text-xs font-semibold mb-2">
+          <h3 class="text-center text-sm font-bold">
             {{ service.title }}
           </h3>
-          <p class="text-[10px] text-center mb-2">
+          <p class="text-xs text-center mb-2">
             {{ service.description }}
           </p>
           <NuxtLink
             :to="service.link"
             class="text-xs px-3 py-1 border border-rose-500 text-rose-500 rounded-md hover:bg-rose-500 hover:text-white transition"
           >
-            {{ $t("services.view_details") }}
+            {{ $t("home.services.view_details") }}
           </NuxtLink>
         </div>
       </div>

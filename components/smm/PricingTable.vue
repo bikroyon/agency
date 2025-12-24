@@ -17,7 +17,7 @@
       </p>
     </div>
     <!-- Pricing Cards -->
-    <div class="grid gap-6 lg:grid-cols-2 lg:px-28">
+    <div class="grid gap-6  lg:grid-cols-2 lg:px-28">
       <SmmPricingCard
         v-for="plan in plans"
         :key="plan.name"

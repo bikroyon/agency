@@ -3,7 +3,6 @@
     <div class="max-w-5xl mx-auto px-4">
 
       <!-- Heading -->
-      <!-- Heading -->
       <div class="text-center mb-10">
         <h2 class="text-3xl sm:text-4xl font-bold">
           {{ t('custom_app.custom_app_why_choose_section.heading_first') }}

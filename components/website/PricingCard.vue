@@ -3,7 +3,6 @@ const { t } = useI18n({ useScope: "global" });
 
 defineProps({
   plan: Object,
-  isAnnual: Boolean,
   highlighted: Boolean,
 });
 </script>
@@ -34,11 +33,9 @@ defineProps({
             t("ecommerce_page.pricing.money_symbole")
           }}</span>
           <span class="text-slate-900 dark:text-slate-200 font-bold text-4xl">
-            {{ isAnnual ? plan.yearly : plan.monthly }}
+             {{ plan.monthly }}
           </span>
-          <span class="text-slate-500 font-medium">{{
-            t("ecommerce_page.pricing.money_per")
-          }}</span>
+          <span class="text-slate-500 font-medium">{{plan.per}}</span>
         </div>
         <p class="text-sm text-slate-500 mb-5">{{ plan.description }}</p>
         <NuxtLink

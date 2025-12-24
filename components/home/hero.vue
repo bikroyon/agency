@@ -3,16 +3,16 @@ const { t } = useI18n({ useScope: "global" });
 
 // Stats reactive to locale
 const stats = computed(() => [
-  { value: "300+", label: t("hero.clients") },
-  { value: "350+", label: t("hero.projects") },
-  { value: "3+", label: t("hero.years") },
-  { value: "4.9", label: t("hero.rating") },
+  { value: "300+", label: t("home.hero.clients") },
+  { value: "350+", label: t("home.hero.projects") },
+  { value: "3+", label: t("home.hero.years") },
+  { value: "4.9", label: t("home.hero.rating") },
 ]);
 </script>
 
 <template>
   <!-- HERO SECTION -->
-  <section class="relative py-4 overflow-hidden">
+  <section class="relative py-4 pb-0 overflow-hidden">
     <!-- Decorative Blobs -->
     <div
       class="absolute top-20 left-10 w-64 h-64 rounded-full opacity-20 hidden md:block"
@@ -27,24 +27,26 @@ const stats = computed(() => [
     <div class="max-w-7xl mx-auto px-4 md:p-12 md:pt-8 relative">
       <div class="grid md:grid-cols-2 gap-12 md:gap-16 items-center">
         <!-- LEFT: CONTENT -->
-        <div class="relative z-10 text-center md:text-left">
+        <div class="relative z-10 text-center md:text-left order-2 md:order-1">
           <span
             class="inline-block mb-4 px-5 py-2 text-xs font-semibold rounded-full"
             style="background: #e31c5215; color: #e31c52"
           >
-            {{ t("hero.tagline") }}
+            {{ t("home.hero.tagline") }}
           </span>
 
           <h1
             class="text-4xl md:text-4xl lg:text-5xl font-bold leading-tight mb-4"
           >
-            {{ t("hero.main_line") }}<br />
-            <span class="block text-[#E31C52]">{{ t("hero.highlight") }}</span>
-            {{ t("hero.main_line_2") }}
+            {{ t("home.hero.main_line") }}<br />
+            <span class="block text-[#E31C52]">{{
+              t("home.hero.highlight")
+            }}</span>
+            {{ t("home.hero.main_line_2") }}
           </h1>
 
           <p class="text-sm mb-4 leading-relaxed max-w-xl">
-            {{ t("hero.description") }}
+            {{ t("home.hero.description") }}
           </p>
 
           <!-- CTA BUTTONS -->
@@ -55,7 +57,7 @@ const stats = computed(() => [
               to="https://wa.me/8801904015818"
               class="text-white font-semibold rounded-xl px-8 py-2 shadow-lg flex items-center justify-center gap-2 btn-primary"
             >
-              {{ t("hero.cta_contact") }}
+              {{ t("home.hero.cta_contact") }}
               <Icon name="hugeicons:whatsapp" class="w-5 h-5" />
             </NuxtLink>
 
@@ -63,13 +65,13 @@ const stats = computed(() => [
               to="#services"
               class="btn-outline font-semibold rounded-xl px-8 py-2 flex items-center justify-center gap-2"
             >
-              {{ t("hero.cta_services") }}
+              {{ t("home.hero.cta_services") }}
               <Icon name="hugeicons:service" class="w-5 h-5" />
             </NuxtLink>
           </div>
 
           <!-- STATS -->
-          <div class="grid grid-cols-2 sm:grid-cols-4 gap-4">
+          <div  class="grid grid-cols-2 sm:grid-cols-4 gap-4">
             <div
               v-for="(stat, index) in stats"
               :key="index"
@@ -84,7 +86,7 @@ const stats = computed(() => [
         </div>
 
         <!-- RIGHT: VIDEO + FLOAT CARDS -->
-        <div class="relative w-full">
+        <div class="relative w-full order-1 md:order-2">
           <div class="glass rounded-3xl shadow-2xl p-1 md:p-2 w-full">
             <iframe
               class="rounded-xl w-full h-[315px] md:h-[420px]"
@@ -99,11 +101,11 @@ const stats = computed(() => [
 
           <!-- FLOATING CARDS LEFT & RIGHT (unchanged) -->
           <div
-            class="absolute -bottom-6 -left-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+            class="absolute -bottom-6 -left-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-3 hidden md:block float-card float-anim"
           >
             <div class="flex items-center gap-4">
               <div
-                class="w-14 h-14 rounded-full flex-center"
+                class="w-10 h-10 rounded-full flex-center"
                 style="background: #e31c5215"
               >
                 <Icon
@@ -112,18 +114,18 @@ const stats = computed(() => [
                 />
               </div>
               <div>
-                <div class="font-bold">{{ t("hero.stat1_title") }}</div>
-                <div class="text-sm">{{ t("hero.stat1_desc") }}</div>
+                <div class="font-bold">{{ t("home.hero.stat1_title") }}</div>
+                <div class="text-sm">{{ t("home.hero.stat1_desc") }}</div>
               </div>
             </div>
           </div>
 
           <div
-            class="absolute -top-6 -right-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-5 hidden md:block float-card float-anim"
+            class="absolute -top-6 -right-6 glass bg-[#ffffff95] dark:bg-[#01043251] rounded-2xl shadow-2xl p-3 hidden md:block float-card float-anim"
           >
             <div class="flex items-center gap-4">
               <div
-                class="w-14 h-14 rounded-full flex-center"
+                class="w-10 h-10 rounded-full flex-center"
                 style="background: #e31c5215"
               >
                 <Icon
@@ -132,8 +134,8 @@ const stats = computed(() => [
                 />
               </div>
               <div>
-                <div class="font-bold">{{ t("hero.stat2_title") }}</div>
-                <div class="text-sm">{{ t("hero.stat2_desc") }}</div>
+                <div class="font-bold">{{ t("home.hero.stat2_title") }}</div>
+                <div class="text-sm">{{ t("home.hero.stat2_desc") }}</div>
               </div>
             </div>
           </div>
@@ -143,7 +145,6 @@ const stats = computed(() => [
     </div>
   </section>
 </template>
-
 
 <style scoped>
 /* Responsive fixes */

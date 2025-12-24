@@ -5,3 +5,11 @@
     <Banner/>
   </div>
 </template>
+<script setup lang="ts">
+  definePageMeta({
+  title: "Case Studies | Successful Web Development Projects",
+  description:
+    "Explore real-world case studies showcasing our WordPress websites, Laravel web applications, and high-performing digital solutions built for growing businesses.",
+});
+
+</script>
