@@ -9,11 +9,27 @@ const { t } = useI18n({ useScope: "global" });
 
 const form = ref({ name: "", email: "", mobile: "", message: "" });
 const successMessage = ref("");
+const errorMessage = ref("");
 
-const submitForm = () => {
-  console.log("Form submitted:", form.value);
-  successMessage.value = t("contact_page.success_message");
-  form.value = { name: "", email: "", mobile: "", message: "" };
+const submitForm = async () => {
+  try {
+    const res = await $fetch("/api/contact", {
+      method: "POST",
+      body: form.value,
+    });
+
+    if (res.status === "success") {
+      successMessage.value = t("contact_page.success_message");
+      errorMessage.value = "";
+      form.value = { name: "", email: "", mobile: "", message: "" };
+    } else {
+      errorMessage.value = res.message || "Something went wrong.";
+      successMessage.value = "";
+    }
+  } catch (err) {
+    errorMessage.value = "Failed to send message.";
+    successMessage.value = "";
+  }
 };
 </script>
 
@@ -166,6 +182,9 @@ const submitForm = () => {
 
         <p v-if="successMessage" class="mt-4 text-green-600">
           {{ successMessage }}
+        </p>
+        <p v-if="errorMessage" class="mt-4 text-red-600">
+          {{ errorMessage }}
         </p>
       </div>
     </div>

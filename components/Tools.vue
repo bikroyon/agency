@@ -1,14 +1,16 @@
 <script setup lang="ts">
 const { t } = useI18n({ useScope: "global" });
 const brandLogos = [
-  "/tools/DailyFoodShop.png",
-  "/tools/FalaqFood.png",
-  "/tools/HFFood.png",
-  "/tools/KhasFood.png",
-  "/tools/LaOrganika.png",
-  "/tools/OrganicOnline.png",
-  "/tools/ShefaNaturalFood.png",
-  "/tools/Sukkar.png",
+  "/tools/vue.png",
+  "/tools/nuxt.png",
+  "/tools/laravel.png",
+  "/tools/tailwindcss.png",
+  "/tools/mysql.png",
+  "/tools/wordpress.png",
+  "/tools/elementor.png",
+  "/tools/photoshop.png",
+  "/tools/figma.png",
+  "/tools/nodejs.png",
 ];
 </script>
 
@@ -32,7 +34,7 @@ const brandLogos = [
         v-for="(logo, index) in brandLogos"
         :key="index"
         :src="logo"
-        class="h-10 md:h-16 w-auto"
+        class="h-10 md:h-16 w-auto grayscale hover:grayscale-0 transition-all duration-500 ease-in-out"
         :alt="`Brand ${index + 1}`"
       />
     </UMarquee>

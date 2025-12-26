@@ -13,28 +13,6 @@ const socialLinks = [
   { href: "#", icon: "tabler:brand-whatsapp-filled" },
   { href: "#", icon: "mdi:facebook-messenger" },
 ];
-const cards = computed(() => [
-  {
-    icon: "mdi:web",
-    title: t("about_page.skills.cards.wordpress.title"),
-    description: t("about_page.skills.cards.wordpress.desc"),
-  },
-  {
-    icon: "mdi-palette",
-    title: t("about_page.skills.cards.webapp.title"),
-    description: t("about_page.skills.cards.webapp.desc"),
-  },
-  {
-    icon: "mdi-robot",
-    title: t("about_page.skills.cards.ai.title"),
-    description: t("about_page.skills.cards.ai.desc"),
-  },
-  {
-    icon: "mdi-shield-check",
-    title: t("about_page.skills.cards.security.title"),
-    description: t("about_page.skills.cards.security.desc"),
-  },
-]);
 const benefits = computed(() => [
   {
     icon: "mdi-check-circle-outline",
@@ -176,7 +154,6 @@ const benefits = computed(() => [
       </div>
     </section>
     <Partners />
-    <Timeline />
     <Team />
     <Testimonials />
     <Banner />

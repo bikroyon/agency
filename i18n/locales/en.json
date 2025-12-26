@@ -128,32 +128,6 @@
       ]
     }
   },
-  "process": {
-    "title": "How We",
-    "highlight": "Work",
-    "subtitle": "From idea to launch — every stage of our workflow is strategic and proven to grow your business.",
-
-    "step1": {
-      "title": "Detailed Discussion",
-      "description": "We understand your requirements and define the project goals clearly."
-    },
-    "step2": {
-      "title": "Market Research & Design",
-      "description": "We design the UI/UX with a strategic layout for landing pages or websites."
-    },
-    "step3": {
-      "title": "Development Stage",
-      "description": "We develop your website or landing page using Laravel or WordPress."
-    },
-    "step4": {
-      "title": "Testing & Review",
-      "description": "We perform bug fixes and final reviews to ensure everything runs smoothly."
-    },
-    "step5": {
-      "title": "Delivery & Launch",
-      "description": "We host, deploy, and prepare your website for a successful launch."
-    }
-  },
   "support": {
     "title": "We",
     "highlight": " listen, understand, and guide ",
@@ -362,28 +336,72 @@
   },
   "portfolio_page": {
     "title": "Our",
-    "highlight": "Portfolio",
+    "highlight": "Case Study",
     "description": "I always strive to provide the highest quality service to clients. Alhamdulillah, I have maintained this consistency since 2022.",
-    "tabs": {
+    "sections": {
       "landing": {
-        "title": "Landing Page Design",
-        "description": "300+ Completed · 3 Running",
-        "button": "See More"
+        "title": "Landing Pages",
+        "description": "High-converting landing pages designed to generate leads",
+        "items": [
+          {
+            "title": "Mango Product Landing",
+            "desc": "Conversion-focused landing page for a local product business",
+            "btn": "See Live"
+          },
+          {
+            "title": "Real Estate Landing",
+            "desc": "Modern landing page optimized for property inquiries",
+            "btn": "See Live"
+          }
+        ]
       },
-      "ecommerce": {
-        "title": "E-Commerce Website",
-        "description": "50+ Completed · 2 Running",
-        "button": "See More"
+      "website": {
+        "title": "Websites",
+        "description": "Professional business & eCommerce websites",
+        "items": [
+          {
+            "title": "Corporate Website",
+            "desc": "Clean corporate website for a service-based company",
+            "btn": "See Live"
+          },
+          {
+            "title": "Online Store",
+            "desc": "E-commerce website with smooth checkout experience",
+            "btn": "See Live"
+          }
+        ]
       },
-      "custom": {
-        "title": "Custom Website",
-        "description": "12 Completed · 1 Running",
-        "button": "See More"
+      "apps": {
+        "title": "Apps",
+        "description": "We've built our personal products",
+        "items": [
+          {
+            "title": "Corporate Website",
+            "desc": "Clean corporate website for a service-based company",
+            "btn": "See Live"
+          },
+          {
+            "title": "Online Store",
+            "desc": "E-commerce website with smooth checkout experience",
+            "btn": "See Live"
+          }
+        ]
       },
-      "smm": {
-        "title": "Social Media Marketing",
-        "description": "30 Completed · 4 Running",
-        "button": "See More"
+      "social": {
+        "title": "Social Media Management",
+        "description": "Brand growth through content and paid ads",
+        "items": [
+          {
+            "title": "Facebook Growth Campaign",
+            "desc": "Lead generation & engagement strategy",
+            "btn": "See Live"
+          },
+          {
+            "title": "Instagram Branding",
+            "desc": "Visual branding & organic growth campaign",
+            "btn": "See Live"
+          }
+        ]
       }
     }
   },
@@ -417,37 +435,13 @@
   },
   "about_page": {
     "heroSection": {
-      "title": "We are",
+      "title": "Bikroyon",
       "highlight": "Bikroyon",
       "paragraphs1": "Bikroyon is a professional web development, digital marketing, and AI automation agency in Bangladesh. Since 2020, we have been designing and developing custom websites, landing pages, and complete digital solutions for our clients. Our main goal is to help every client's business grow quickly and efficiently online.",
       "paragraphs2": "Our team consists of skilled WordPress and Laravel developers, UI/UX designers, and digital marketing experts. We don't just create websites; we create effective, SEO-friendly, and conversion-focused digital products for businesses.",
       "paragraphs3": "We believe that every client is unique. Hence, each of our projects is fully customized. Our work enhances your brand visibility, builds customer trust, and boosts online sales. Our design and development process always ensures responsive, secure, and fast-loading websites.",
       "missionTitle": "Our Mission",
       "missionParagraph": "Our mission is to ensure the digital success of every client. We don’t just build websites; we create a strong online presence for your brand. Working with Bikroyon means you get custom solutions, fast support, and professional design that keeps your business ahead in a competitive market."
-    },
-    "skills": {
-      "heading": "Our",
-      "heading_highlight": "Skills",
-      "subtitle": "Bikroyon provides industry-leading web development, design, and marketing services. We build modern, effective solutions to strengthen your online presence.",
-
-      "cards": {
-        "wordpress": {
-          "title": "WordPress Web Design",
-          "desc": "Premium-quality websites built using WordPress, Elementor, and WooCommerce."
-        },
-        "webapp": {
-          "title": "Custom Web App",
-          "desc": "Secure and scalable web applications built using Laravel, Vue.js, and Nuxt.js."
-        },
-        "ai": {
-          "title": "AI Automation",
-          "desc": "Advanced workflow automation using n8n, Zapier, and other AI automation platforms."
-        },
-        "security": {
-          "title": "Secure & Fast Websites",
-          "desc": "Performance-optimized, secure, and fast-loading websites that stand out in competition."
-        }
-      }
     },
     "tools": {
       "title": "The ",
