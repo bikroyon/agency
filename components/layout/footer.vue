@@ -111,8 +111,14 @@ const { t } = useI18n({ useScope: "global" });
 
           <li class="flex items-center gap-2">
             <Icon name="mdi:email-outline" class="w-5 h-5 text-rose-500" />
-            <NuxtLink :to="`mailto:${t('footer.contact.email')}`" class="">
-              info@bikroyon.com
+            <NuxtLink :to="`mailto:contact@bikroyon.com`" class="">
+              contact@bikroyon.com
+            </NuxtLink>
+          </li>
+          <li class="flex items-center gap-2">
+            <Icon name="mdi:map-outline" class="w-5 h-5 text-rose-500" />
+            <NuxtLink to="" class="">
+              Find us on Map
             </NuxtLink>
           </li>
         </ul>

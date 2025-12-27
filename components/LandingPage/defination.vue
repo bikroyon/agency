@@ -116,7 +116,7 @@
 
         <!-- CTA Button -->
         <NuxtLink
-          to="https://wa.me/8809638365975"
+          to="https://wa.me/8801904015818"
           target="_blank"
           class="inline-flex items-center gap-4 px-12 py-3 rounded-lg text-white font-normal text-sm md:text-xl shadow-xl shadow-red-600/30 transform hover:scale-105 transition-all duration-300"
           style="background: linear-gradient(135deg, #e31c52, #c4173f)"

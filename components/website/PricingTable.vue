@@ -39,7 +39,6 @@ const plans = computed(() => [
     id: "regular",
     name: t("ecommerce_page.pricing.plans.0.name"),
     monthly: t("ecommerce_page.pricing.plans.0.monthly"),
-    per: t("ecommerce_page.pricing.plans.0.money_per"),
     description: t("ecommerce_page.pricing.plans.0.description"),
     features_title: t("ecommerce_page.pricing.plans.0.features_title"),
     features: [

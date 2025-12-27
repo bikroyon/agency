@@ -1,6 +1,6 @@
 <template>
   <div
-    id="#pricing"
+    id="pricing"
     class="py-20 sm:px-4 max-w-7xl mx-auto"
     :class="{ dark: darkMode }"
   >
@@ -16,48 +16,13 @@
         {{ t("landing_pricing.subheading") }}
       </p>
     </div>
-    <!-- Toggle -->
-    <div class="flex justify-center max-w-[24rem] mx-auto mb-8">
-      <div
-        class="relative flex w-full p-1 bg-slate-100 dark:bg-slate-800 rounded-lg"
-      >
-        <span
-          class="absolute inset-0 m-1 pointer-events-none"
-          aria-hidden="true"
-        >
-          <span
-            class="absolute inset-0 w-1/2 bg-rose-500 rounded-lg shadow-sm shadow-indigo-950/10 transform transition-transform duration-150 ease-in-out"
-            :class="isAnnual ? 'translate-x-0' : 'translate-x-full'"
-          ></span>
-        </span>
-        <button
-          class="relative flex-1 text-sm sm:text-base font-semibold sm:font-bold h-8 sm:h-12 rounded-full transition-colors"
-          :class="
-            isAnnual ? 'text-white' : 'text-slate-500 dark:text-slate-400'
-          "
-          @click="isAnnual = true"
-        >
-          {{ t("landing_pricing.toggle_left") }}
-        </button>
-        <button
-          class="relative flex-1 text-sm sm:text-base font-semibold sm:font-bold h-8 sm:h-12 rounded-full transition-colors"
-          :class="
-            !isAnnual ? 'text-white' : 'text-slate-500 dark:text-slate-400'
-          "
-          @click="isAnnual = false"
-        >
-          {{ t("landing_pricing.toggle_right") }}
-        </button>
-      </div>
-    </div>
 
     <!-- Pricing Cards -->
-    <div class="grid gap-6 lg:grid-cols-2 lg:px-28">
+    <div class="grid gap-6  lg:grid-cols-2 lg:px-28">
       <LandingPagePricingCard
         v-for="plan in plans"
         :key="plan.name"
         :plan="plan"
-        :is-annual="isAnnual"
         :highlighted="plan.name === 'কমপ্লিট প্যাকেজ'"
       />
     </div>
@@ -65,7 +30,6 @@
 </template>
 
 <script setup>
-const isAnnual = ref(true);
 const darkMode = false;
 const { t } = useI18n({ useScope: "global" });
 
@@ -75,7 +39,7 @@ const plans = computed(() => [
     id: "regular",
     name: t("landing_pricing.plans.0.name"),
     monthly: t("landing_pricing.plans.0.monthly"),
-    yearly: t("landing_pricing.plans.0.yearly"),
+    per: t("landing_pricing.plans.0.money_per"),
     description: t("landing_pricing.plans.0.description"),
     features_title: t("landing_pricing.plans.0.features_title"),
     features: [
@@ -93,7 +57,7 @@ const plans = computed(() => [
     id: "completed",
     name: t("landing_pricing.plans.1.name"),
     monthly: t("landing_pricing.plans.1.monthly"),
-    yearly: t("landing_pricing.plans.1.yearly"),
+      per: t("landing_pricing.plans.1.money_per"),
     description: t("landing_pricing.plans.1.description"),
     features_title: t("landing_pricing.plans.1.features_title"),
     features: [

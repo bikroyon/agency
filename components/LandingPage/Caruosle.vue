@@ -3,7 +3,7 @@ const { t } = useI18n({ useScope: "global" });
 
 const items = computed(() => [
   t("landing_portfolio_section.images.0"),
-  t("landing_portfolio_sectionlanding_portfolio_section.images.1"),
+  t("landing_portfolio_section.images.1"),
   t("landing_portfolio_section.images.2"),
   t("landing_portfolio_section.images.3"),
   t("landing_portfolio_section.images.4"),

@@ -191,5 +191,16 @@ onMounted(async () => {
         </div>
       </UCarousel>
     </div>
+
+    <!-- CTA -->
+    <div class="text-center max-w-2xl mx-auto">
+      <NuxtLink
+        to="/contacts"
+        class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-medium transition"
+      >
+        {{ t("portfolio_page.cta") }}
+        <Icon name="mdi-arrow-right" class="w-5 h-5" />
+      </NuxtLink>
+    </div>
   </section>
 </template>

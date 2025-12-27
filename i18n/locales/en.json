@@ -37,8 +37,7 @@
     "contact_title": "Contact Info",
     "contact": {
       "address": "Dhaka, Bangladesh",
-      "phone": "+880 1799 568 976",
-      "email": "infobikroyon.com"
+      "phone": "+880 1799 568 976"
     },
 
     "copyright": "© 2025 Bikroyon. All rights reserved."
@@ -271,8 +270,8 @@
     "plans": {
       "0": {
         "name": "Regular Package",
-        "monthly": "5,000",
-        "yearly": "3,000",
+        "monthly": "100",
+        "money_per": "/Project",
         "description": "If you need advanced features and want to take your business to the next level, this package is perfect. Premium themes & plugins are not included.",
         "features_title": "You are Getting:",
         "features": [
@@ -288,8 +287,8 @@
       },
       "1": {
         "name": "Complete Package",
-        "monthly": "7,500",
-        "yearly": "4,500",
+        "monthly": "199",
+        "money_per": "/Project",
         "description": "This is our all-in-one premium package. Perfect for those who want maximum results & top-level support. Includes all premium themes & plugins.",
         "features_title": "You are Getting:",
         "features": [
@@ -338,6 +337,7 @@
     "title": "Our",
     "highlight": "Case Study",
     "description": "I always strive to provide the highest quality service to clients. Alhamdulillah, I have maintained this consistency since 2022.",
+    "cta": "Contact Now",
     "sections": {
       "landing": {
         "title": "Landing Pages",
@@ -656,17 +656,14 @@
       "heading_first": "Our",
       "heading_highlight": "Pricing Plans",
       "subheading": "Choose a plan that fits your business needs.",
-      "money_symbole": "৳",
+      "money_symbole": "$",
       "recomended": "Our Suggested",
-      "money_per": "/Project",
-      "toggle_left": "Without",
-      "toggle_right": "With Domain & Hosting",
       "cta_button": "I want this Package",
       "plans": {
         "0": {
           "name": "Regular Package",
-          "monthly": "5,000",
-          "yearly": "3,000",
+          "monthly": "250",
+          "money_per": "/Project",
           "description": "If you need advanced features and want to take your business to the next level, this package is perfect. Premium themes & plugins are not included.",
           "features_title": "You are Getting:",
           "features": [
@@ -682,8 +679,8 @@
         },
         "1": {
           "name": "Complete Package",
-          "monthly": "7,500",
-          "yearly": "4,500",
+          "monthly": "450",
+          "money_per": "/Project",
           "description": "This is our all-in-one premium package. Perfect for those who want maximum results & top-level support. Includes all premium themes & plugins.",
           "features_title": "You are Getting:",
           "features": [
@@ -1041,7 +1038,7 @@
       "plans": {
         "0": {
           "name": "Growth Package",
-          "monthly": "250",
+          "monthly": "150",
           "money_per": "/Month",
           "description": "Ideal for small businesses and startups looking to build a strong social presence and consistent engagement. Focused on organic growth and brand awareness.",
           "features_title": "What’s Included:",
@@ -1058,7 +1055,7 @@
         },
         "1": {
           "name": "Authority Package",
-          "monthly": "499",
+          "monthly": "299",
           "money_per": "/Month",
           "description": "A complete social media management solution for brands that want faster growth, higher engagement, and measurable ROI. Perfect for scaling businesses.",
           "features_title": "What’s Included:",

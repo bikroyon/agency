@@ -1,36 +1,59 @@
 <script setup lang="ts">
 import Community from "~/assets/lottie/Community.json";
 const { t } = useI18n({ useScope: "global" });
+import gsap from "gsap";
+import ScrollTrigger from "gsap/ScrollTrigger";
+onMounted(async () => {
+  // Wait for DOM to render carousel cards
+  await nextTick();
+
+  document.querySelectorAll(".banner-section").forEach((section) => {
+    const cards = section.querySelectorAll(".banner-items");
+
+    gsap.from(cards, {
+      opacity: 0,
+      y: 40,
+      stagger: 0.15,
+      duration: 0.6,
+      ease: "power3.out",
+      scrollTrigger: {
+        trigger: section,
+        start: "top 98.5%", // ~1.5% from top of viewport
+        toggleActions: "play reverse play reverse",
+      },
+    });
+  });
+});
 </script>
 
 <template>
   <section>
     <div
-      class="bg-stone-100 dark:bg-stone-800 sm:max-h-[300px] rounded-3xl flex flex-col-reverse sm:flex-row items-center justify-between p-6 overflow-hidden"
+      class="bg-stone-100 dark:bg-stone-800 sm:max-h-[300px] rounded-3xl flex flex-col-reverse sm:flex-row items-center justify-between p-6 overflow-hidden banner-section"
     >
       <!-- Left Section (Text Content) -->
       <div class="max-w-xl flex items-center flex-col">
         <div class="text-left sm:pl-10">
           <!-- Heading -->
-          <h2 class="text-2xl md:text-3xl font-bold">
+          <h2 class="text-2xl md:text-3xl font-bold banner-items">
             {{ t("support.title") }}
             <span class="text-rose-500">{{ t("support.highlight") }}</span>
             {{ t("support.subtitle") }}
           </h2>
 
           <!-- Descriptions -->
-          <p class="text-xs sm:text-sm mb-2 font-normal">
+          <p class="text-xs sm:text-sm mb-2 font-normal banner-items">
             {{ t("support.description1") }}
           </p>
-          <p class="text-xs sm:text-sm mb-2 font-normal">
+          <p class="text-xs sm:text-sm mb-2 font-normal banner-items">
             {{ t("support.description2") }}
           </p>
 
           <!-- Button -->
           <NuxtLink
-            to="https://wa.me/+8801904015818?text=ফ্রি পরামর্শ নিতে চাই।"
+            to="https://wa.me/8801904015818?text=i want to get free consultations"
             target="_blank"
-            class="bg-rose-500 dark:bg-rose-600 hover:bg-rose-500 hover:dark:bg-rose-700 w-fit text-slate-50 px-4 py-2 rounded-lg flex items-center justify-center gap-2"
+            class="banner-items bg-rose-500 dark:bg-rose-600 hover:bg-rose-500 hover:dark:bg-rose-700 w-fit text-slate-50 px-4 py-2 rounded-lg flex items-center justify-center gap-2"
           >
             <Icon name="hugeicons:whatsapp" />
             <p class="text-xs sm:text-sm md:text-base">{{
