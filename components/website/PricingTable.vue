@@ -1,6 +1,6 @@
 <template>
   <div
-    id="#pricing"
+    id="pricing"
     class="py-20 sm:px-4 max-w-7xl mx-auto"
     :class="{ dark: darkMode }"
   >
@@ -19,7 +19,7 @@
 
     <!-- Pricing Cards -->
     <div class="grid gap-6 grid-cols-1 lg:grid-cols-2 lg:px-28">
-      <LandingPagePricingCard
+      <WebsitePricingCard
         v-for="plan in plans"
         :key="plan.name"
         :plan="plan"
@@ -39,6 +39,7 @@ const plans = computed(() => [
     id: "regular",
     name: t("ecommerce_page.pricing.plans.0.name"),
     monthly: t("ecommerce_page.pricing.plans.0.monthly"),
+    per: t("ecommerce_page.pricing.plans.0.money_per"),
     description: t("ecommerce_page.pricing.plans.0.description"),
     features_title: t("ecommerce_page.pricing.plans.0.features_title"),
     features: [
@@ -68,6 +69,9 @@ const plans = computed(() => [
       t("ecommerce_page.pricing.plans.1.features.5"),
       t("ecommerce_page.pricing.plans.1.features.6"),
       t("ecommerce_page.pricing.plans.1.features.7"),
+      t("ecommerce_page.pricing.plans.1.features.8"),
+      t("ecommerce_page.pricing.plans.1.features.9"),
+      t("ecommerce_page.pricing.plans.1.features.10"),
     ],
   },
 ]);

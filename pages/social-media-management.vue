@@ -4,8 +4,6 @@
     <SmmDefination />
     <SmmWhy />
     <SmmProblem />
-    <Tools />
-    <SmmCaruosle />
     <SmmPricingTable/>
     <Banner />
     <Testimonials />

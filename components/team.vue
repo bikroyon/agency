@@ -1,82 +1,22 @@
 <script setup lang="ts">
 const { t } = useI18n({ useScope: "global" });
-import { onMounted, nextTick } from "vue";
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-
-gsap.registerPlugin(ScrollTrigger);
-
-onMounted(async () => {
-  await nextTick();
-  gsap.from(".team-header", {
-    opacity: 0,
-    y: 30,
-    stagger: 0.15,
-    duration: 0.5,
-    ease: "power3.out",
-    scrollTrigger: {
-      trigger: ".team-section",
-      start: "top 99.0%",
-      toggleActions: "play reverse play reverse",
-    },
-  });
-  gsap.utils.toArray<HTMLElement>(".team-card").forEach((card) => {
-    const items = card.querySelectorAll(".team-item");
-
-    const tl = gsap.timeline({
-      scrollTrigger: {
-        trigger: card,
-        start: "top 99.5%",
-        toggleActions: "play reverse play reverse",
-      },
-    });
-
-    tl.from(card, {
-      opacity: 0,
-      y: 40,
-      duration: 0.6,
-      ease: "power3.out",
-    }).from(
-      items,
-      {
-        opacity: 0,
-        y: 20,
-        stagger: 0.1,
-        duration: 0.4,
-        ease: "power2.out",
-      },
-      "-=0.35"
-    );
-  });
-});
-
-interface SocialLinks {
-  facebook?: string;
-  linkedin?: string;
-  twitter?: string;
-}
 
 interface TeamMember {
   image: string;
-  socials: SocialLinks;
 }
 
 const teamMembers = ref<TeamMember[]>([
   {
     image: "/teams/founder.png",
-    socials: { facebook: "#", linkedin: "#", twitter: "#" },
   },
   {
     image: "/teams/co.webp",
-    socials: { facebook: "#", linkedin: "#", twitter: "#" },
   },
   {
     image: "/teams/designer.png",
-    socials: { facebook: "#", linkedin: "#", twitter: "#" },
   },
   {
     image: "/teams/abu.png",
-    socials: { facebook: "#", linkedin: "#", twitter: "#" },
   },
 ]);
 </script>
@@ -118,36 +58,6 @@ const teamMembers = ref<TeamMember[]>([
         <p class="mt-1 text-xs sm:text-sm team-items">
           {{ t(`home.team.members.${index}.role`) }}
         </p>
-
-        <!-- SOCIAL ICONS -->
-        <div class="mt-2 flex justify-center space-x-3 sm:space-x-4">
-          <NuxtLink
-            v-if="member.socials.facebook"
-            :to="member.socials.facebook"
-          >
-            <Icon
-              name="hugeicons:facebook-02"
-              class="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 hover:text-rose-500 team-item"
-            />
-          </NuxtLink>
-
-          <NuxtLink
-            v-if="member.socials.linkedin"
-            :to="member.socials.linkedin"
-          >
-            <Icon
-              name="hugeicons:linkedin-02"
-              class="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 hover:text-rose-500 team-item"
-            />
-          </NuxtLink>
-
-          <NuxtLink v-if="member.socials.twitter" :to="member.socials.twitter">
-            <Icon
-              name="hugeicons:new-twitter"
-              class="w-4 h-4 sm:w-5 sm:h-5 text-gray-600 hover:text-rose-500 team-item"
-            />
-          </NuxtLink>
-        </div>
       </div>
     </div>
   </section>

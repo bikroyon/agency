@@ -5,7 +5,7 @@
     <WebsiteProblem/>
     <WebsiteFeatures />
     <ChooseUs/>
-    <WebsiteCaruosle />
+    <Partners/>
     <WebsitePricingTable/>
     <Banner />
     <Testimonials />

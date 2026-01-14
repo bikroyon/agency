@@ -4,6 +4,13 @@ const message = encodeURIComponent(
   "Hello! I want to chat with you about Your services."
 );
 const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
+const { $fbq } = useNuxtApp()
+
+const trackMessage = () => {
+  if ($fbq) {
+    $fbq('track', 'Message')
+  }
+}
 </script>
 
 <template>
@@ -12,6 +19,7 @@ const whatsappLink = `https://wa.me/${whatsappNumber}?text=${message}`;
     :to="whatsappLink"
     target="_blank"
     rel="noopener noreferrer"
+     @click="trackMessage"
     class="fixed bottom-5 right-5 z-50 flex items-center justify-center w-14 h-14 bg-rose-500 rounded-full shadow-lg hover:scale-110 transition-transform"
   >
     <!-- Ping animation -->

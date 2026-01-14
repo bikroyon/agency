@@ -29,7 +29,7 @@
             <strong class="font-semibold block text-gray-900 dark:text-gray-100">
               {{ item.title }}
             </strong>
-            <span class="text-gray-600 dark:text-gray-300 text-sm sm:text-base">
+            <span class="text-gray-600 dark:text-gray-300 text-xs sm:text-base">
               {{ item.description }}
             </span>
           </div>

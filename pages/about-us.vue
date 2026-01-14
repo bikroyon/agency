@@ -48,10 +48,10 @@ const benefits = computed(() => [
 </script>
 <template>
   <div class="mx-auto container p-2 md:p-16 md:pt-0">
-    <section class="pb-10">
-      <div class="max-w-7xl mx-auto grid md:grid-cols-2 gap-4 items-center">
+    <section class="py-10">
+      <div class="  gap-4 md:gap-8 lg:gap-16 flex flex-col md:flex-row items-center justify-between flex-col-reverse">
         <!-- Left Side: About Text -->
-        <div>
+        <div class="p-2 sm:p-0">
           <h2 class="text-3xl sm:text-4xl font-bold leading-snug">
             {{ t("about_page.heroSection.title") }}
             <span class="text-rose-500">{{
@@ -59,15 +59,15 @@ const benefits = computed(() => [
             }}</span>
           </h2>
 
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
+          <p class="mt-2 text-gray-700 text-sm md:text-base dark:text-gray-300">
             {{ t("about_page.heroSection.paragraphs1") }}
           </p>
 
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
+          <p class="mt-2 text-gray-700  text-sm md:text-base dark:text-gray-300">
             {{ t("about_page.heroSection.paragraphs2") }}
           </p>
 
-          <p class="mt-2 text-gray-700 dark:text-gray-300">
+          <p class="mt-2 text-gray-700  text-sm md:text-base dark:text-gray-300">
             {{ t("about_page.heroSection.paragraphs3") }}
           </p>
 
@@ -76,22 +76,22 @@ const benefits = computed(() => [
             <h3 class="text-2xl font-bold mb-2">
               {{ t("about_page.heroSection.missionTitle") }}
             </h3>
-            <p class="text-gray-700 dark:text-gray-300">
+            <p class="text-gray-700  text-sm md:text-base dark:text-gray-300">
               {{ t("about_page.heroSection.missionParagraph") }}
             </p>
           </div>
         </div>
 
         <!-- Right Side: Illustration / Image + Social Media -->
-        <div class="flex flex-col justify-center items-center">
+        <div class="flex flex-col justify-center items-center px-8" >
           <img
-            src="https://placehold.co/500x400?text=Bikroyon+Agency"
+            src="../public/teams/team.webp"
             alt="Bikroyon Agency"
-            class="rounded-lg shadow-lg"
+            class="rounded-lg shadow-lg w-80 h-72 object-cover object-top"
           />
 
           <!-- Social Icons -->
-          <div class="flex items-center gap-4 pt-6">
+          <div class="flex items-center gap-4 pt-2">
             <NuxtLink
               v-for="(social, index) in socialLinks"
               :key="index"
@@ -104,8 +104,7 @@ const benefits = computed(() => [
         </div>
       </div>
     </section>
-    <Tools />
-    <section class="py-16 px-4 sm:px-6 lg:px-8">
+    <section class="py-16 px-2 sm:px-6 lg:px-8">
       <div class="max-w-5xl mx-auto text-center">
         <!-- Main Heading -->
         <h2 class="text-3xl sm:text-4xl font-bold">
@@ -115,19 +114,19 @@ const benefits = computed(() => [
           }}</span>
           {{ t("about_page.why_choose.title_last") }}
         </h2>
-        <p class="mt-4 text-gray-700 dark:text-gray-300 text-base sm:text-lg">
+        <p class="mt-4 text-gray-700 dark:text-gray-300 text-sm sm:text-base">
           {{ t("about_page.why_choose.description") }}
         </p>
 
         <!-- Sub-heading -->
         <h3
-          class="mt-8 text-xl sm:text-2xl font-semibold text-gray-800 dark:text-gray-100"
+          class="mt-8 text-base sm:text-2xl font-semibold text-gray-800 dark:text-gray-100"
         >
           {{ t("about_page.why_choose.subtitle") }}
         </h3>
 
         <!-- Benefits List -->
-        <ul class="mt-6 space-y-2 text-left sm:text-left">
+        <ul class="mt-2 sm:mt-6 space-y-2 text-left sm:text-left">
           <li
             v-for="(item, index) in benefits"
             :key="index"
@@ -135,17 +134,17 @@ const benefits = computed(() => [
           >
             <Icon :name="item.icon" class="text-rose-500 w-6 h-6 mt-1" />
             <div>
-              <strong class="font-semibold">{{ item.strong }}</strong>
-              {{ item.text }}
+              <strong class="font-semibold text-sm sm:text-base">{{ item.strong }}</strong>
+              <p class="text-xs sm:text-sm">{{ item.text }}</p>
             </div>
           </li>
         </ul>
 
         <!-- CTA -->
-        <div class="mt-10">
+        <div class="mt-4 sm:mt-16">
           <NuxtLink
             to="/contacts"
-            class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-6 py-3 rounded-md font-medium transition"
+            class="inline-flex items-center gap-2 bg-rose-500 hover:bg-rose-600 text-white px-2.5 py-1.5 sm:px-6 sm:py-3 rounded-md font-medium transition text-sm sm:text-base"
           >
             {{ t("about_page.why_choose.cta") }}
             <Icon name="mdi-arrow-right" class="w-5 h-5" />

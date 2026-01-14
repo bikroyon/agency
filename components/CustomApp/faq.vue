@@ -32,42 +32,34 @@ const { t } = useI18n({ useScope: "global" });
 
 const faqItems = [
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.0.label"),
     content: t("custom_app.faq_section.items.0.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.1.label"),
     content: t("custom_app.faq_section.items.1.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.2.label"),
     content: t("custom_app.faq_section.items.2.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.3.label"),
     content: t("custom_app.faq_section.items.3.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.4.label"),
     content: t("custom_app.faq_section.items.4.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.5.label"),
     content: t("custom_app.faq_section.items.5.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.6.label"),
     content: t("custom_app.faq_section.items.6.content"),
   },
   {
-    icon: "mdi-help-circle-outline",
     label: t("custom_app.faq_section.items.7.label"),
     content: t("custom_app.faq_section.items.7.content"),
   },

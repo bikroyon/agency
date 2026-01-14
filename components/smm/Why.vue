@@ -83,7 +83,7 @@ const smmBenefits = computed(() => [
       <!-- Buttons -->
       <div class="mt-1 sm:mt-0 flex justify-center gap-2 sm:gap-4 flex-wrap">
         <NuxtLink
-          to="https://wa.me/+8801904015818"
+          to="https://wa.me/8801904015818"
           class="bg-rose-500 text-sm sm:text-base flex items-center justify-center gap-2 text-white  px-4 py-2 sm:px-6 sm:py-3  rounded-md hover:bg-rose-700 transition"
         >
           <Icon name="hugeicons:whatsapp" />

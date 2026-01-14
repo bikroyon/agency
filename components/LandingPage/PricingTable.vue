@@ -69,6 +69,9 @@ const plans = computed(() => [
       t("landing_pricing.plans.1.features.5"),
       t("landing_pricing.plans.1.features.6"),
       t("landing_pricing.plans.1.features.7"),
+      t("landing_pricing.plans.1.features.8"),
+      t("landing_pricing.plans.1.features.9"),
+      t("landing_pricing.plans.1.features.10"),
     ],
   },
 ]);

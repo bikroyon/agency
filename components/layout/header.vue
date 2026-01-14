@@ -30,7 +30,7 @@ const items = computed(() => [
         label: t("menu.ecommerce"),
         description: t("menu.ecommerce_desc"),
         icon: "hugeicons:activity-04",
-        to: localePath("/ecommerce-website"),
+        to: localePath("/wordpress-website"),
       },
       {
         label: t("menu.custom_app"),
@@ -90,7 +90,7 @@ const items = computed(() => [
             <UColorModeButton color="error" />
           </ClientOnly>
           <UButton
-            to="https://wa.me/+8801904015818"
+            to="https://wa.me/8801904015818"
             class="hidden sm:flex"
             icon="hugeicons:whatsapp"
             size="lg"
@@ -126,7 +126,7 @@ const items = computed(() => [
         class="text-base"
       />
       <div class="flex gap-3 pt-6 mt-auto border-t border-white/10">
-        <NuxtLink to="https://wa.me/+8801904015818">
+        <NuxtLink to="https://wa.me/8801904015818">
           <UButton
             icon="hugeicons:whatsapp"
             size="md"

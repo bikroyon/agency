@@ -43,16 +43,17 @@
       <!-- CTA বাটন -->
       <div id="video" class="mt-3 flex justify-center gap-2 sm:gap-4 flex-wrap">
         <NuxtLink
-          to="https://wa.me/+8801904015818"
+          to="https://wa.me/8801904015818"
+          @click="trackMessage"
           class="bg-rose-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-rose-600 flex items-center gap-2 transition text-sm sm:text-base"
         >
-          <Icon name="hugeicons:whatsapp" /> {{ t("smm.hero.cta_primary") }}
+          <Icon name="hugeicons:whatsapp" /> {{ t("ecommerce_page.features_section.btn_contact") }}
         </NuxtLink>
         <NuxtLink
-          to="#video"
+          to="#pricing"
           class="border border-rose-500 text-rose-500 px-4 py-2 text-sm sm:text-base sm:px-6 sm:py-3 rounded-md hover:bg-rose-500 hover:dark:bg-rose-500 hover:text-white flex items-center gap-2 transition"
         >
-          {{ t("smm.hero.cta_secondary") }}
+          {{ t("ecommerce_page.features_section.btn_details") }}
           <Icon name="hugeicons:arrow-down-double" />
         </NuxtLink>
       </div>
@@ -62,7 +63,13 @@
 
 <script setup lang="ts">
 const { t } = useI18n({ useScope: "global" });
+const { $fbq } = useNuxtApp();
 
+const trackMessage = () => {
+  if ($fbq) {
+    $fbq("track", "Message");
+  }
+};
 const features = computed(() => [
   {
     icon: t("ecommerce_page.features_section.features.0.icon"),

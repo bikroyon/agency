@@ -5,6 +5,13 @@ defineProps({
   plan: Object,
   highlighted: Boolean,
 });
+const { $fbq } = useNuxtApp();
+
+const trackMessage = () => {
+  if ($fbq) {
+    $fbq("track", "Message");
+  }
+};
 </script>
 <template>
   <div class="relative">
@@ -22,7 +29,7 @@ defineProps({
       :class="[
         plan.id === 'completed' ? 'border-rose-600' : 'border-slate-700',
       ]"
-      class="p-6 rounded-2xl bg-white dark:bg-slate-900 border shadow shadow-slate-950/5"
+      class="p-6 rounded-2xl border shadow shadow-slate-950/5"
     >
       <div class="mb-5">
         <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">
@@ -40,6 +47,7 @@ defineProps({
         <p class="text-sm text-slate-500 mb-5">{{ plan.description }}</p>
         <NuxtLink
           to="#"
+          @click="trackMessage"
           :class="[
             highlighted
               ? 'bg-rose-700 hover:bg-rose-600'

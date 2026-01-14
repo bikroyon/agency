@@ -28,7 +28,7 @@ useSeoMeta({
 </script>
 
 <template>
-  <div class="min-h-screen flex flex-col">
+  <div class="min-h-screen flex flex-col selection:bg-rose-600 selection:text-white">
     <LayoutHeader />
     <main class="flex-grow">
       <slot />

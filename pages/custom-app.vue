@@ -4,11 +4,10 @@
     <div class="min-h-screen container mx-auto p-2 md:p-16 md:pt-0 pt-0">
       <CustomAppWhy />
       <CustomAppProblem />
-      <Tools />
       <CustomAppWeBuildFor />
-      <Timeline />
       <Partners />
       <ChooseUs />
+      <CoreButtons/>
       <Testimonials />
       <Banner />
       <CustomAppFaq />

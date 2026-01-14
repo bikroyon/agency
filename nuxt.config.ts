@@ -115,7 +115,7 @@ export default defineNuxtConfig({
     },
     vueI18n: "./i18n.config.ts",
   },
-  
+
   css: ["~/assets/css/main.css"],
   lottie: {
     componentName: "Lottie",
@@ -123,6 +123,7 @@ export default defineNuxtConfig({
   },
   ui: {
     colorMode: true,
+    
   },
   vite: {
     plugins: [tailwindcss()],

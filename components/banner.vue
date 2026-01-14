@@ -1,29 +1,13 @@
 <script setup lang="ts">
 import Community from "~/assets/lottie/Community.json";
 const { t } = useI18n({ useScope: "global" });
-import gsap from "gsap";
-import ScrollTrigger from "gsap/ScrollTrigger";
-onMounted(async () => {
-  // Wait for DOM to render carousel cards
-  await nextTick();
+const { $fbq } = useNuxtApp();
 
-  document.querySelectorAll(".banner-section").forEach((section) => {
-    const cards = section.querySelectorAll(".banner-items");
-
-    gsap.from(cards, {
-      opacity: 0,
-      y: 40,
-      stagger: 0.15,
-      duration: 0.6,
-      ease: "power3.out",
-      scrollTrigger: {
-        trigger: section,
-        start: "top 98.5%", // ~1.5% from top of viewport
-        toggleActions: "play reverse play reverse",
-      },
-    });
-  });
-});
+const trackMessage = () => {
+  if ($fbq) {
+    $fbq("track", "Message");
+  }
+};
 </script>
 
 <template>
@@ -53,12 +37,13 @@ onMounted(async () => {
           <NuxtLink
             to="https://wa.me/8801904015818?text=i want to get free consultations"
             target="_blank"
+            @click="trackMessage"
             class="banner-items bg-rose-500 dark:bg-rose-600 hover:bg-rose-500 hover:dark:bg-rose-700 w-fit text-slate-50 px-4 py-2 rounded-lg flex items-center justify-center gap-2"
           >
             <Icon name="hugeicons:whatsapp" />
-            <p class="text-xs sm:text-sm md:text-base">{{
-              t("support.button")
-            }}</p>
+            <p class="text-xs sm:text-sm md:text-base">
+              {{ t("support.button") }}
+            </p>
           </NuxtLink>
         </div>
       </div>

@@ -49,14 +49,14 @@ const submitForm = async () => {
         <ul class="mt-6 space-y-4">
           <li class="flex items-center space-x-3">
             <Icon name="hugeicons:calling-02" />
-            <NuxtLink to="tel:+880190415818"
+            <NuxtLink to="tel:+8801904015818"
               >{{ t("contact_page.contacts.mobile") }}: +880 1904 015 818
             </NuxtLink>
           </li>
           <li class="flex items-center space-x-3">
             <Icon name="hugeicons:whatsapp" />
             <NuxtLink
-              to="https://wa.me/+880190415818"
+              to="https://wa.me/8801904015818"
               class="text-rose-400 hover:underline"
               >{{ t("contact_page.contacts.whatsapp") }}: +880 1904 015
               818</NuxtLink
@@ -81,7 +81,7 @@ const submitForm = async () => {
           <li class="flex items-center space-x-3">
             <Icon name="hugeicons:youtube" />
             <NuxtLink
-              to="https://www.youtube.com/@stackvai"
+              to="https://www.youtube.com/@bikroyon"
               class="text-rose-400 hover:underline"
               >{{ t("contact_page.contacts.youtube") }}:
               youtube.com/@bikroyon</NuxtLink

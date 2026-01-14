@@ -3,7 +3,7 @@
     "name": "Menu",
     "home": "Home",
     "services": "Services",
-    "landing_page": "One Page Website Design",
+    "landing_page": "Landing Page Website Design",
     "landing_page_desc": "Attractive landing pages that turn visitors into customers.",
     "ecommerce": "WordPress Website Design",
     "ecommerce_desc": "Custom WordPress websites built to boost online sales 24/7.",
@@ -23,7 +23,7 @@
       "wordpress": "WordPress Web Design",
       "webapp": "Custom Web App",
       "ai": "Social Media Marketing",
-      "security": "One Page Website Design"
+      "security": "Landing Page Design"
     },
 
     "quick_links_title": "Quick Links",
@@ -74,7 +74,7 @@
       "view_details": "View Details",
       "service_list": [
         {
-          "title": "One-Page Website Design",
+          "title": "Landing Page Website Design",
           "description": "Increase conversions with a focused, fast-loading one-page website designed to engage users."
         },
         {
@@ -113,7 +113,7 @@
           "role": "Software Developer, Founder"
         },
         {
-          "name": "Mahmudul Hasan Tuhin",
+          "name": "Mahmudul Hasan",
           "role": "Software Engineer, Co-Founder"
         },
         {
@@ -435,19 +435,13 @@
   },
   "about_page": {
     "heroSection": {
-      "title": "Bikroyon",
-      "highlight": "Bikroyon",
+      "title": "About",
+      "highlight": "us",
       "paragraphs1": "Bikroyon is a professional web development, digital marketing, and AI automation agency in Bangladesh. Since 2020, we have been designing and developing custom websites, landing pages, and complete digital solutions for our clients. Our main goal is to help every client's business grow quickly and efficiently online.",
       "paragraphs2": "Our team consists of skilled WordPress and Laravel developers, UI/UX designers, and digital marketing experts. We don't just create websites; we create effective, SEO-friendly, and conversion-focused digital products for businesses.",
       "paragraphs3": "We believe that every client is unique. Hence, each of our projects is fully customized. Our work enhances your brand visibility, builds customer trust, and boosts online sales. Our design and development process always ensures responsive, secure, and fast-loading websites.",
       "missionTitle": "Our Mission",
       "missionParagraph": "Our mission is to ensure the digital success of every client. We don’t just build websites; we create a strong online presence for your brand. Working with Bikroyon means you get custom solutions, fast support, and professional design that keeps your business ahead in a competitive market."
-    },
-    "tools": {
-      "title": "The ",
-      "highlight": "Technologies ",
-      "title_last": "We Use",
-      "subtitle": "We carefully choose the best and most professional tools for every project. These technologies make our work faster, more efficient, and high-quality."
     },
     "why_choose": {
       "title_first": "Why ",

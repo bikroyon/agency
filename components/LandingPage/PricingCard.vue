@@ -22,7 +22,7 @@ defineProps({
       :class="[
         plan.id === 'completed' ? 'border-rose-600' : 'border-slate-700',
       ]"
-      class="p-6 rounded-2xl bg-white dark:bg-slate-900 border shadow shadow-slate-950/5"
+      class="p-6 rounded-2xl border shadow shadow-slate-950/5"
     >
       <div class="mb-5">
         <div class="text-slate-900 dark:text-slate-200 font-semibold mb-1">

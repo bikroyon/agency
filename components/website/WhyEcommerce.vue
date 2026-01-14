@@ -70,6 +70,13 @@ const items = computed(() => [
     color: "text-yellow-600",
   },
 ]);
+const { $fbq } = useNuxtApp();
+
+const trackMessage = () => {
+  if ($fbq) {
+    $fbq("track", "Message");
+  }
+};
 </script>
 
 <template>
@@ -117,7 +124,8 @@ const items = computed(() => [
     <!-- Buttons -->
       <div id="video" class="mt-3 sm:mt-6 flex justify-center gap-2 sm:gap-4 flex-wrap">
         <NuxtLink
-          to="https://wa.me/+8801904015818"
+          to="https://wa.me/8801904015818"
+          @click="trackMessage"
           class="bg-rose-500 text-white px-4 py-2 sm:px-6 sm:py-3 rounded-md hover:bg-rose-600 flex items-center gap-2 transition text-sm sm:text-base"
         >
           <Icon name="hugeicons:whatsapp" /> {{ t("smm.hero.cta_primary") }}

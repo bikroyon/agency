@@ -3,7 +3,7 @@ const { t } = useI18n({ useScope: "global" });
 </script>
 <template>
   <footer class="pt-6">
-    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-12">
+    <div class="container mx-auto px-6 grid grid-cols-1 md:grid-cols-4 gap-4 sm:gap-12">
       <!-- Brand -->
       <div>
         <!-- Logo -->
@@ -38,7 +38,7 @@ const { t } = useI18n({ useScope: "global" });
         </h3>
         <ul class="space-y-2 text-sm">
           <li>
-            <NuxtLink :to="$localePath('/ecommerce-website')" class="">{{
+            <NuxtLink :to="$localePath('/wordpress-website')" class="">{{
               t("footer.services.wordpress")
             }}</NuxtLink>
           </li>
@@ -104,7 +104,7 @@ const { t } = useI18n({ useScope: "global" });
 
           <li class="flex items-center gap-2">
             <Icon name="mdi:phone-outline" class="w-5 h-5 text-rose-500" />
-            <NuxtLink :to="`tel:+8801904015818`" class="">
+            <NuxtLink :to="`tel:8801904015818`" class="">
               {{ t("footer.contact.phone") }}
             </NuxtLink>
           </li>

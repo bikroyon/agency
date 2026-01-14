@@ -15,7 +15,7 @@ const services = computed(() => [
     title: t("home.services.service_list.1.title"),
     description: t("home.services.service_list.1.description"),
     icon: "hugeicons:store-location-01",
-    link: localePath("/ecommerce-website"),
+    link: localePath("/wordpress-website"),
   },
   {
     title: t("home.services.service_list.2.title"),

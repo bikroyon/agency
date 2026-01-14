@@ -7,7 +7,7 @@
     <div class="text-center mb-2">
       <!-- Heading -->
       <h2 class="text-2xl sm:text-3xl md:text-4xl font-bold">
-        <span class="text-rose-500">{{ t('landing_defination.what_is_highlight') }}</span>{{ t('landing_defination.what_is') }}
+        <span class="text-rose-500">{{ t('landing_defination.what_is_highlight') }}</span> {{ t('landing_defination.what_is') }}
       </h2>
     </div>
     <!-- Landing Page Explanation -->
